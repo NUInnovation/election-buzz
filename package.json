@@ -1,0 +1,23 @@
+{
+  "name": "election-buzz",
+  "version": "1.0.0",
+  "description": "Election Buzz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelGofron/election-buzz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelGofron/election-buzz/issues"
+  },
+  "homepage": "https://github.com/MichaelGofron/election-buzz#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
