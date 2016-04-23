@@ -1,4 +1,5 @@
 ReactDOM.render(
-  <BarChart />,
+  // <div>hello world</div>,
+  <HBar></HBar>,
   document.getElementById("content")
 )

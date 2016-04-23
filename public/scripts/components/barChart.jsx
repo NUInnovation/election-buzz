@@ -1,4 +1,5 @@
-var BarChart=React.createClass({
+// Declare Bar Chart as global to access in mainPage.js
+window.BarChart=React.createClass({
   getDefaultProps: function() {
       return {
           width: 300,
