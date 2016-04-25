@@ -1,0 +1,32 @@
+
+Get tweets:
+I already have a database of 5 million tweets (+/-) but no username!
+
+
+Get Tweets
+	1. Listen on the mentions of users 'realTrump', 'tedcruz', 'etc' (all 5 candidates)
+	2. Then collect data from each 
+		1 request per minute -> max 1.440/day
+		so would need to split it evenly
+		better:
+			2 - we can track 5000 users (1k for each candidate)
+
+
+FIGURE OUT LIST OF USERS TO TRACK
+	1. track nonstop tweets for a few days (5)
+	2. record the user id of the people tweeting
+	3. record also the username of the person tweeting (basically build a db of all usernames that we get)
+	4. build a db of every person's tweets (identify by db)
+
+FILTERING
+	- filter out news
+	- filter out @<supportive-message>
+	- filter out people who have no followers (not influential enough)
+
+
+
+------------------------
+GET NUMBER OF PEOPLE IN FOLLOWERS IDS WHERE WE HAVE AT LEAST ONE TWEET FROM
+select count(*) from users join followings on users.user_id=followings.follower_id
+SPLIT BY CANDIDATE
+select count(*) from users join followings on users.user_id=followings.follower_id group by followings.followed_id

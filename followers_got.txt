@@ -1,0 +1,821 @@
+IDs collected:  5000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  10000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  15000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  20000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  25000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  30000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  35000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  40000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  45000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  50000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  55000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  60000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  65000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  70000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  75000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  80000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  85000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  90000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  95000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  100000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  105000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  110000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  115000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  120000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  125000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  130000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  135000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  140000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  145000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  150000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  155000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  160000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  165000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  170000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  175000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  180000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  185000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  190000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  195000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  200000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  205000 for realDonaldTrump
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  5000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  10000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  15000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  20000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  25000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  30000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  35000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  40000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  45000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  50000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  55000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  60000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  65000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  70000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  75000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  80000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  85000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  90000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  95000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  100000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  105000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  110000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  115000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  120000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  125000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  130000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  135000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  140000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  145000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  150000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  155000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  160000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  165000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  170000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  175000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  180000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  185000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  190000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  195000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  200000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  205000 for BernieSanders
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  5000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  10000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  15000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  20000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  25000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  30000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  35000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  40000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  45000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  50000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  55000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  60000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  65000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  70000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  75000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  80000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  85000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  90000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  95000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  100000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  105000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  110000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  115000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  120000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  125000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  130000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  135000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  140000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  145000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  150000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  155000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  160000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  165000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  170000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  175000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  180000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  185000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  190000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  195000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  200000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  205000 for TedCruz
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  5000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  10000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  15000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  20000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  25000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  30000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  35000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  40000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  45000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  50000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  55000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  60000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  65000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  70000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  75000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  80000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  85000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  90000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  95000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  100000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  105000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  110000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  115000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  120000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  125000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  130000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  135000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  140000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  145000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  150000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  155000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  160000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  165000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  170000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  175000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  180000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  185000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  190000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  195000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  200000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  205000 for HillaryClinton
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  5000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  10000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  15000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  20000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  25000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  30000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  35000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  40000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  45000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  50000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  55000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  60000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  65000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  70000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  75000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  80000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  85000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  90000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  95000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  100000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  105000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  110000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  115000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  120000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  125000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  130000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  135000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  140000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  145000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  150000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  155000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  160000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  165000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  170000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  175000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  180000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  185000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  190000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  195000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  200000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+IDs collected:  205000 for JohnKasich
+sleep 60
+sleep 40
+sleep 20
+205000
