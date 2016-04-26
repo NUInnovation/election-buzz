@@ -1,5 +1,11 @@
 // Declare Bar Chart as global to access in mainPage.js
-window.BarChart=React.createClass({
+var React = require('react');
+
+var Router = require('react-router');
+var Navigation = Router.Navigation;
+var Link = Router.Link;
+
+var BarChart=React.createClass({
   getDefaultProps: function() {
       return {
           width: 300,
@@ -79,3 +85,5 @@ window.BarChart=React.createClass({
   }
 
 });
+
+module.exports = BarChart;
