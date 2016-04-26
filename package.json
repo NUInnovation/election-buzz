@@ -18,6 +18,11 @@
   "homepage": "https://github.com/MichaelGofron/election-buzz#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jsx-loader": "^0.13.2",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-router": "^2.3.0",
+    "webpack": "^1.13.0"
   }
 }

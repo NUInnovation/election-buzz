@@ -1,4 +1,4 @@
 node_modules/*
+client/build/*
 connect_db.php
-
 connect.py
