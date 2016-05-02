@@ -1,0 +1,2674 @@
+{ "Tweets": [{
+    "id": 723637770758033409, 
+    "stems": [
+        "thank", 
+        "#trump2016", 
+        "#makeamericagreatagain"
+    ], 
+    "text": "thank you, @donaldjtrumpjr! #trump2016 #makeamericagreatagain \n ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "#trump2016", 
+        "#makeamericagreatagain"
+    ]
+},
+{
+    "id": 725803014775263232, 
+    "stems": [
+        "watch", 
+        "live", 
+        "take", 
+        "stage", 
+        "portland", 
+        "town", 
+        "hall", 
+        "event"
+    ], 
+    "text": "rt @kgwnews: watch live: @johnkasich takes the stage for portland town hall event ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "watch", 
+        "live", 
+        "takes", 
+        "stage", 
+        "portland", 
+        "town", 
+        "hall", 
+        "event"
+    ]
+},
+{
+    "id": 721691854849318912, 
+    "stems": [
+        "i'll", 
+        "favorit", 
+        "place", 
+        "morn", 
+        "staten", 
+        "island", 
+        "big", 
+        "crowd", 
+        "will", 
+        "fun"
+    ], 
+    "text": "i'll be in one of my favorite places this morning, staten island. big crowd, will be fun!", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "i'll", 
+        "favorite", 
+        "places", 
+        "morning", 
+        "staten", 
+        "island", 
+        "big", 
+        "crowd", 
+        "will", 
+        "fun"
+    ]
+},
+{
+    "id": 725112873714900992, 
+    "stems": [
+        "thank", 
+        "maryland"
+    ], 
+    "text": "thank you, maryland. ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "maryland"
+    ]
+},
+{
+    "id": 723200045911175168, 
+    "stems": [
+        "first", 
+        "dai", 
+        "second", 
+        "#kasich4u"
+    ], 
+    "text": "the first 100 days in less than 90 seconds.\n\n#kasich4us\n", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "first", 
+        "days", 
+        "seconds", 
+        "#kasich4us"
+    ]
+},
+{
+    "id": 722611938233098244, 
+    "stems": [
+        "race", 
+        "democrat", 
+        "nomin", 
+        "home", 
+        "stretch", 
+        "goal", 
+        "sight"
+    ], 
+    "text": "\u201cthe race for the democratic nomination is in the home stretch and our goal is in sight.\u201d ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "race", 
+        "democratic", 
+        "nomination", 
+        "home", 
+        "stretch", 
+        "goal", 
+        "sight"
+    ]
+},
+{
+    "id": 725785005335711745, 
+    "stems": [
+        "watch", 
+        "ted", 
+        "cruz", 
+        "respond", 
+        "john", 
+        "boehner", 
+        "call", 
+        "lucif", 
+        "flesh"
+    ], 
+    "text": "rt @seanhannity: watch: ted cruz responds to john boehner calling him 'lucifer in the flesh\u2019 ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "watch", 
+        "ted", 
+        "cruz", 
+        "responds", 
+        "john", 
+        "boehner", 
+        "calling", 
+        "lucifer", 
+        "flesh"
+    ]
+},
+{
+    "id": 725131634215899136, 
+    "stems": [
+        "american", 
+        "hungri", 
+        "solut", 
+        "don", 
+        "just", 
+        "want", 
+        "diagnos", 
+        "problem", 
+        "want", 
+        "solv"
+    ], 
+    "text": "americans are hungry for solutions. they don\u2019t just want us to diagnose problems, they want us to solve them.", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "americans", 
+        "hungry", 
+        "solutions", 
+        "don", 
+        "just", 
+        "want", 
+        "diagnose", 
+        "problems", 
+        "want", 
+        "solve"
+    ]
+},
+{
+    "id": 724227158046990340, 
+    "stems": [
+        "time", 
+        "few", 
+        "littl", 
+        "reject", 
+        "foundat", 
+        "economi", 
+        "immor", 
+        "unsustain"
+    ], 
+    "text": "at a time when so few have so much, and so many have so little, we must reject the foundations of this economy as immoral and unsustainable.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "time", 
+        "few", 
+        "little", 
+        "reject", 
+        "foundations", 
+        "economy", 
+        "immoral", 
+        "unsustainable"
+    ]
+},
+{
+    "id": 724600323365466112, 
+    "stems": [
+        "diplomaci", 
+        "everyth", 
+        "can", 
+        "avoid", 
+        "war", 
+        "weak", 
+        "intellig", 
+        "strength"
+    ], 
+    "text": "diplomacy and doing everything we can to avoid a war is not weakness. it is intelligence. it is strength.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "diplomacy", 
+        "everything", 
+        "can", 
+        "avoid", 
+        "war", 
+        "weakness", 
+        "intelligence", 
+        "strength"
+    ]
+},
+{
+    "id": 723527707401838592, 
+    "stems": [
+        "hope", 
+        "commemor", 
+        "passov", 
+        "week", 
+        "experi", 
+        "love", 
+        "grace", 
+        "god", 
+        "who", 
+        "bring", 
+        "freedom"
+    ], 
+    "text": "\"i hope that as you commemorate passover this week, you experience the love &amp; grace of the god who brings freedom.\" ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "hope", 
+        "commemorate", 
+        "passover", 
+        "week", 
+        "experience", 
+        "love", 
+        "grace", 
+        "god", 
+        "who", 
+        "brings", 
+        "freedom"
+    ]
+},
+{
+    "id": 725341496702996480, 
+    "stems": [
+        "dai", 
+        "last", 
+        "#gopdeb", 
+        "indiana", 
+        "deserv", 
+        "debat"
+    ], 
+    "text": "it\u2019s been 48 days since the last #gopdebate.\n\nindiana deserves a debate, @realdonaldtrump: ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "days", 
+        "last", 
+        "#gopdebate", 
+        "indiana", 
+        "deserves", 
+        "debate"
+    ]
+},
+{
+    "id": 723934984281563141, 
+    "stems": [
+        "need", 
+        "real", 
+        "credit", 
+        "score", 
+        "reform", 
+        "bank", 
+        "credit", 
+        "industri", 
+        "work", 
+        "borrow", 
+        "just", 
+        "lender"
+    ], 
+    "text": "we need real credit score reform to make the banking and credit industries work for borrowers and not just lenders.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "need", 
+        "real", 
+        "credit", 
+        "score", 
+        "reform", 
+        "banking", 
+        "credit", 
+        "industries", 
+        "work", 
+        "borrowers", 
+        "just", 
+        "lenders"
+    ]
+},
+{
+    "id": 723906843865698306, 
+    "stems": [
+        "thank", 
+        "waterburi", 
+        "connecticut", 
+        "#makeamericagreatagain", 
+        "#trump2016"
+    ], 
+    "text": "thank you waterbury, connecticut!\n#makeamericagreatagain #trump2016\n ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "waterbury", 
+        "connecticut", 
+        "#makeamericagreatagain", 
+        "#trump2016"
+    ]
+},
+{
+    "id": 724630697588211712, 
+    "stems": [
+        "ms", 
+        "clinton", 
+        "advanc", 
+        "realist", 
+        "well", 
+        "thought", 
+        "propos"
+    ], 
+    "text": "\"ms. clinton has advanced realistic, well thought out proposals.\" \u2014@baltimoresun:  ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "ms", 
+        "clinton", 
+        "advanced", 
+        "realistic", 
+        "well", 
+        "thought", 
+        "proposals"
+    ]
+},
+{
+    "id": 724304022350393346, 
+    "stems": [
+        "it'", 
+        "clear", 
+        "time", 
+        "long", 
+        "overdu", 
+        "shut", 
+        "down", 
+        "berk", 
+        "counti", 
+        "famili", 
+        "detent", 
+        "center"
+    ], 
+    "text": "it's clear to me that the time it is long overdue to shut down the berks county family detention center.\n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "it's", 
+        "clear", 
+        "time", 
+        "long", 
+        "overdue", 
+        "shut", 
+        "down", 
+        "berks", 
+        "county", 
+        "family", 
+        "detention", 
+        "center"
+    ]
+},
+{
+    "id": 725017409132855296, 
+    "stems": [
+        "bad", 
+        "new", 
+        "york", 
+        "time", 
+        "inaccur", 
+        "coverag", 
+        "constantli", 
+        "try", 
+        "belittl", 
+        "paper", 
+        "lost", 
+        "wai"
+    ], 
+    "text": "how bad is the new york times\u2014the most inaccurate coverage constantly. always trying to belittle. paper has lost its way!", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "bad", 
+        "new", 
+        "york", 
+        "times", 
+        "inaccurate", 
+        "coverage", 
+        "constantly", 
+        "trying", 
+        "belittle", 
+        "paper", 
+        "lost", 
+        "way"
+    ]
+},
+{
+    "id": 726171479692300288, 
+    "stems": [
+        "want", 
+        "want", 
+        "can", 
+        "win", 
+        "next", 
+        "primari"
+    ], 
+    "text": "rt @politico: .@johnkasich: @hillaryclinton wants whatever @berniesanders wants so she can win the next primary. ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "wants", 
+        "wants", 
+        "can", 
+        "win", 
+        "next", 
+        "primary"
+    ]
+},
+{
+    "id": 726111209242677248, 
+    "stems": [
+        "see", 
+        "ted", 
+        "cruz", 
+        "principl", 
+        "conserv", 
+        "who", 
+        "advoc", 
+        "reagan", 
+        "agenda", 
+        "sai", 
+        "penc"
+    ], 
+    "text": "rt @dloesch: \u201ci see ted cruz as a principled conservative who has advocated the reagan agenda\u201d says pence.", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "see", 
+        "ted", 
+        "cruz", 
+        "principled", 
+        "conservative", 
+        "who", 
+        "advocated", 
+        "reagan", 
+        "agenda", 
+        "says", 
+        "pence"
+    ]
+},
+{
+    "id": 722945216202715138, 
+    "stems": [
+        "want", 
+        "see", 
+        "countri", 
+        "highest", 
+        "voter", 
+        "turnout", 
+        "world", 
+        "lowest"
+    ], 
+    "text": "i want to see our country have one of the highest voter turnouts in the world, not one of the lowest.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "want", 
+        "see", 
+        "country", 
+        "highest", 
+        "voter", 
+        "turnouts", 
+        "world", 
+        "lowest"
+    ]
+},
+{
+    "id": 726500880602656768, 
+    "stems": [
+        "#break", 
+        "fmr", 
+        "ca", 
+        "gov", 
+        "pete", 
+        "wilson", 
+        "announc", 
+        "surpris", 
+        "endors", 
+        "#cagopconvent"
+    ], 
+    "text": "rt @abc7elex: #breaking fmr ca gov. pete wilson announces surprise endorsement of @tedcruz at #cagopconvention ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "#breaking", 
+        "fmr", 
+        "ca", 
+        "gov", 
+        "pete", 
+        "wilson", 
+        "announces", 
+        "surprise", 
+        "endorsement", 
+        "#cagopconvention"
+    ]
+},
+{
+    "id": 726423311844941824, 
+    "stems": [
+        "largest", 
+        "grassroot", 
+        "campaign", 
+        "histori", 
+        "presidenti", 
+        "polit", 
+        "#notmeu"
+    ], 
+    "text": "together, we have become the largest grassroots campaign in the history of presidential politics. #notmeus\n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "largest", 
+        "grassroots", 
+        "campaign", 
+        "history", 
+        "presidential", 
+        "politics", 
+        "#notmeus"
+    ]
+},
+{
+    "id": 725748952713162752, 
+    "stems": [
+        "show", 
+        "#cruzcarli", 
+        "support", 
+        "bumper", 
+        "sticker", 
+        "now"
+    ], 
+    "text": "show your #cruzcarly support with our best-selling bumper sticker! get yours now:  ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "show", 
+        "#cruzcarly", 
+        "support", 
+        "bumper", 
+        "sticker", 
+        "now"
+    ]
+},
+{
+    "id": 722403107511132160, 
+    "stems": [
+        "new", 
+        "york", 
+        "we'r", 
+        "face", 
+        "big", 
+        "challeng", 
+        "need", 
+        "presid", 
+        "who'", 
+        "readi", 
+        "dai", 
+        "#kasich4u"
+    ], 
+    "text": "new york, we're facing some big challenges. we need a president who's ready on day one. \n\n#kasich4us ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "new", 
+        "york", 
+        "we're", 
+        "facing", 
+        "big", 
+        "challenges", 
+        "need", 
+        "president", 
+        "who's", 
+        "ready", 
+        "day", 
+        "#kasich4us"
+    ]
+},
+{
+    "id": 725478750700236800, 
+    "stems": [
+        "can", 
+        "will", 
+        "win", 
+        "nomin", 
+        "#cruzcarli"
+    ], 
+    "text": ".@carlyfiorina on the @marklevinshow: @tedcruz can and will win this nomination  #cruzcarly ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "can", 
+        "will", 
+        "win", 
+        "nomination", 
+        "#cruzcarly"
+    ]
+},
+{
+    "id": 724988942836101120, 
+    "stems": [
+        "vote", 
+        "#mdprimari"
+    ], 
+    "text": "rt @cmbaker353: i voted in the #mdprimary for @tedcruz @sentedcruz ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "voted", 
+        "#mdprimary"
+    ]
+},
+{
+    "id": 722796231391490048, 
+    "stems": [
+        "berni", 
+        "sander", 
+        "inspir", 
+        "art", 
+        "revolut"
+    ], 
+    "text": "rt @salon: how bernie sanders inspired an art revolution ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "bernie", 
+        "sanders", 
+        "inspired", 
+        "art", 
+        "revolution"
+    ]
+},
+{
+    "id": 725435862050299904, 
+    "stems": [
+        "carli", 
+        "fiorina", 
+        "sing", 
+        "announc", 
+        "ll", 
+        "ted", 
+        "cruz", 
+        "run", 
+        "mate"
+    ], 
+    "text": "rt @cnnpolitics: carly fiorina sings after announcing she\u2019ll be ted cruz\u2019s running mate  ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "carly", 
+        "fiorina", 
+        "sings", 
+        "announcing", 
+        "ll", 
+        "ted", 
+        "cruz", 
+        "running", 
+        "mate"
+    ]
+},
+{
+    "id": 726859173774921732, 
+    "stems": [
+        "presidenti", 
+        "elect", 
+        "held", 
+        "todai", 
+        "onli", 
+        "republican", 
+        "defeat", 
+        "hillari", 
+        "clinton", 
+        "that'", 
+        "ht"
+    ], 
+    "text": "rt @teamjohnkasich: if the presidential election were held today only 1 republican could defeat hillary clinton, and that's @johnkasich. ht\u2026", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "presidential", 
+        "election", 
+        "held", 
+        "today", 
+        "only", 
+        "republican", 
+        "defeat", 
+        "hillary", 
+        "clinton", 
+        "that's", 
+        "ht"
+    ]
+},
+{
+    "id": 721688773923336193, 
+    "stems": [
+        "don't", 
+        "forget", 
+        "vote", 
+        "tuesdai", 
+        "#nyprimari"
+    ], 
+    "text": "rt @governorpataki: don't forget to vote for @johnkasich on tuesday. #nyprimary", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "don't", 
+        "forget", 
+        "vote", 
+        "tuesday", 
+        "#nyprimary"
+    ]
+},
+{
+    "id": 725133247395598336, 
+    "stems": [
+        "fight", 
+        "women", 
+        "health", 
+        "care", 
+        "paid", 
+        "famili", 
+        "leav", 
+        "equal", 
+        "pai", 
+        "plai", 
+        "woman", 
+        "card", 
+        "deal", 
+        "hillari"
+    ], 
+    "text": "\u201cif fighting for women\u2019s health care and paid family leave and equal pay is playing the \u2018woman card,\u2019 then deal me in.\u201d \u2014hillary", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "fighting", 
+        "women", 
+        "health", 
+        "care", 
+        "paid", 
+        "family", 
+        "leave", 
+        "equal", 
+        "pay", 
+        "playing", 
+        "woman", 
+        "card", 
+        "deal", 
+        "hillary"
+    ]
+},
+{
+    "id": 723617111466070018, 
+    "stems": [
+        "year", 
+        "can", 
+        "gener", 
+        "enough", 
+        "renew", 
+        "energi", 
+        "power", 
+        "home", 
+        "america", 
+        "#earthdai"
+    ], 
+    "text": "in ten years, we can generate enough renewable energy to power every home in america. #earthday\n", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "years", 
+        "can", 
+        "generate", 
+        "enough", 
+        "renewable", 
+        "energy", 
+        "power", 
+        "home", 
+        "america", 
+        "#earthday"
+    ]
+},
+{
+    "id": 719326834538778625, 
+    "stems": [
+        "peopl", 
+        "colorado", 
+        "vote", 
+        "taken", 
+        "awai", 
+        "phoni", 
+        "politician", 
+        "biggest", 
+        "stori", 
+        "polit", 
+        "will", 
+        "allow"
+    ], 
+    "text": "the people of colorado had their vote taken away from them by the phony politicians. biggest story in politics. this will not be allowed!", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "people", 
+        "colorado", 
+        "vote", 
+        "taken", 
+        "away", 
+        "phony", 
+        "politicians", 
+        "biggest", 
+        "story", 
+        "politics", 
+        "will", 
+        "allowed"
+    ]
+},
+{
+    "id": 725091182540427265, 
+    "stems": [
+        "thank"
+    ], 
+    "text": "thank you!  ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "thank"
+    ]
+},
+{
+    "id": 726947994847707137, 
+    "stems": [
+        "talk", 
+        "#job", 
+        "#freedom", 
+        "#secur", 
+        "la", 
+        "port", 
+        "#in", 
+        "#cruzcarly2016", 
+        "#cruzcrew", 
+        "#cruzcrew"
+    ], 
+    "text": "rt @brucereddenjr: .@tedcruz talking #jobs #freedom #security in la porte #in #cruzcarly2016 #cruzcrew #cruzcrew ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "talking", 
+        "#jobs", 
+        "#freedom", 
+        "#security", 
+        "la", 
+        "porte", 
+        "#in", 
+        "#cruzcarly2016", 
+        "#cruzcrew", 
+        "#cruzcrew"
+    ]
+},
+{
+    "id": 724269891063156736, 
+    "stems": [
+        "show", 
+        "who", 
+        "believ", 
+        "trump", 
+        "shown", 
+        "who"
+    ], 
+    "text": "when someone shows you who they are, believe them. trump has shown us who he is.\n", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "shows", 
+        "who", 
+        "believe", 
+        "trump", 
+        "shown", 
+        "who"
+    ]
+},
+{
+    "id": 725132403207995394, 
+    "stems": [
+        "support", 
+        "senat", 
+        "sander", 
+        "support", 
+        "unit", 
+        "divid", 
+        "hillari"
+    ], 
+    "text": "\u201cwhether you support senator sanders or you support me, there\u2019s much more that unites us than divides us.\u201d \u2014hillary", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "support", 
+        "senator", 
+        "sanders", 
+        "support", 
+        "unites", 
+        "divides", 
+        "hillary"
+    ]
+},
+{
+    "id": 725340509481345026, 
+    "stems": [
+        "ted", 
+        "cruz", 
+        "donald", 
+        "trump", 
+        "doesn't", 
+        "like", 
+        "face", 
+        "voter", 
+        "scrutini", 
+        "parachut", 
+        "like", 
+        "mick", 
+        "jagger"
+    ], 
+    "text": "rt @cnnpolitics: ted cruz: donald trump doesn't like facing voter scrutiny; he parachutes in like mick jagger  ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "ted", 
+        "cruz", 
+        "donald", 
+        "trump", 
+        "doesn't", 
+        "like", 
+        "facing", 
+        "voter", 
+        "scrutiny", 
+        "parachutes", 
+        "like", 
+        "mick", 
+        "jagger"
+    ]
+},
+{
+    "id": 724996031033806849, 
+    "stems": [
+        "thank", 
+        "incred", 
+        "support", 
+        "melania", 
+        "barron", 
+        "ivanka", 
+        "jare", 
+        "tiffani", 
+        "don", 
+        "vanessa", 
+        "eric", 
+        "lara"
+    ], 
+    "text": "thank you for the incredible support- melania, barron, ivanka, jared, tiffany, don, vanessa, eric, and lara!\n", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "incredible", 
+        "support", 
+        "melania", 
+        "barron", 
+        "ivanka", 
+        "jared", 
+        "tiffany", 
+        "don", 
+        "vanessa", 
+        "eric", 
+        "lara"
+    ]
+},
+{
+    "id": 719321288301486081, 
+    "stems": [
+        "possibl", 
+        "peopl", 
+        "great", 
+        "state", 
+        "colorado", 
+        "never", 
+        "vote", 
+        "republican", 
+        "primari", 
+        "great", 
+        "anger", 
+        "total", 
+        "unfair"
+    ], 
+    "text": "how is it possible that the people of the great state of colorado never got to vote in the republican primary? great anger - totally unfair!", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "possible", 
+        "people", 
+        "great", 
+        "state", 
+        "colorado", 
+        "never", 
+        "vote", 
+        "republican", 
+        "primary", 
+        "great", 
+        "anger", 
+        "totally", 
+        "unfair"
+    ]
+},
+{
+    "id": 726089113900711937, 
+    "stems": [
+        "will", 
+        "vote", 
+        "#tedcruz"
+    ], 
+    "text": "rt @foxnews: \u201ci will be voting for #tedcruz.\u201d  - @govpencein ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "will", 
+        "voting", 
+        "#tedcruz"
+    ]
+},
+{
+    "id": 722603689358266371, 
+    "stems": [
+        "let'", 
+        "win", 
+        "nomin", 
+        "chip", 
+        "let", 
+        "hillari", 
+        "know", 
+        "you'v", 
+        "back", 
+        "wai", 
+        "white", 
+        "hous"
+    ], 
+    "text": "let's win this nomination. chip in $3 to let hillary know you've got her back all the way to the white house: ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "let's", 
+        "win", 
+        "nomination", 
+        "chip", 
+        "let", 
+        "hillary", 
+        "know", 
+        "you've", 
+        "back", 
+        "way", 
+        "white", 
+        "house"
+    ]
+},
+{
+    "id": 721831066626093056, 
+    "stems": [
+        "thank", 
+        "tour", 
+        "hous", 
+        "brownsvil"
+    ], 
+    "text": "rt @ritchietorres: thank you @berniesanders for touring @nycha housing in brownsville. @anniekarni @thelastword ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "touring", 
+        "housing", 
+        "brownsville"
+    ]
+},
+{
+    "id": 725448246873755648, 
+    "stems": [
+        "yike"
+    ], 
+    "text": "yikes. ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "yikes"
+    ]
+},
+{
+    "id": 724674303661232129, 
+    "stems": [
+        "sound", 
+        "strang", 
+        "come", 
+        "presidenti", 
+        "candid", 
+        "need", 
+        "love", 
+        "kind"
+    ], 
+    "text": "this might sound strange coming from a presidential candidate, but what we really need is more love and kindness.\n", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "sound", 
+        "strange", 
+        "coming", 
+        "presidential", 
+        "candidate", 
+        "need", 
+        "love", 
+        "kindness"
+    ]
+},
+{
+    "id": 719630780499128320, 
+    "stems": [
+        "doe", 
+        "liber", 
+        "media", 
+        "think", 
+        "bill", 
+        "o'reilli", 
+        "complet", 
+        "total", 
+        "vulgarian", 
+        "don't", 
+        "think"
+    ], 
+    "text": "why does the liberal media think bill o'reilly  (@oreillyfactor) is a complete and total vulgarian? i don't think so!", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "does", 
+        "liberal", 
+        "media", 
+        "think", 
+        "bill", 
+        "o'reilly", 
+        "complete", 
+        "total", 
+        "vulgarian", 
+        "don't", 
+        "think"
+    ]
+},
+{
+    "id": 721306189867413504, 
+    "stems": [
+        "just", 
+        "vote", 
+        "indiana", 
+        "everyon", 
+        "talk", 
+        "follow", 
+        "suit", 
+        "fantast"
+    ], 
+    "text": "\"@dmharvey89: @realdonaldtrump @wdct8110 i just voted for @realdonaldtrump in indiana. everyone i talk to was following suit!\" fantastic!", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "just", 
+        "voted", 
+        "indiana", 
+        "everyone", 
+        "talk", 
+        "following", 
+        "suit", 
+        "fantastic"
+    ]
+},
+{
+    "id": 726110498459000832, 
+    "stems": [
+        "tune", 
+        "hour", 
+        "exclus", 
+        "interview"
+    ], 
+    "text": "rt @seanhannity: tune in at 10pm/et for my hour exclusive interview with @tedcruz and @carlyfiorina ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "tune", 
+        "hour", 
+        "exclusive", 
+        "interview"
+    ]
+},
+{
+    "id": 722169354503081984, 
+    "stems": [
+        "sundai", 
+        "visit", 
+        "brownsvil", 
+        "came", 
+        "awai", 
+        "determin", 
+        "ever", 
+        "address", 
+        "afford", 
+        "hous", 
+        "crisi"
+    ], 
+    "text": "on sunday, i visited brownsville. i came away more determined than ever to address the affordable housing crisis.\n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "sunday", 
+        "visited", 
+        "brownsville", 
+        "came", 
+        "away", 
+        "determined", 
+        "ever", 
+        "address", 
+        "affordable", 
+        "housing", 
+        "crisis"
+    ]
+},
+{
+    "id": 726407981684932609, 
+    "stems": [
+        "want", 
+        "thank", 
+        "unit", 
+        "local", 
+        "endors", 
+        "campaign", 
+        "presid"
+    ], 
+    "text": "i want to thank united @steelworkers local 1999 for endorsing my campaign for president. ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "want", 
+        "thank", 
+        "united", 
+        "local", 
+        "endorsing", 
+        "campaign", 
+        "president"
+    ]
+},
+{
+    "id": 725383459284353025, 
+    "stems": [
+        "greatest", 
+        "foreign", 
+        "polici", 
+        "speech", 
+        "washington'", 
+        "farewel", 
+        "address"
+    ], 
+    "text": "rt @anncoulter: greatest foreign policy speech since washington's farewell address.", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "greatest", 
+        "foreign", 
+        "policy", 
+        "speech", 
+        "washington's", 
+        "farewell", 
+        "address"
+    ]
+},
+{
+    "id": 723542968850886656, 
+    "stems": [
+        "enough", 
+        "monei", 
+        "need", 
+        "make", 
+        "monei", 
+        "hillari", 
+        "ensur", 
+        "equal", 
+        "pai", 
+        "women"
+    ], 
+    "text": "\"it is not enough to be on the money. you need to be making the money.\" \u2014hillary on ensuring equal pay for women", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "enough", 
+        "money", 
+        "need", 
+        "making", 
+        "money", 
+        "hillary", 
+        "ensuring", 
+        "equal", 
+        "pay", 
+        "women"
+    ]
+},
+{
+    "id": 723677300563283968, 
+    "stems": [
+        "children", 
+        "should", 
+        "live", 
+        "grow", 
+        "healthi", 
+        "world", 
+        "it'", 
+        "import", 
+        "#actonclim"
+    ], 
+    "text": "rt @chelseaclinton: all children should live &amp; grow up in a healthy world. that\u2019s why it's so important we #actonclimate. ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "children", 
+        "should", 
+        "live", 
+        "grow", 
+        "healthy", 
+        "world", 
+        "it's", 
+        "important", 
+        "#actonclimate"
+    ]
+},
+{
+    "id": 726181047323389952, 
+    "stems": [
+        "passag", 
+        "nafta", 
+        "indiana", 
+        "lost", 
+        "pai", 
+        "manufactur", 
+        "job"
+    ], 
+    "text": "since the passage of nafta in 1994, indiana has lost 113,000 good paying manufacturing jobs.\n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "passage", 
+        "nafta", 
+        "indiana", 
+        "lost", 
+        "paying", 
+        "manufacturing", 
+        "jobs"
+    ]
+},
+{
+    "id": 725807321268424708, 
+    "stems": [
+        "right", 
+        "now", 
+        "billionair", 
+        "pai", 
+        "amount", 
+        "monei", 
+        "social", 
+        "secur", 
+        "who", 
+        "make", 
+        "year", 
+        "time", 
+        "chang"
+    ], 
+    "text": "right now a billionaire pays the same amount of money into social security as someone who makes $118,500 a year. time for a change.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "right", 
+        "now", 
+        "billionaire", 
+        "pays", 
+        "amount", 
+        "money", 
+        "social", 
+        "security", 
+        "who", 
+        "makes", 
+        "year", 
+        "time", 
+        "change"
+    ]
+},
+{
+    "id": 726120505393045504, 
+    "stems": [
+        "john", 
+        "kasich", 
+        "challeng", 
+        "oregonian"
+    ], 
+    "text": "john kasich has a challenge for oregonians.\n", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "john", 
+        "kasich", 
+        "challenge", 
+        "oregonians"
+    ]
+},
+{
+    "id": 722628504529928192, 
+    "stems": [
+        "count", 
+        "hold", 
+        "#manhattan", 
+        "lead", 
+        "#magicwal", 
+        "#cnnelect"
+    ], 
+    "text": "rt @johnkingcnn: 98% counted and @johnkasich holding #manhattan lead over @realdonaldtrump #magicwall #cnnelection ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "counted", 
+        "holding", 
+        "#manhattan", 
+        "lead", 
+        "#magicwall", 
+        "#cnnelection"
+    ]
+},
+{
+    "id": 724399226344509440, 
+    "stems": [
+        "countri", 
+        "simpli", 
+        "doesn't", 
+        "like", 
+        "trump", 
+        "cruz", 
+        "#foxnewstownhal"
+    ], 
+    "text": "\"most of the country simply doesn't like [trump &amp; cruz].\"\n\n#foxnewstownhall\n", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "country", 
+        "simply", 
+        "doesn't", 
+        "like", 
+        "trump", 
+        "cruz", 
+        "#foxnewstownhall"
+    ]
+},
+{
+    "id": 725037765486764032, 
+    "stems": [
+        "larg", 
+        "voter", 
+        "turnout", 
+        "will", 
+        "win", 
+        "can", 
+        "call", 
+        "voter", 
+        "todai", 
+        "poll"
+    ], 
+    "text": "if there is a large voter turnout, we will win. can you call voters today and get them to the polls? ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "large", 
+        "voter", 
+        "turnout", 
+        "will", 
+        "win", 
+        "can", 
+        "call", 
+        "voters", 
+        "today", 
+        "polls"
+    ]
+},
+{
+    "id": 726857438272483328, 
+    "stems": [
+        "watch", 
+        "speech", 
+        "live", 
+        "lafayett", 
+        "now"
+    ], 
+    "text": "rt @catblackfrazier: watch @tedcruz speech live in lafayette, in now! ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "watch", 
+        "speech", 
+        "live", 
+        "lafayette", 
+        "now"
+    ]
+},
+{
+    "id": 722620394734231553, 
+    "stems": [
+        "esta", 
+        "victoria", 
+        "es", 
+        "de", 
+        "todo", 
+        "usted", 
+        "nueva", 
+        "york", 
+        "mucha", 
+        "gracia", 
+        "por", 
+        "su", 
+        "apoyo", 
+        "unet", 
+        "la"
+    ], 
+    "text": "\u00a1esta victoria es de todos ustedes nueva york! muchas gracias por su apoyo. unete a la campa\u00f1a aqu\u00ed \u2192 ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "esta", 
+        "victoria", 
+        "es", 
+        "de", 
+        "todos", 
+        "ustedes", 
+        "nueva", 
+        "york", 
+        "muchas", 
+        "gracias", 
+        "por", 
+        "su", 
+        "apoyo", 
+        "unete", 
+        "la"
+    ]
+},
+{
+    "id": 726918444931776512, 
+    "stems": [
+        "join", 
+        "carmel", 
+        "indiana", 
+        "tomorrow", 
+        "#inprimari"
+    ], 
+    "text": "join me in carmel, indiana- tomorrow at 4pm! #inprimary \n ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "join", 
+        "carmel", 
+        "indiana", 
+        "tomorrow", 
+        "#inprimary"
+    ]
+},
+{
+    "id": 726148966237138944, 
+    "stems": [
+        "proven", 
+        "conserv", 
+        "who", 
+        "stand", 
+        "principl", 
+        "need", 
+        "hous", 
+        "repres"
+    ], 
+    "text": ".@bridenstine4ok is a proven conservative who stands on principle. we need him in the house of representatives: ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "proven", 
+        "conservative", 
+        "who", 
+        "stands", 
+        "principle", 
+        "need", 
+        "house", 
+        "representatives"
+    ]
+},
+{
+    "id": 725113901780754432, 
+    "stems": [
+        "am", 
+        "person", 
+        "todai", 
+        "yesterdai", 
+        "will", 
+        "tomorrow", 
+        "presid"
+    ], 
+    "text": "i am the same person today as i was yesterday and that i will be tomorrow as president:  ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "am", 
+        "person", 
+        "today", 
+        "yesterday", 
+        "will", 
+        "tomorrow", 
+        "president"
+    ]
+},
+{
+    "id": 725396721115750400, 
+    "stems": [
+        "fight", 
+        "women", 
+        "plai", 
+        "#womancard", 
+        "well"
+    ], 
+    "text": "so if fighting for women is playing the #womancard, well... ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "fighting", 
+        "women", 
+        "playing", 
+        "#womancard", 
+        "well"
+    ]
+},
+{
+    "id": 723611199749918722, 
+    "stems": [
+        "ronald", 
+        "reagan", 
+        "won", 
+        "presid", 
+        "build", 
+        "broad", 
+        "divers", 
+        "coalit", 
+        "support", 
+        "onli", 
+        "kasich", 
+        "can", 
+        "do"
+    ], 
+    "text": "ronald reagan won the presidency by building a broad &amp; diverse coalition of support. \n\nonly kasich can do the same. ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "ronald", 
+        "reagan", 
+        "won", 
+        "presidency", 
+        "building", 
+        "broad", 
+        "diverse", 
+        "coalition", 
+        "support", 
+        "only", 
+        "kasich", 
+        "can", 
+        "do"
+    ]
+},
+{
+    "id": 726090161885319168, 
+    "stems": [
+        "thank", 
+        "governor", 
+        "support", 
+        "#choosecruz"
+    ], 
+    "text": "thank you governor @mike_pence for your support!\n\n#choosecruz: \n\n", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "governor", 
+        "support", 
+        "#choosecruz"
+    ]
+},
+{
+    "id": 726843789743144960, 
+    "stems": [
+        "announc", 
+        "begin", 
+        "campaign", 
+        "year", 
+        "ago", 
+        "tune", 
+        "discuss", 
+        "success", 
+        "path", 
+        "forward"
+    ], 
+    "text": "we announced the beginning of this campaign a year ago. tune in as we discuss our success and path forward: ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "announced", 
+        "beginning", 
+        "campaign", 
+        "year", 
+        "ago", 
+        "tune", 
+        "discuss", 
+        "success", 
+        "path", 
+        "forward"
+    ]
+},
+{
+    "id": 722431574369636352, 
+    "stems": [
+        "nueva", 
+        "york", 
+        "es", 
+        "tu", 
+        "turno", 
+        "de", 
+        "votar", 
+        "por", 
+        "nuestro", 
+        "movimiento", 
+        "lleva", 
+        "tu", 
+        "familia", 
+        "amigo", 
+        "votar", 
+        "la", 
+        "casilla", 
+        "cierran", 
+        "la", 
+        "pm"
+    ], 
+    "text": "nueva york \u2014 \u00a1es tu turno de votar por nuestro movimiento! lleva a tu familia y amigos a votar. las casillas cierran a las 9 pm.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "nueva", 
+        "york", 
+        "es", 
+        "tu", 
+        "turno", 
+        "de", 
+        "votar", 
+        "por", 
+        "nuestro", 
+        "movimiento", 
+        "lleva", 
+        "tu", 
+        "familia", 
+        "amigos", 
+        "votar", 
+        "las", 
+        "casillas", 
+        "cierran", 
+        "las", 
+        "pm"
+    ]
+},
+{
+    "id": 725636530417463296, 
+    "stems": [
+        "next", 
+        "#daybreak8", 
+        "talk", 
+        "switch", 
+        "competitor", 
+        "partner"
+    ], 
+    "text": "rt @wish_tv: next on #daybreak8: @carlyfiorina talked with @drewblairtv about her switch from competitor to partner w/ @tedcruz. ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "next", 
+        "#daybreak8", 
+        "talked", 
+        "switch", 
+        "competitor", 
+        "partner"
+    ]
+},
+{
+    "id": 725006270546079744, 
+    "stems": [
+        "vote", 
+        "ted", 
+        "pa", 
+        "#trust"
+    ], 
+    "text": "rt @bwagz2014: @tedcruz i voted for ted in pa! #trusted ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "voted", 
+        "ted", 
+        "pa", 
+        "#trusted"
+    ]
+},
+{
+    "id": 721791930871476224, 
+    "stems": [
+        "wealthiest", 
+        "countri", 
+        "histori", 
+        "world", 
+        "peopl", 
+        "should", 
+        "forc", 
+        "live", 
+        "dilapid", 
+        "hous"
+    ], 
+    "text": "in the wealthiest country in the history of the world, people should not be forced to live in dilapidated housing. ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "wealthiest", 
+        "country", 
+        "history", 
+        "world", 
+        "people", 
+        "should", 
+        "forced", 
+        "live", 
+        "dilapidated", 
+        "housing"
+    ]
+},
+{
+    "id": 722591421593731072, 
+    "stems": [
+        "poll", 
+        "still", 
+        "open", 
+        "you'r", 
+        "line", 
+        "stai", 
+        "line", 
+        "berni", 
+        "need", 
+        "hang", 
+        "#primarydai", 
+        "#nyprimari", 
+        "ht"
+    ], 
+    "text": "rt @latinos4bernie: polls are still open! if you're in line by 9pm stay in line. bernie needs you. hang in there. #primaryday #nyprimary ht\u2026", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "polls", 
+        "still", 
+        "open", 
+        "you're", 
+        "line", 
+        "stay", 
+        "line", 
+        "bernie", 
+        "needs", 
+        "hang", 
+        "#primaryday", 
+        "#nyprimary", 
+        "ht"
+    ]
+},
+{
+    "id": 727113928971423744, 
+    "stems": [
+        "donald", 
+        "hillari", 
+        "side", 
+        "coin", 
+        "#choosecruz"
+    ], 
+    "text": "donald and hillary... two sides of the same coin.\n\n#choosecruz: \n", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "donald", 
+        "hillary", 
+        "sides", 
+        "coin", 
+        "#choosecruz"
+    ]
+},
+{
+    "id": 722835735192035329, 
+    "stems": [
+        "thank", 
+        "unit", 
+        "steelwork", 
+        "local", 
+        "support"
+    ], 
+    "text": "thank you, united steelworkers local 1999 for your support. \n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "united", 
+        "steelworkers", 
+        "local", 
+        "support"
+    ]
+},
+{
+    "id": 723530002617229312, 
+    "stems": [
+        "proud", 
+        "sign", 
+        "pari", 
+        "climat", 
+        "deal", 
+        "wai", 
+        "celebr", 
+        "earth", 
+        "dai", 
+        "take", 
+        "action", 
+        "help", 
+        "save", 
+        "planet"
+    ], 
+    "text": "proud the u.s. is signing the paris climate deal. what better way to celebrate earth day than taking action to help save our planet? -h", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "proud", 
+        "signing", 
+        "paris", 
+        "climate", 
+        "deal", 
+        "way", 
+        "celebrate", 
+        "earth", 
+        "day", 
+        "taking", 
+        "action", 
+        "help", 
+        "save", 
+        "planet"
+    ]
+},
+{
+    "id": 722592772096724997, 
+    "stems": [
+        "thank", 
+        "new", 
+        "york", 
+        "love", 
+        "#makeamericagreatagain", 
+        "#trump2016"
+    ], 
+    "text": "thank you new york! i love you!\n#makeamericagreatagain #trump2016 ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "new", 
+        "york", 
+        "love", 
+        "#makeamericagreatagain", 
+        "#trump2016"
+    ]
+},
+{
+    "id": 721795136255078401, 
+    "stems": [
+        "tune", 
+        "#bernieatprospectpark", 
+        "live", 
+        "here"
+    ], 
+    "text": "tune in to #bernieatprospectpark live here: ", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "tune", 
+        "#bernieatprospectpark", 
+        "live", 
+        "here"
+    ]
+},
+{
+    "id": 725111669085638656, 
+    "stems": [
+        "donald", 
+        "hillari", 
+        "support", 
+        "obamacar", 
+        "individu", 
+        "mandat", 
+        "presid", 
+        "will", 
+        "repeal", 
+        "word", 
+        "obamacar", 
+        "#fullrep"
+    ], 
+    "text": "donald and hillary both support the obamacare individual mandate. as president, i will repeal every word of obamacare. #fullrepeal", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "donald", 
+        "hillary", 
+        "support", 
+        "obamacare", 
+        "individual", 
+        "mandate", 
+        "president", 
+        "will", 
+        "repeal", 
+        "word", 
+        "obamacare", 
+        "#fullrepeal"
+    ]
+},
+{
+    "id": 722165356618452996, 
+    "stems": [
+        "john", 
+        "kasich", 
+        "gain", 
+        "support", 
+        "icon", 
+        "name", 
+        "new", 
+        "york", 
+        "polit", 
+        "histori"
+    ], 
+    "text": "john kasich gains the support of \"one of the most iconic names in new york political history.\" ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "john", 
+        "kasich", 
+        "gains", 
+        "support", 
+        "iconic", 
+        "names", 
+        "new", 
+        "york", 
+        "political", 
+        "history"
+    ]
+},
+{
+    "id": 723873688001589249, 
+    "stems": [
+        "pennsylvania", 
+        "cast", 
+        "vote", 
+        "trump", 
+        "potu", 
+        "vote", 
+        "trump", 
+        "deleg", 
+        "congression", 
+        "district"
+    ], 
+    "text": "pennsylvania: cast your vote for trump for potus &amp; also vote for the trump delegates in your congressional district! ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "pennsylvania", 
+        "cast", 
+        "vote", 
+        "trump", 
+        "potus", 
+        "vote", 
+        "trump", 
+        "delegates", 
+        "congressional", 
+        "district"
+    ]
+},
+{
+    "id": 725825042676772864, 
+    "stems": [
+        "hope", 
+        "partner", 
+        "who", 
+        "can", 
+        "amplifi", 
+        "messag", 
+        "#greta"
+    ], 
+    "text": "rt @foxnews: .@carlyfiorina: \u201ci hope to be...a partner to [@tedcruz] who can amplify his message.\u201d #greta ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "hope", 
+        "partner", 
+        "who", 
+        "can", 
+        "amplify", 
+        "message", 
+        "#greta"
+    ]
+},
+{
+    "id": 726512700528967680, 
+    "stems": [
+        "town", 
+        "hall", 
+        "downtown", 
+        "san", 
+        "jose", 
+        "psych", 
+        "check", 
+        "debt", 
+        "clock", 
+        "terrifi"
+    ], 
+    "text": "rt @johnsleyba: at @johnkasich town hall in downtown san jose @thetechmuseum - so psyched! check out debt clock. terrifying! ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "town", 
+        "hall", 
+        "downtown", 
+        "san", 
+        "jose", 
+        "psyched", 
+        "check", 
+        "debt", 
+        "clock", 
+        "terrifying"
+    ]
+},
+{
+    "id": 726515818394066944, 
+    "stems": [
+        "#donaldtrump", 
+        "support", 
+        "#california", 
+        "democrat"
+    ], 
+    "text": "rt @aswoyer: .@tedcruz - #donaldtrump supports #california democrats   via @breitbartnews", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "#donaldtrump", 
+        "supports", 
+        "#california", 
+        "democrats"
+    ]
+},
+{
+    "id": 725869008994635778, 
+    "stems": [
+        "want", 
+        "chip", 
+        "now", 
+        "#womancard"
+    ], 
+    "text": "want one? chip in now:  #womancard ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "want", 
+        "chip", 
+        "now", 
+        "#womancard"
+    ]
+},
+{
+    "id": 726513475166457856, 
+    "stems": [
+        "send", 
+        "clear", 
+        "messag", 
+        "billionair", 
+        "class", 
+        "can", 
+        "continu", 
+        "huge", 
+        "tax", 
+        "break", 
+        "children", 
+        "countri", 
+        "hungri"
+    ], 
+    "text": "we are sending a clear message to the billionaire class: you can\u2019t continue to get huge tax breaks while children in this country go hungry.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "sending", 
+        "clear", 
+        "message", 
+        "billionaire", 
+        "class", 
+        "can", 
+        "continue", 
+        "huge", 
+        "tax", 
+        "breaks", 
+        "children", 
+        "country", 
+        "hungry"
+    ]
+},
+{
+    "id": 725125407129911296, 
+    "stems": [
+        "ey", 
+        "nation", 
+        "now", 
+        "gaze", 
+        "indiana", 
+        "decis", 
+        "countri"
+    ], 
+    "text": "the eyes of the nation are now gazing upon indiana to make a decision for our country:  ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "eyes", 
+        "nation", 
+        "now", 
+        "gazing", 
+        "indiana", 
+        "decision", 
+        "country"
+    ]
+},
+{
+    "id": 725854001883799555, 
+    "stems": [
+        "name", 
+        "vp", 
+        "nomine", 
+        "ensur", 
+        "clear", 
+        "choic", 
+        "elect"
+    ], 
+    "text": "rt @foxnews: .@tedcruz: \u201cnaming [@carlyfiorina] as my vp nominee ensures that we have a clear choice in this election.\" ", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "naming", 
+        "vp", 
+        "nominee", 
+        "ensures", 
+        "clear", 
+        "choice", 
+        "election"
+    ]
+},
+{
+    "id": 722531276041895937, 
+    "stems": [
+        "hei", 
+        "new", 
+        "york", 
+        "there'", 
+        "just", 
+        "few", 
+        "hour", 
+        "left", 
+        "vote", 
+        "john", 
+        "kasich", 
+        "grab", 
+        "friend", 
+        "famili", 
+        "vote"
+    ], 
+    "text": "hey new york, there's just a few hours left to vote for john kasich! grab your friends &amp; family and go vote! ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "hey", 
+        "new", 
+        "york", 
+        "there's", 
+        "just", 
+        "few", 
+        "hours", 
+        "left", 
+        "vote", 
+        "john", 
+        "kasich", 
+        "grab", 
+        "friends", 
+        "family", 
+        "vote"
+    ]
+},
+{
+    "id": 724399992782225408, 
+    "stems": [
+        "here", 
+        "highlight", 
+        "path", 
+        "speech", 
+        "governor", 
+        "just", 
+        "spoke", 
+        "#foxnewstownhal"
+    ], 
+    "text": "here are highlights of the two paths speech the governor just spoke about on the #foxnewstownhall\n", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "here", 
+        "highlights", 
+        "paths", 
+        "speech", 
+        "governor", 
+        "just", 
+        "spoke", 
+        "#foxnewstownhall"
+    ]
+},
+{
+    "id": 726155514707464192, 
+    "stems": [
+        "repeat", 
+        "want", 
+        "see", 
+        "leader", 
+        "republican", 
+        "parti", 
+        "like", 
+        "john", 
+        "boehner", 
+        "donald", 
+        "trump"
+    ], 
+    "text": "rt @patricksvitek: .@tedcruz repeats: \"if you want to see more leaders in the republican party like john boehner, then donald trump is your\u2026", 
+    "tweet": "", 
+    "username": "TedCruz", 
+    "vector": null, 
+    "words": [
+        "repeats", 
+        "want", 
+        "see", 
+        "leaders", 
+        "republican", 
+        "party", 
+        "like", 
+        "john", 
+        "boehner", 
+        "donald", 
+        "trump"
+    ]
+},
+{
+    "id": 720821603064524800, 
+    "stems": [
+        "america", 
+        "great"
+    ], 
+    "text": "make america great again!\n", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "america", 
+        "great"
+    ]
+},
+{
+    "id": 723918901545979904, 
+    "stems": [
+        "watch", 
+        "gettysburg", 
+        "sai", 
+        "super", 
+        "pac", 
+        "lincoln", 
+        "envis"
+    ], 
+    "text": "rt @abcpolitics: watch: at gettysburg, @berniesanders says super pacs not what lincoln would have envisioned: \n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "watch", 
+        "gettysburg", 
+        "says", 
+        "super", 
+        "pacs", 
+        "lincoln", 
+        "envisioned"
+    ]
+},
+{
+    "id": 724393254716772353, 
+    "stems": [
+        "i'v", 
+        "balanc", 
+        "peopl", 
+        "will", 
+        "meet", 
+        "time", 
+        "#foxnewstownhal"
+    ], 
+    "text": "rt @foxnews: .@johnkasich: \"i've balanced more than all the people you will meet times ten.\" #foxnewstownhall ", 
+    "tweet": "", 
+    "username": "JohnKasich", 
+    "vector": null, 
+    "words": [
+        "i've", 
+        "balanced", 
+        "people", 
+        "will", 
+        "meet", 
+        "times", 
+        "#foxnewstownhall"
+    ]
+},
+{
+    "id": 724279017629736960, 
+    "stems": [
+        "thank", 
+        "member", 
+        "unit", 
+        "electr", 
+        "worker", 
+        "endors"
+    ], 
+    "text": "i thank the 35,000 members of the united electrical workers for their endorsement. \n", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "thank", 
+        "members", 
+        "united", 
+        "electrical", 
+        "workers", 
+        "endorsement"
+    ]
+},
+{
+    "id": 722259860071522305, 
+    "stems": [
+        "condemn", 
+        "horrif", 
+        "terrorist", 
+        "attack", 
+        "jerusalem", 
+        "todai", 
+        "deepest", 
+        "condol", 
+        "wound", 
+        "famili"
+    ], 
+    "text": "i condemn the horrific terrorist attack in jerusalem today. i send my deepest condolences to all of those wounded and their families.", 
+    "tweet": "", 
+    "username": "BernieSanders", 
+    "vector": null, 
+    "words": [
+        "condemn", 
+        "horrific", 
+        "terrorist", 
+        "attack", 
+        "jerusalem", 
+        "today", 
+        "deepest", 
+        "condolences", 
+        "wounded", 
+        "families"
+    ]
+},
+{
+    "id": 719648132225699840, 
+    "stems": [
+        "interest", 
+        "piec", 
+        "writer"
+    ], 
+    "text": "a very interesting piece, by a very good writer, @kirstenpowers of @usatoday and @foxnews. ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "interesting", 
+        "piece", 
+        "writer"
+    ]
+},
+{
+    "id": 722601824818216960, 
+    "stems": [
+        "right", 
+        "back", 
+        "new", 
+        "york"
+    ], 
+    "text": "right back at you, new york. ", 
+    "tweet": "", 
+    "username": "HillaryClinton", 
+    "vector": null, 
+    "words": [
+        "right", 
+        "back", 
+        "new", 
+        "york"
+    ]
+},
+{
+    "id": 722540379799740416, 
+    "stems": [
+        "messag", 
+        "donald", 
+        "trump", 
+        "new", 
+        "york"
+    ], 
+    "text": "rt @donaldjtrumpjr: a message from donald j. trump to new york!\n  ", 
+    "tweet": "", 
+    "username": "realDonaldTrump", 
+    "vector": null, 
+    "words": [
+        "message", 
+        "donald", 
+        "trump", 
+        "new", 
+        "york"
+    ]
+}] 
+ }

@@ -1,0 +1,145 @@
+{
+    "Topics": {
+        "Bernie": [
+            "sanders",
+            "feelthebern",
+            "berniesanders",
+            "bernie2016",
+            "bernie"
+        ],
+        "Cruz": [
+            "tedcruz",
+            "ted",
+            "cruz2016",
+            "cruz"
+        ],
+        "Education": [
+            "loan",
+            "primary",
+            "professors",
+            "college",
+            "elementary",
+            "education",
+            "undergraduate",
+            "matriculation",
+            "diplomas",
+            "enrolment",
+            "graduate",
+            "tests",
+            "exam",
+            "students",
+            "postgraduate",
+            "curriculum",
+            "tuition",
+            "post-graduate",
+            "teacher",
+            "school",
+            "university",
+            "teachers",
+            "learn"
+        ],
+        "Healthcare": [
+            "illness",
+            "hospital",
+            "obamacare",
+            "elderly",
+            "health",
+            "sick",
+            "healthcare",
+            "medicare",
+            "zika",
+            "hospitals",
+            "care"
+        ],
+        "Hillary": [
+            "hillary",
+            "bill",
+            "clinton",
+            "hillaryclinton"
+        ],
+        "Immigration": [
+            "f1",
+            "h1-b",
+            "citizenship",
+            "mexico",
+            "wall",
+            "migrant",
+            "legalization",
+            "border",
+            "trumpwall",
+            "deportation",
+            "overstay",
+            "illegal",
+            "tsa",
+            "mexicans",
+            "visas",
+            "passports",
+            "immigration",
+            "quota",
+            "visa",
+            "foreigners",
+            "deport",
+            "airports",
+            "refugee",
+            "immigrants",
+            "undocumented",
+            "naturalization"
+        ],
+        "Kasich": [
+            "johnkasich",
+            "",
+            "john",
+            "kasich2016",
+            "kasich"
+        ],
+        "Security": [
+            "",
+            "execution",
+            "suicide",
+            "bomb",
+            "threat",
+            "isis",
+            "islamophobia",
+            "jihadi",
+            "extremists",
+            "safety",
+            "iraq",
+            "terror",
+            "syria",
+            "terrorism",
+            "isil",
+            "war"
+        ],
+        "Supreme Court": [
+            "supreme",
+            "court",
+            "garland",
+            "justice",
+            "merrick",
+            "supremecourt",
+            "scous",
+            "scalia"
+        ],
+        "Tax": [
+            "fiscal",
+            "taxed",
+            "tax",
+            "budget"
+        ],
+        "Trump": [
+            "trump",
+            "trumptrain2016",
+            "realdonaldtrump",
+            "donald",
+            "votetrump",
+            "trumptrain"
+        ],
+        "Women": [
+            "mujer",
+            "womancard",
+            "woman",
+            "abortion",
+            "women"
+        ]
+    }
+}
