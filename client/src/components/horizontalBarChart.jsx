@@ -7,41 +7,41 @@ var Router = require('react-router');
 var Navigation = Router.Navigation;
 var Link = Router.Link;
 
-var HBar = React.createClass({
-  getInitialState: function(){
-    var shade = this.props.flash === "true" ? 0.7 : 0
-    return {shade}
-  },
+// var HBar = React.createClass({
+//   getInitialState: function(){
+//     var shade = this.props.flash === "true" ? 0.7 : 0
+//     return {shade}
+//   },
 
-  getDefaultProps: function() {
-    return {
-      width: 0,
-      height: 0,
-      offset: 0
-    }
-  },
+//   getDefaultProps: function() {
+//     return {
+//       width: 0,
+//       height: 0,
+//       offset: 0
+//     }
+//   },
 
-  componentDidMount: function(){
-    setTimeout(() => {
-      if (this.isMounted()) this.setState({shade: 0})
-    }, 150)
-  },
+//   componentDidMount: function(){
+//     setTimeout(() => {
+//       if (this.isMounted()) this.setState({shade: 0})
+//     }, 150)
+//   },
 
-  render: function() {
-    var style = this.props.fillColor ?
-      {fill: shadeColor(this.props.fillColor, this.state.shade)} : {};
-    return (
-      <rect
-        className={this.props.focused ? 'focused' : ''}
-        width={this.props.width} height={this.props.height}
-        y={this.props.offset} x={this.props.x}
-        onMouseOver={this.props.over}
-        onMouseOut={this.props.out}
-        style={style}
-      />
-    );
-  }
-});
+//   render: function() {
+//     var style = this.props.fillColor ?
+//       {fill: shadeColor(this.props.fillColor, this.state.shade)} : {};
+//     return (
+//       <rect
+//         className={this.props.focused ? 'focused' : ''}
+//         width={this.props.width} height={this.props.height}
+//         y={this.props.offset} x={this.props.x}
+//         onMouseOver={this.props.over}
+//         onMouseOut={this.props.out}
+//         style={style}
+//       />
+//     );
+//   }
+// });
 
 window.HBar = React.createClass({
   getDefaultProps: function() {

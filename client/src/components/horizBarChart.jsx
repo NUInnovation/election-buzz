@@ -1,11 +1,10 @@
-// Declare Bar Chart as global to access in mainPage.js
 var React = require('react');
 
 var Router = require('react-router');
 var Navigation = Router.Navigation;
 var Link = Router.Link;
 
-var BarChart=React.createClass({
+var HorizBarChart=React.createClass({
   getDefaultProps: function() {
       return {
           width: 300,
@@ -70,28 +69,29 @@ var BarChart=React.createClass({
           )
       });
 
-      // return(
-      //   <svg id={this.props.chartId} width={this.props.width}
-      //   height={this.props.height}>
-      //     <circle cx="25" cy="25" r="25" fill="purple" />
-      //   </svg>
-      // )
-
       return(
-          <div>
-              <svg id={this.props.chartId} width={this.state.width}
-                   height={this.props.height}>
+        <svg id={this.props.chartId} width={this.props.width}
+        height={this.props.height}>
+          <circle cx="25" cy="25" r="25" fill="purple" />
+        </svg>
+      )
 
-                  <g transform={transform}>
-                      {rectBackground}
-                      {rectForeground}
-                  </g>
-              </svg>
-          </div>
+      // return(
+      //     <div>
+      //         <svg id={this.props.chartId} width={this.state.width}
+      //              height={this.props.height}>
 
-          );
+      //             <g transform={transform}>
+      //                 {rectBackground}
+      //                 {rectForeground}
+      //             </g>
+      //         </svg>
+      //     </div>
+
+      //     );
   }
 
 });
 
-module.exports = BarChart;
+
+module.exports = HorizBarChart;
