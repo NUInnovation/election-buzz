@@ -4,6 +4,9 @@
 	<title>Bar Chart Example</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<style>
 		.bar.realDonaldTrump { fill: red; }
@@ -23,14 +26,257 @@
 		.candidatechart{
 			background-color: lightgray;
 		}
+		#new_item {
+            width: 40%;
+        }
+
+        .todo_list {
+            margin-top: 20px;
+        }
+
+        .item {
+            display: block;
+        }
+
+        #prev_categories{
+        	width:50%;
+        }
+
+        .btn{
+        	margin-right:2px;
+        	margin-left:2px;
+        	margin-bottom: 2px;
+        }
 	</style>
 
 
 </head>
-<body>
+<body onload=startTime()>
 
-<h1> Type in all the topics that you think this tweet applies to </h1>
+<h2> You have 10 seconds to type in topics that this tweet applies to. </h2>
+
+<h2> Here are some that have been used before for all tweets</h2>
+
+<div id=prev_categories>
+</div>
+
+<div id='tweet_box' style='width:800px; height:100px; font-size:1.3em;'>
+	<div id=user style='font-weight:400; color:blue; float:none;'>Username </div>
+	<div id=tweet style='float:left; width:600px;'> Tweet goes here </div>
+	<button id='getTweet' onclick='getNextTweet()' style='width:80px; height:50px;'>Another tweet </button>
+</div>
+
+<div id=input_categories>
+<input type="text" id="new_item" placeholder="Type and press Enter to add categories"> 
+    <div class="todo_list">
+    </div>
+</div>
 
 
 
-</body>
+</body >
+
+<script>
+//get all elements that have the class
+var todoList = $(".todo_list");
+//timeout (in seconds)
+var timeoutTime = 15;
+
+//keypress -> tells you that the user pressed a key
+// if key is 13 (enter) then runs alert
+
+$("#new_item").on("keypress",function(e) {
+    if (e.which === 13) {
+        // alert($(this).val()); //val gives you the value of the input form
+        
+        if ($(this).val() === '') { return; }
+        //add it to the list
+        todoList.prepend('<label class="item" style="float:none"><div class="check" style="color:red; float:left; margin-right:10px;"> X </div><div class="thing">'+$(this).val()+'</div></label>');
+
+        txt = $(this).val();
+
+        if (allCategories.indexOf(txt) === -1)
+		{
+			allCategories.push(txt);
+			allCategories.sort();
+			$('#prev_categories').empty();
+			allCategories.forEach(function(txt)
+			{
+				$('#prev_categories').fadeIn(1000,function(){
+					
+					$(this).append('<button type="button" class="btn btn-primary">'+txt+'</button>');
+				});
+			});
+			categoriesRef.set(allCategories);
+
+		}
+
+        $('#new_item').val('');
+    }
+});
+
+
+// if you click on a checkbox, make it disappear
+//event handler: on (basically a piece of code that happens when smthn happens)
+
+//on takes: event to listen to (click, keypress, change, press down, release mouse)
+// 2nd argument is the child of todolist that you want to watch
+// 
+todoList.on("click", ".check", function(e) {
+	//this now refers to checkbox
+	// $(this).remove(); // this only removes the checkbox, not the other stuff
+
+	//this takes the thing out of the first you had
+	// $(this).parent().remove();
+
+	//you can make it fade out
+	// wait for 250 ms then run the anonymous function
+	$(this).fadeOut(250, function() {
+		$(this).parent().css("color","red");
+		$(this).parent().remove();
+	});
+
+})
+
+/// FIREBASE STUFF HERE 
+var myFirebaseRef = new Firebase("https://electionbuzz.firebaseio.com/");
+var tweetsRef = myFirebaseRef.child('Tweets');
+var categoriesRef = myFirebaseRef.child('Categories');
+
+var total_tweets = 0;
+tweetsRef.on("value",function(snapshot){
+	total_tweets = snapshot.numChildren();
+	console.log("Total tweets:"+total_tweets);
+});
+
+var myTweet = tweetsRef.child(0);
+
+var tweetCat = [];
+
+var currentTweetIndex = 1;
+
+
+// load categories and display them 
+var allCategories = []
+
+
+var timeout = timeoutTime;
+function startTime(){
+	// console.log(timeout);
+	timeout--;
+	if (timeout === 0)
+	{
+		timeout = timeoutTime;
+		getNextTweet();
+	}
+	$('#getTweet').text(timeout);
+	setTimeout(startTime,1000);
+}
+
+
+categoriesRef.on("value",function(snap){
+	var catArray = snap.val();
+	catArray = Array.from(catArray);
+	console.log("All Categories: ");
+	console.log(catArray);
+	catArray.forEach(function(elem){
+		if (allCategories.indexOf(elem) === -1)
+		{
+			allCategories.push(elem);
+			$('#prev_categories').append('<button type="button" class="btn btn-primary">'+elem+'</button>');
+
+		}
+	})
+
+
+});
+
+
+
+function getNextTweet()
+{
+	// debugger;
+	timeout = timeoutTime;
+	$('#getTweet').text(timeout);
+	//first, if there is a tweet, it saves the categories of the tweet
+	if (currentTweetIndex === -1)
+	{
+		//get all categories 
+
+	}
+	else
+	{
+		console.log("SAVING TWEET ");
+		tweetCat = []
+		$( '.thing' ).each(function( index ) {
+  			console.log( index + ": " + $( this ).text() );
+  			tweetCat.push($(this).text());
+
+  			if (allCategories.indexOf($(this).text()) === -1)
+  			{
+  				allCategories.push($(this).text());
+  				var txt = $(this).text();
+  				$('#prev_categories').append('<button type="button" class="btn btn-primary">'+txt+'</button>');
+
+  			}
+  			console.log(tweetCat);
+		});
+
+		myTweet = tweetsRef.child(currentTweetIndex);
+		myTweet.child('Categories').set(tweetCat);
+		todoList.empty();
+		myTweet.on("value",function(snap){
+			console.log(snap.val());
+		});
+
+		
+		// todoList.prepend('<label class="item" style="float:none"><div class="check" style="color:red; float:left; margin-right:10px;"> X </div><div class="thing">'+$(this).val()+'</label>');
+
+		console.log("LOADING NEW TWEET");
+		newTweetId = Math.floor((Math.random() * total_tweets) );
+		currentTweetIndex = newTweetId;
+		console.log("Selected tweet: "+newTweetId);
+
+		myTweet = tweetsRef.child(newTweetId);
+		myTweet.on('value',function(dataSnapshot) {
+			// set the text in the tweet to the text
+
+			$('#tweet').text( dataSnapshot.val().text);
+			$('#user').text( "By: @"+dataSnapshot.val().username);
+
+		// and the categories as needed
+
+		categoriesRef.set(allCategories);
+
+
+
+		});
+		myCat = myTweet.child('Categories');
+		myCat.on('value',function(dataSnapshot){
+			tweetCat = dataSnapshot.val()
+			console.log(tweetCat);
+			if (tweetCat === null){
+				console.log("No categories yet");
+			}
+			else{
+				tweetCat.forEach(function(entry) {
+
+					todoList.append('<label class="item" style="float:none"><div class="check" style="color:red; float:left; margin-right:10px;"> X </div><div class="thing">'+entry+'</div></label>');
+				});
+			}
+		});
+
+
+
+
+	}
+	// it marks the tweet as used (tweet=1)
+
+	// and also saves the categories to the new ones 
+
+	// selects a tweet and puts it on the board
+}
+
+</script>
+
+</html>
