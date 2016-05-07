@@ -13,12 +13,12 @@ var BarChart=React.createClass({
           chartId: 'v_chart'
       };
   },
+
   getInitialState:function(){
       return {
           width:300
       };
   },
-
   render:function(){
       var data=[
           { month:'Jan', value:40 },
@@ -70,6 +70,13 @@ var BarChart=React.createClass({
           )
       });
 
+      // return(
+      //   <svg id={this.props.chartId} width={this.props.width}
+      //   height={this.props.height}>
+      //     <circle cx="25" cy="25" r="25" fill="purple" />
+      //   </svg>
+      // )
+
       return(
           <div>
               <svg id={this.props.chartId} width={this.state.width}
@@ -81,6 +88,7 @@ var BarChart=React.createClass({
                   </g>
               </svg>
           </div>
+
           );
   }
 
