@@ -2,8 +2,6 @@ var React = require("react");
 
 // var barCharts = require('./components/barCharts.jsx');
 var hBarChart = require('./components/horizontalBarChart.jsx');
-var BarChart = require('./components/barChart.jsx');
-var HorizBarChart = require('./components/horizBarChart.jsx');
 var CategoryPicker = require('./components/categoryPicker.jsx');
 
 var ReactRouter = require('react-router');
