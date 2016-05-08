@@ -179,14 +179,20 @@ categoriesRef.on("value",function(snap){
 	catArray = Array.from(catArray);
 	console.log("All Categories: ");
 	console.log(catArray);
+	catArray.sort();
 	catArray.forEach(function(elem){
 		if (allCategories.indexOf(elem) === -1)
 		{
 			allCategories.push(elem);
-			$('#prev_categories').append('<button type="button" class="btn btn-primary">'+elem+'</button>');
-
+			allCategories.sort();
+			$('#prev_categories').empty();
+			allCategories.forEach(function(txt)
+			{
+				$('#prev_categories').append('<button type="button" class="btn btn-primary">'+txt+'</button>');
+			});
 		}
-	})
+
+	});
 
 
 });

@@ -1,0 +1,107 @@
+CLUSTERING
+
+- Select some topics (10)
+- Create bag of words
+- Create feature vectors for each of the training tweets
+FOR EACH TOPIC:
+- Figure out the centroid of the feature vectors for each topic
+- STORE THIS
+
+Store: Bag of words
+Store: For each topic, the centroids of each topic
+----------------------------
+
+LISTEN TO TWEETS
+	- NEW TWEET:
+		Tokenize it, filter out words
+		Use k-nearest neighbor to figure out the closest topic
+			(for each topic, calculate distance to that topic)
+
+		For each distance:
+			If the distance to a topic is greater than some threshold
+			Then add tag (topic) to the tags of the tweet
+
+		Store tweet as:
+			username_id
+			id
+			tweet
+			text
+			tags
+
+		Store username
+			(as was done before) -- in theory, don't need to do this since we are listening on a select group of followers exclusively
+
+		Store tag information
+		!!! this could just be firebase!!!
+
+			+1 for total tweets by that user
+			+1 for total tweets related to a candidate
+			for each tag:
+				+1 for each candidate's count related to that tweet specifically
+
+
+-----------------------------
+REQUEST INFORMATION
+
+	- request would just get from a specific tag
+		(request the json obj for the theme):
+			{
+				Topic:
+				Data:
+					{ Name: "realDonaldTrump", 
+					  TotalTweets: ##,
+					  TweetsAboutThis: ##
+					}
+			}
+
+
+			STRUCTURED (training dataset):
+				Tweets
+					... (training data)
+				Category
+					... (category data)
+
+			STRUCTURED (real-time graph dataset)
+			{
+				TopicCounts = 
+				[
+					{
+						Topic: "ALL",
+						Counts: [
+							{Name: "", TweetsAboutThis: ##},
+							{Name: "", TweetsAboutThis: ##}
+						]
+						FollowerCounts = [
+							{Name: "", TweetsAboutThis: ##},
+							{Name: "", TweetsAboutThis: ##}
+						]
+					}
+					{
+						Topic: "healthcare",
+						Counts: [
+							{ Name: realDonald, TweetsAboutThis: ##},
+							{ NAme: johnKasich, Total ..............................}
+						]
+						FollowerCounts = [
+							{ Name: realDonald, TweetsAboutThis: ##},
+							{ Name: realDonald, TweetsAboutThis: ##}
+						]
+					}
+					...
+					{
+						Topic: 'education',
+						Counts: [
+							{ Name: HillaryClinton, TweetsAboutThis: ##}
+							{ Name: HillaryClinton, TweetsAboutThis: ##}
+						]
+						FollowerCounts = [
+							{ Name: HillaryClinton, TweetsAboutThis: ##}
+							{ Name: bernieSanders, TweetsAboutThis: ##}
+						]
+					}
+					...
+				]
+			}
+
+
+
