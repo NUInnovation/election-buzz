@@ -4,6 +4,7 @@ var React = require("react");
 var hBarChart = require('./components/horizontalBarChart.jsx');
 var BarChart = require('./components/barChart.jsx');
 var HorizBarChart = require('./components/horizBarChart.jsx');
+var CategoryPicker = require('./components/categoryPicker.jsx');
 
 var ReactRouter = require('react-router');
 var ReactDom = require('react-dom');
@@ -16,9 +17,8 @@ var App = React.createClass({
     return (
 
       <div className="container">
-        <h1>Test</h1>
+        <CategoryPicker></CategoryPicker>
         <HorizBarChart></HorizBarChart>
-        <BarChart></BarChart>
       </div>
 
       )
