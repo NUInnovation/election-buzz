@@ -2,11 +2,7 @@
     "Themes": [
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 835,
-                    "Tweets": 28.922757187391756
-                },
+               
                 {
                     "Name": "HillaryClinton",
                     "Number": 4,
@@ -17,11 +13,7 @@
                     "Number": 1,
                     "Tweets": 0.034818941504178275
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 18,
-                    "Tweets": 0.6269592476489029
-                },
+                
                 {
                     "Name": "realDonaldTrump",
                     "Number": 62,
@@ -32,11 +24,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 104,
-                    "Tweets": 3.602355386214063
-                },
+               
                 {
                     "Name": "HillaryClinton",
                     "Number": 92,
@@ -47,11 +35,7 @@
                     "Number": 32,
                     "Tweets": 1.1142061281337048
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 226,
-                    "Tweets": 7.871821664925113
-                },
+               
                 {
                     "Name": "realDonaldTrump",
                     "Number": 493,
@@ -62,11 +46,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 90,
-                    "Tweets": 3.1174229303775545
-                },
+               
                 {
                     "Name": "HillaryClinton",
                     "Number": 760,
@@ -77,11 +57,7 @@
                     "Number": 88,
                     "Tweets": 3.064066852367688
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 66,
-                    "Tweets": 2.2988505747126435
-                },
+                
                 {
                     "Name": "realDonaldTrump",
                     "Number": 149,
@@ -92,11 +68,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 100,
-                    "Tweets": 3.4638032559750607
-                },
+              
                 {
                     "Name": "HillaryClinton",
                     "Number": 25,
@@ -107,11 +79,7 @@
                     "Number": 34,
                     "Tweets": 1.1838440111420614
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 53,
-                    "Tweets": 1.8460466736328804
-                },
+
                 {
                     "Name": "realDonaldTrump",
                     "Number": 14,
@@ -122,11 +90,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 24,
-                    "Tweets": 0.8313127814340145
-                },
+
                 {
                     "Name": "HillaryClinton",
                     "Number": 94,
@@ -137,11 +101,7 @@
                     "Number": 172,
                     "Tweets": 5.988857938718663
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 50,
-                    "Tweets": 1.7415534656913967
-                },
+
                 {
                     "Name": "realDonaldTrump",
                     "Number": 81,
@@ -152,11 +112,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 5,
-                    "Tweets": 0.17319016279875304
-                },
+
                 {
                     "Name": "HillaryClinton",
                     "Number": 81,
@@ -167,11 +123,7 @@
                     "Number": 45,
                     "Tweets": 1.5668523676880224
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 38,
-                    "Tweets": 1.3235806339254614
-                },
+
                 {
                     "Name": "realDonaldTrump",
                     "Number": 6,
@@ -182,11 +134,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 11,
-                    "Tweets": 0.38101835815725665
-                },
+
                 {
                     "Name": "HillaryClinton",
                     "Number": 160,
@@ -197,11 +145,7 @@
                     "Number": 63,
                     "Tweets": 2.1935933147632314
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 19,
-                    "Tweets": 0.6617903169627307
-                },
+
                 {
                     "Name": "realDonaldTrump",
                     "Number": 26,
@@ -212,11 +156,7 @@
         },
         {
             "Data": [
-                {
-                    "Name": "JohnKasich",
-                    "Number": 46,
-                    "Tweets": 1.5933494977485279
-                },
+
                 {
                     "Name": "HillaryClinton",
                     "Number": 9,
@@ -227,11 +167,7 @@
                     "Number": 2,
                     "Tweets": 0.06963788300835655
                 },
-                {
-                    "Name": "TedCruz",
-                    "Number": 608,
-                    "Tweets": 21.177290142807383
-                },
+
                 {
                     "Name": "realDonaldTrump",
                     "Number": 202,
@@ -243,11 +179,6 @@
         {
             "Data": [
                 {
-                    "Name": "JohnKasich",
-                    "Number": 37,
-                    "Tweets": 1.2816072047107725
-                },
-                {
                     "Name": "HillaryClinton",
                     "Number": 156,
                     "Tweets": 5.302515295717199
@@ -256,11 +187,6 @@
                     "Name": "BernieSanders",
                     "Number": 146,
                     "Tweets": 5.0835654596100275
-                },
-                {
-                    "Name": "TedCruz",
-                    "Number": 43,
-                    "Tweets": 1.497735980494601
                 },
                 {
                     "Name": "realDonaldTrump",
@@ -273,11 +199,6 @@
         {
             "Data": [
                 {
-                    "Name": "JohnKasich",
-                    "Number": 68,
-                    "Tweets": 2.3553862140630413
-                },
-                {
                     "Name": "HillaryClinton",
                     "Number": 64,
                     "Tweets": 2.175390890550646
@@ -286,11 +207,6 @@
                     "Name": "BernieSanders",
                     "Number": 61,
                     "Tweets": 2.1239554317548746
-                },
-                {
-                    "Name": "TedCruz",
-                    "Number": 35,
-                    "Tweets": 1.2190874259839777
                 },
                 {
                     "Name": "realDonaldTrump",
@@ -303,11 +219,6 @@
         {
             "Data": [
                 {
-                    "Name": "JohnKasich",
-                    "Number": 108,
-                    "Tweets": 3.7409075164530656
-                },
-                {
                     "Name": "HillaryClinton",
                     "Number": 137,
                     "Tweets": 4.656696125084976
@@ -316,11 +227,6 @@
                     "Name": "BernieSanders",
                     "Number": 117,
                     "Tweets": 4.073816155988858
-                },
-                {
-                    "Name": "TedCruz",
-                    "Number": 55,
-                    "Tweets": 1.9157088122605364
                 },
                 {
                     "Name": "realDonaldTrump",
@@ -333,11 +239,6 @@
         {
             "Data": [
                 {
-                    "Name": "JohnKasich",
-                    "Number": 4,
-                    "Tweets": 0.13855213023900242
-                },
-                {
                     "Name": "HillaryClinton",
                     "Number": 27,
                     "Tweets": 0.9177430319510537
@@ -346,11 +247,6 @@
                     "Name": "BernieSanders",
                     "Number": 346,
                     "Tweets": 12.047353760445683
-                },
-                {
-                    "Name": "TedCruz",
-                    "Number": 6,
-                    "Tweets": 0.2089864158829676
                 },
                 {
                     "Name": "realDonaldTrump",
