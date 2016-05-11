@@ -4,18 +4,20 @@
   <title>Election Buzz</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-    }
+    } 
 
     div {
-      border: 1px solid black;
+      /*border: 1px solid black;*/
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -43,18 +45,21 @@
       }
 
     #candidatetweets {
-      border: 1px solid black;
-      padding-top: 120px;
+      /*border: 1px solid black;*/
+      height: 100%;
     }
 
     #pictures {
-      border: 1px solid black;
+      /*border: 1px solid black;*/
+      height: 100%;
+      padding:0;
 
     }
 
     #followertweets {
-      border: 1px solid black;
-      padding-top: 120px;
+      /*border: 1px solid black;*/
+      height: 100%;
+      padding:0;
     }
 
     #TwitterFollowers {
@@ -63,6 +68,10 @@
 
     .topfollowers {
       display: inline-block;
+    }
+    
+    #graph {
+      height: 250px;
     }
     
     /* Set black background color, white text and some padding */
@@ -80,6 +89,36 @@
       }
       .row.content {height:auto;} 
     }
+    
+    .candidateImg{
+      height: 33.3333%;
+      /*width:50px;*/
+      display:block;
+      margin:auto;
+    }
+    
+    #chart{
+      border:none;
+    }
+    
+    .bar.realDonaldTrump { fill: rgb(226,26,33); }
+		.bar.HillaryClinton { fill: rgb(2,26,188); }
+		.bar.BernieSanders { fill: rgb(2,26,188); }
+		.bar{
+			color: white;
+			/*stroke: gray;*/
+			/*stroke-width:1px;*/
+		}
+		.label{
+			font-size:15px;
+			font-weidht:normal;
+		}
+
+    #title_graph{
+      margin: 10px 0px 10px 0px;
+    }
+    
+    
   </style>
 </head>
 <body>
@@ -96,13 +135,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <!--<li class="active"><a href="#">Home</a></li>-->
+        <!--<li><a href="#">About</a></li>-->
+        <!--<li><a href="#">Projects</a></li>-->
+        <!--<li><a href="#">Contact</a></li>-->
       </ul>
     </div>
   </div>
@@ -110,15 +146,31 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+    <div class="col-sm-2" >
     </div>
     <div class="col-sm-8 text-center"> 
-      <h1>Election Buzz</h1>
-      <h3> Mentions of: TOPIC </h3>
-      <p>Candidates vs. Followers </p>
+      <img src='../pictures/logo.png'>
+      <h3> Mentions of: </h3>
+      <select name="Theme">
+  			<option value="Education">Education</option>
+  			<option value="Security">Security</option>
+  			<option value="Immigration">Immigration</option>
+  			<option value="Women">Women</option>
+  			<option value="Healthcare">Healthcare</option>
+  			<option value="Supreme Court">Supreme Court</option>
+  			<option value="Tax">Taxes</option>
+  		</select>
+  		<div id='title_graph'>
+  		  <div class='row'>
+  		    <div class="col-sm-6">
+  		        <h3>Followers</h3>
+  		    </div>
+  		    <div class="col-sm-6">
+  		        <h3>Candidates</h3>
+  		    </div>
+  		  </div>
+  		</div>
+      
       <div id="graph" class="row">
         <div class= "col-sm-5" id="candidatetweets">
           <p>Box 1</p>
@@ -126,25 +178,19 @@
          <div class= "col-sm-2" id="pictures">
           <table>
             <tr>
-              <p>Hillary</p>
+              <img src='../pictures/hillary.jpg' class='img-circle candidateImg'>
             </tr>
             <tr>
-              <p>Bernie</p>
+              <img src='../pictures/bernie.jpg' class='img-circle candidateImg'>
             </tr>
              <tr>
-              <p>Trump</p>
+              <img src='../pictures/trump.jpg' class='img-circle candidateImg'>
             </tr>
-             <tr>
-              <p>Cruz</p>
-            </tr>
-             <tr>
-              <p>Kasich</p>
-            </tr>
-
+          
           </table> 
         </div>
          <div class= "col-sm-5" id="followertweets">
-          <p>Box 3</p>
+          <div id="chart"></div>
         </div>
       </div>
       <hr>
@@ -178,4 +224,99 @@
 
 
 </body>
+
+	<script type="text/javascript">
+
+		var theme = "Education";
+		function rightTheme(obj){
+			return obj.Topic == theme;
+		}
+
+		var w =  $('#followertweets').width();
+		var   h = $('#followertweets').height();
+
+		var svg = d3.select("#chart")
+			.append("svg")
+			.attr("class",'candidatechart')
+			.attr("width", w)
+			.attr("height", h);
+		var max_n = 10;
+
+		d3.json("../tweet_analysis_py/tweetdata.json", function(json) {
+
+			var data = json.Themes.filter(rightTheme);
+
+			var data = data[0].Data;
+			for (var d in data) {
+				console.log(d);
+				max_n = Math.max(data[d].Tweets, max_n);
+				// console.log(data.Data[d]);
+			}
+			console.log(max_n);
+			// debugger;
+		
+			var dx = w / max_n;
+			var dy = h / data.length;
+	
+			// bars
+
+			var bars = svg.selectAll(".bar")
+				.data(data)
+				.enter()
+				.append("rect")
+				.attr("class", function(d, i) {return "bar " + d.Name;})
+				.attr("x", function(d, i) {return 0;})
+				.attr("y", function(d, i) {return dy*i;})
+				.attr("width", function(d, i) {return dx*d.Tweets})
+				.attr("height", dy*.95)
+				.attr("rx",2)
+				.attr("ry",2);
+	
+			// labels
+			var text = svg.selectAll("text")
+				.data(data)
+				.enter()
+				.append("text")
+				.attr("class", function(d, i) {return "label " + d.Name;})
+				.attr("x", function(d,i) { return dx*d.Tweets})
+				.attr("y", function(d, i) {return dy*i + dy/2;})
+				.text( function(d) {return '@'+d.Name + " : " + Number(d.Tweets).toFixed(1)  + "%";})
+				.style("font-weight", "bold");
+		});
+
+		$('select').on('change', function(){
+			console.log("Theme changed to: ",this.value);
+			theme = this.value;
+			d3.json("../tweet_analysis_py/tweetdata.json",function(json){
+				 
+				var data = json.Themes.filter(rightTheme);
+
+				var data = data[0].Data;
+				for (var d in data) {
+					console.log(d);
+					max_n = Math.max(data[d].Tweets, max_n);
+					// console.log(data.Data[d]);
+				}
+				console.log(max_n);
+				// debugger;
+			
+				var dx = w / max_n;
+				var dy = h / data.length;
+
+				svg.selectAll(".bar")
+					.data(data)
+					.transition()
+					.attr("width", function(d, i) {return dx*d.Tweets});
+				
+				svg.selectAll("text")
+					.data(data)
+					.transition()
+					.attr("x", function(d,i) { return dx*d.Tweets})
+					.text( function(d) {return '@'+d.Name + " : " + Number(d.Tweets).toFixed(1)  + "%";});
+			});
+		});
+		// {
+		// 	svg.selectAll(".bar");
+		// }
+	</script>
 </html>
