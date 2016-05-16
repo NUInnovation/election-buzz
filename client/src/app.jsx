@@ -29,6 +29,10 @@ var routes = (
   </Route>
 );
 
-ReactDom.render((
-    <Router history={ReactRouter.hashHistory}>{routes}</Router>
-), document.getElementById("content"));
+if (typeof document !== "undefined"){
+  ReactDom.render((
+      <Router history={ReactRouter.hashHistory}>{routes}</Router>
+  ), document.getElementById("content"));    
+}
+
+
