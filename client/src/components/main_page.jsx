@@ -9,35 +9,31 @@ var MainPage = React.createClass({
   render:function(){
     return(
       <div>
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
+        <nav className="navbar navbar-inverse">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>                        
               </button>
-              <a class="navbar-brand" href="#">Election Buzz</a>
+              <a className="navbar-brand" href="#">Election Buzz</a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+            <div className="collapse navbar-collapse" id="myNavbar">
+              <ul className="nav navbar-nav">
               </ul>
             </div>
           </div>
         </nav>
           
-        <div class="container-fluid text-center">    
-          <div class="row content">
-            <div class="col-sm-2" >
+        <div className="container-fluid text-center">    
+          <div className="row content">
+            <div className="col-sm-2" >
             </div>
-            <div class="col-sm-8 text-center"> 
+            <div className="col-sm-8 text-center"> 
               <img src='../images/logo.png' />
               <h3> % of tweets related to: </h3>
-              <select name="Theme" class="selectForm">
+              <select name="Theme" className="selectForm">
                 <option value="Education">Education</option>
                 <option value="Security">Security</option>
                 <option value="Immigration">Immigration</option>
@@ -47,50 +43,57 @@ var MainPage = React.createClass({
                 <option value="Tax">Taxes</option>
               </select>
               <div id='title_graph'>
-                <div class='row'>
-                  <div class="col-sm-6">
+                <div className='row'>
+                  <div className="col-sm-6">
                       <h3>Followers</h3>
                   </div>
-                  <div class="col-sm-6">
+                  <div className="col-sm-6">
                       <h3>Candidates (past 3000 tweets)</h3>
                   </div>
                 </div>
               </div>
               
-              <div id="graph" class="row">
-                <div class= "col-sm-5" id="candidatetweets">
+              <div id="graph" className="row">
+                <div className= "col-sm-5" id="candidatetweets">
                   <div id="fChart"></div>
                 </div>
-                 <div class= "col-sm-2" id="pictures">
+                 <div className= "col-sm-2" id="pictures">
                   <table>
                     <tbody>
                       <tr>
-                        <a href="candidate.html?name=Hillary"><div class='candidatePicture'>
-                        <img src='../images/hillary.jpg' class='img-circle candidateImg' />
-                        @HillaryClinton
-                        </div>
-                        </a>
+                        <td>
+                          <a href="candidate.html?name=Hillary">
+                          <div className='candidatePicture'>
+                          <img src='../images/hillary.jpg' className='img-circle candidateImg' />
+                          @HillaryClinton
+                          </div>
+                          </a>
+                        </td>
                       </tr>
                       <tr>
-                        <a href="candidate.html?name=Bernie">
-                        <div class='candidatePicture'>
-                        <img src='../images/bernie.jpg' class='img-circle candidateImg' />
-                        @BernieSanders
-                        </div>
-                        </a>
+                        <td>
+                          <a href="candidate.html?name=Bernie">
+                          <div className='candidatePicture'>
+                          <img src='../images/bernie.jpg' className='img-circle candidateImg' />
+                          @BernieSanders
+                          </div>
+                          </a>
+                        </td>
                       </tr>
-                       <tr>
-                         <a href="candidate.html?name=Trump">
-                         <div class='candidatePicture'>
-                        <img src='../images/trump.jpg' class='img-circle candidateImg' />
-                        @realDonaldTrump
-                        </div>
-                        </a>
+                      <tr>
+                        <td>
+                          <a href="candidate.html?name=Trump">
+                            <div className='candidatePicture'>
+                              <img src='../images/trump.jpg' className='img-circle candidateImg' />
+                              @realDonaldTrump
+                            </div>
+                          </a>
+                        </td>
                       </tr>
                     </tbody>
                   </table> 
                 </div>
-                 <div class= "col-sm-5" id="followertweets">
+                 <div className= "col-sm-5" id="followertweets">
                   <div id="chart"></div>
                 </div>
               </div>
@@ -98,21 +101,21 @@ var MainPage = React.createClass({
               <br/>
               <br/>
               <div id="Results">
-                <div class="Hillary text-center">
+                <div className="Hillary text-center">
                 </div>
                 <h3>Hillary Clinton</h3>
                 <p>Top Twitter Followers:</p>
                 <div id="TwitterFollowers">
-                  <div class= "topfollowers">
+                  <div className= "topfollowers">
                   <p>Follower1</p>
                 </div>
-                 <div class= "topfollowers">
+                 <div className= "topfollowers">
                   <p>Follower2</p>
                 </div>
-                 <div class= "topfollowers">
+                 <div className= "topfollowers">
                   <p>Follower3</p>
                 </div>
-                 <div class= "topfollowers">
+                 <div className= "topfollowers">
                   <p>Follower4</p>
                 </div>
                 
