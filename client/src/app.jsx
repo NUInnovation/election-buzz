@@ -16,8 +16,6 @@ var App = React.createClass({
 
       <div className="container">
         <MainPage></MainPage>
-        <CategoryPicker></CategoryPicker>
-        <HorizBarChart></HorizBarChart>
       </div>
 
       )
