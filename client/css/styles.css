@@ -68,7 +68,7 @@ footer {
   .row.content {height:auto;} 
 }
 .candidatePicture{
-  height:33.3333%;
+  height:33.333%;
   display:block;
   margin:auto;
   font-weight:bold;
@@ -106,3 +106,19 @@ footer {
   font-size:1.5em;
 }
 
+.candidateProfile {
+  height: 100%;
+  width: 100%;
+}
+
+#fChart {
+  height: 100%;
+}
+
+.followerChart {
+  height: 100%;
+}
+
+.candidatechart {
+  height: 100%;
+}

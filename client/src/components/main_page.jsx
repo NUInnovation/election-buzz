@@ -6,6 +6,177 @@ var Link = Router.Link;
 
 var MainPage = React.createClass({
   
+  componentDidMount: function(){
+    var theme = "Education";
+    function rightTheme(obj){
+      return obj.Topic == theme;
+    }
+
+    var w =  $('#followertweets').width();
+    var   h = $('#followertweets').height();
+
+    var svg = d3.select("#chart")
+      .append("svg")
+      .attr("class",'candidatechart')
+      .attr("width", w)
+      .attr("height", h);
+    var max_n = 10;
+
+    d3.json("../data/tweetdata.json", function(json) {
+
+      var data = json.Themes.filter(rightTheme);
+
+      var data = data[0].Data;
+      for (var d in data) {
+        max_n = Math.max(data[d].Tweets, max_n);
+      }
+    
+      var dx = w / max_n;
+      var dy = h / data.length;
+      
+      
+  
+      // bars
+
+      var bars = svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", function(d, i) {return "bar " + d.Name;})
+        .attr("x", function(d, i) {return 0;})
+        .attr("y", function(d, i) {return dy*i;})
+        .attr("width", function(d, i) {return dx*d.Tweets})
+        .attr("height", dy*.95)
+        .attr("rx",2)
+        .attr("ry",2);
+  
+      // labels
+      var text = svg.selectAll("text")
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("class", function(d, i) {return "label " + d.Name;})
+        .attr("x", function(d,i) { return dx*d.Tweets+5})
+        .attr("y", function(d, i) {return dy*i + dy/2;})
+        .text( function(d) {return Number(d.Tweets).toFixed(1)  + "% ("+d.Number+" tweets)";})
+        .style("font-weight", "bold");
+    });
+    
+
+    $('select').on('change', function(){
+      theme = this.value;
+      d3.json("../data/tweetdata.json",function(json){
+         
+        var data = json.Themes.filter(rightTheme);
+
+        var data = data[0].Data;
+        for (var d in data) {
+          max_n = Math.max(data[d].Tweets, max_n);
+        }
+        // debugger;
+      
+        var dx = w / max_n;
+        var dy = h / data.length;
+
+        svg.selectAll(".bar")
+          .data(data)
+          .transition()
+          .attr("width", function(d, i) {return dx*d.Tweets});
+        
+        svg.selectAll("text")
+          .data(data)
+          .transition()
+          .attr("x", function(d,i) { return dx*d.Tweets+5})
+          .text( function(d) {return Number(d.Tweets).toFixed(1)  + "% ("+d.Number+" tweets)";});
+      });
+    });
+    
+    
+    ///////////////////////////////////////////////////////////////
+    /////////////////////////// FOLLOWERS /////////////////////////
+    
+    
+    var w1 =  $('#candidatetweets').width();
+    var h1 = $('#candidatetweets').height();
+
+    var svg1 = d3.select("#fChart")
+      .append("svg")
+      .attr("class",'followerChart')
+      .attr("width", w)
+      .attr("height", h);
+    var max_n1 = 10;
+
+    d3.json("../data/tweetdata_followers.json", function(json) {
+
+      var data = json.Themes.filter(rightTheme);
+
+      var data = data[0].Data;
+      for (var d in data) {
+        max_n = Math.max(data[d].Tweets, max_n);
+      }
+      // debugger;
+    
+      var dx = w1 / max_n1;
+      var dy = h1 / data.length;
+  
+      // bars
+      var randNumbers = [(Math.random() * 8),(Math.random() * 8),(Math.random() * 8)]
+      var bars = svg1.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", function(d, i) {return "bar " + d.Name;})
+        .attr("x", function(d, i) {return w1-dx*randNumbers[i];})
+        .attr("y", function(d, i) {return dy*i;})
+        .attr("width", function(d, i) {return dx*randNumbers[i]})
+        .attr("height", dy*.95)
+        .attr("rx",2)
+        .attr("ry",2);
+  
+      // labels
+      var text = svg1.selectAll("text")
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("class", function(d, i) {return "label " + d.Name;})
+        .attr("x", function(d,i) { return w1-dx*randNumbers[i]-40})
+        .attr("y", function(d, i) {return dy*i + dy/2;})
+        .text( function(d,i) {return Number(randNumbers[i]).toFixed(1)  + "%";})
+        .style("font-weight", "bold");
+    });
+
+    $('select').on('change', function(){
+      theme = this.value;
+      d3.json("../data/tweetdata_followers.json",function(json,error){
+        if (error) return console.warn(error);
+         
+        var data = json.Themes.filter(rightTheme);
+
+        var data = data[0].Data;
+        for (var d in data) {
+          max_n1 = Math.max(data[d].Tweets, max_n);
+        }
+      
+        var randNumbers = [(Math.random() * 8),(Math.random() * 8),(Math.random() * 8)]
+        var dx = w1 / max_n1;
+        var dy = h1 / data.length;
+
+        svg1.selectAll(".bar")
+          .data(data)
+          .transition()
+          .attr("x",function(d,i) { return w1-dx*randNumbers[i]})
+          .attr("width", function(d, i) {return dx*randNumbers[i]});
+        
+        svg1.selectAll("text")
+          .data(data)
+          .transition()
+          .attr("x", function(d,i) { return w1-dx*randNumbers[i]-40})
+          .text( function(d, i) {return Number(randNumbers[i]).toFixed(1)  + "%";});
+      });
+    });
+  },
+
+
   render:function(){
     return(
       <div>
@@ -58,80 +229,38 @@ var MainPage = React.createClass({
                   <div id="fChart"></div>
                 </div>
                  <div className= "col-sm-2" id="pictures">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <a href="candidate.html?name=Hillary">
-                          <div className='candidatePicture'>
-                          <img src='../images/hillary.jpg' className='img-circle candidateImg' />
-                          @HillaryClinton
-                          </div>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="candidate.html?name=Bernie">
-                          <div className='candidatePicture'>
-                          <img src='../images/bernie.jpg' className='img-circle candidateImg' />
-                          @BernieSanders
-                          </div>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="candidate.html?name=Trump">
-                            <div className='candidatePicture'>
-                              <img src='../images/trump.jpg' className='img-circle candidateImg' />
-                              @realDonaldTrump
-                            </div>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table> 
+                  <div className='candidatePicture'>
+                    <a href="candidate.html?name=Hillary">
+                      <img src='images/hillary.jpg' className='img-circle candidateImg' />
+                    @HillaryClinton           
+                    </a>
+                  </div>
+                  <div className='candidatePicture'>
+                    <a href="candidate.html?name=Bernie">
+                      <img src='images/bernie.jpg' className='img-circle candidateImg' />
+                    @BernieSanders
+                    </a>
+                  </div>
+                  <div className='candidatePicture'>  
+                    <a href="candidate.html?name=Trump">
+                      <img src='images/trump.jpg' className='img-circle candidateImg' />
+                    @realDonaldTrump
+                    </a>
+                  </div>
                 </div>
-                 <div className= "col-sm-5" id="followertweets">
-                  <div id="chart"></div>
+                <div className= "col-sm-5" id="followertweets">
+                  <div id="chart">
                 </div>
               </div>
-              <br/>
-              <br/>
-              <br/>
-              <div id="Results">
-                <div className="Hillary text-center">
-                </div>
-                <h3>Hillary Clinton</h3>
-                <p>Top Twitter Followers:</p>
-                <div id="TwitterFollowers">
-                  <div className= "topfollowers">
-                  <p>Follower1</p>
-                </div>
-                 <div className= "topfollowers">
-                  <p>Follower2</p>
-                </div>
-                 <div className= "topfollowers">
-                  <p>Follower3</p>
-                </div>
-                 <div className= "topfollowers">
-                  <p>Follower4</p>
-                </div>
-                
-                <form>
-          Subject:<br/>
-          <input type="text" name="firstname"></input><br/>
-        </form>
-              </div>
-
-
-              </div>
-
             </div>
           </div>
+          <br/>
+          <br/>
+          <br/>
+
         </div>
       </div>
+    </div>
       );
   }
   
