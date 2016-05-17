@@ -2,3 +2,9 @@ node_modules/*
 client/build/*
 connect_db.php
 connect.py
+
+tweet_analysis_py/tweet_categorization/noun_9996_cc.png
+
+tweet_analysis_py/tweet_categorization/something.py
+
+*.pyc

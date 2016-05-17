@@ -1,0 +1,61 @@
+{
+    "Topics": {
+        "Education": [
+            "millenials",
+            "student loans",
+            "university",
+            "college",
+            "student debt",
+            "education"
+        ],
+        "Healthcare": [
+            "universal healthcare",
+            "obamacare",
+            "universal health care",
+            "health care",
+            "health",
+            "medicare",
+            "affordable care act",
+            "healthcare",
+            "alzheimer",
+            "insurance"
+        ],
+        "Immigration": [
+            "deportation",
+            "immigrants",
+            "border",
+            "immigration",
+            "immagration"
+        ],
+        "Security": [
+            "isis",
+            "national security",
+            "attacks",
+            "jihadism",
+            "military",
+            "security",
+            "terrorism",
+            "islam"
+        ],
+        "Supreme Court": [
+            "scotus",
+            "supreme court"
+        ],
+        "Tax": [
+            "social security",
+            "socialim",
+            "tax",
+            "flat tax",
+            "socialism",
+            "taxes",
+            "cuts"
+        ],
+        "Women": [
+            "paid leave",
+            "woman",
+            "equal pay",
+            "equality",
+            "women"
+        ]
+    }
+}

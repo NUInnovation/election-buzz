@@ -102,7 +102,7 @@ if __name__ == '__main__':
 		# 	# 2 = candidate
 		# 	count[distances[0][1]][distances[0][2]] += 1
 
-	outfile = open('tweetdata.json','w')
+	outfile = open('tweetdata1.json','w')
 
 
 	jsonObj = {}

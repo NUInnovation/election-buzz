@@ -1,18 +1,5 @@
 {
     "Topics": {
-        "Bernie": [
-            "sanders",
-            "feelthebern",
-            "berniesanders",
-            "bernie2016",
-            "bernie"
-        ],
-        "Cruz": [
-            "tedcruz",
-            "ted",
-            "cruz2016",
-            "cruz"
-        ],
         "Education": [
             "loan",
             "primary",
@@ -49,13 +36,17 @@
             "medicare",
             "zika",
             "hospitals",
-            "care"
-        ],
-        "Hillary": [
-            "hillary",
-            "bill",
-            "clinton",
-            "hillaryclinton"
+            "care",
+            "universal healthcare",
+            "obamacare",
+            "universal health care",
+            "health care",
+            "health",
+            "medicare",
+            "affordable care act",
+            "healthcare",
+            "alzheimer",
+            "insurance"
         ],
         "Immigration": [
             "f1",
@@ -83,17 +74,13 @@
             "refugee",
             "immigrants",
             "undocumented",
-            "naturalization"
-        ],
-        "Kasich": [
-            "johnkasich",
-            "",
-            "john",
-            "kasich2016",
-            "kasich"
+            "naturalization",
+            "deportation",
+            "immigrants",
+            "border",
+            "immigration",
         ],
         "Security": [
-            "",
             "execution",
             "suicide",
             "bomb",
@@ -108,7 +95,15 @@
             "syria",
             "terrorism",
             "isil",
-            "war"
+            "war",
+            "isis",
+            "national security",
+            "attacks",
+            "jihadism",
+            "military",
+            "security",
+            "terrorism",
+            "islam"
         ],
         "Supreme Court": [
             "supreme",
@@ -124,21 +119,25 @@
             "fiscal",
             "taxed",
             "tax",
-            "budget"
-        ],
-        "Trump": [
-            "trump",
-            "trumptrain2016",
-            "realdonaldtrump",
-            "donald",
-            "votetrump",
-            "trumptrain"
+            "budget",
+            "social security",
+            "socialim",
+            "tax",
+            "flat tax",
+            "socialism",
+            "taxes",
+            "cuts"
         ],
         "Women": [
             "mujer",
             "womancard",
             "woman",
             "abortion",
+            "women",
+            "paid leave",
+            "woman",
+            "equal pay",
+            "equality",
             "women"
         ]
     }

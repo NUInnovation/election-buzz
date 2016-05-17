@@ -265,6 +265,7 @@ function getNextTweet()
 				console.log("No categories yet");
 			}
 			else{
+				getNextTweet();
 				tweetCat.forEach(function(entry) {
 
 					todoList.append('<label class="item" style="float:none"><div class="check" style="color:red; float:left; margin-right:10px;"> X </div><div class="thing">'+entry+'</div></label>');
