@@ -67,7 +67,7 @@
         #TwitterFollowers {
             display: inline-block;
             margin: auto;
-            width:50%;
+            width:80%;
         }
 
         .topfollowers {
@@ -199,10 +199,7 @@
                 <h3>Hillary Clinton</h3>
                 <p>Top Twitter Followers:</p>
                 <div id="TwitterFollowers">
-                  <div class='row'>
-                      <div class='col-sm-2'>Username</div>
-                      <div class='col-sm-2'># of Followers </div>
-                      <div class='col-sm-8'>Description </div>
+                  <div class="row" style="border:1px solid black;" id='followerProfiles'>
                   </div>
                 </div>
 
@@ -532,12 +529,12 @@
     var urlFollowers = 'http://162.243.13.220:8081/api/followers'
     $.getJSON(urlFollowers,function(data){
 
-        clintonFollowers = JSON.parse(data.Clinton).slice(0,10);
+        clintonFollowers = JSON.parse(data.Trump).slice(0,5);
         console.table(clintonFollowers);
         clintonFollowers.forEach(function(element){
           // append to twitterFollowers class
-          $('#TwitterFollowers').append(
-            '<div class="row" style="border:1px solid black;"> <div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'">@'+element.screen_name+'</a></div><div class="col-sm-2">'+element.follower_count.toLocaleString()+'</div><div class="col-sm-8">'+element.description+'</div></div>'
+          $('#followerProfiles').append(
+            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'"><div><img style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
           );
         });
     });

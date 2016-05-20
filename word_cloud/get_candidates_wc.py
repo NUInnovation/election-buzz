@@ -19,13 +19,23 @@ from datetime import date
 tknzr = TweetTokenizer(strip_handles=True, reduce_len=True)
 stopwords_en = stopwords.words('english')
 
-stopwords_en += ['via','rt','https','http','u','w','see','go','every','hes','get','cant','thats','im','got','new']
+stopwords_en += ['via','rt','https','pm','http','u','w','see','go','every','hes','get','cant','thats','im','got','new']
 politics = ['cruz','trump','ted','hillary','clinton','kasich','bernie','sanders','donald','think','vote']
 politics += ['vote','gop','president','democrat','hillaryclinton','politics','candidate']
 politics += ['votes','primary','primaries','dem','rep','republican']
-stopwords_en += politics
+nonPolitics = "obama state campaign indiana voter poll supporter supporters delegate rally party voter democratic "
+nonPolitics +="state support delegate parties carly fiorina ted cruz state bill taxes caprimary primary "
+nonPolitics +="primaries presidential politics california nominee general election republicans voter "
+nonPolitics +="pledged independence dnc warren convention clintons national debt virginia west oregon states "
+nonPolitics +="debate bush liberal rubio marco states paul ryan nebraska nevada win lose political ohio porland "
+nonPolitics +="democrats us people wv de tax voters voting conservative delegates polls dems democratic congress presidential say bernies potus http htt hillarys trumps va "
+nonPolitics = nonPolitics.split(' ')
 
-for day in range(1,17):
+otherWords = "dont want look one time need let still"
+otherWords += " make america american great again know thank"
+stopwords_en += politics+nonPolitics+(otherWords.split(' '))
+
+for day in range(11,17):
 	for candidate in ['HillaryClinton','BernieSanders','realDonaldTrump']:
 		print "getting data for "+candidate
 		today = date.today()
@@ -50,14 +60,14 @@ for day in range(1,17):
 		string_tokens = ' '.join(alltokens)
 		scale = 0.6
 		wc = WordCloud(
-				max_words=400,
+				max_words=500,
 				stopwords=STOPWORDS,
 				relative_scaling=scale,
 				height=1080,
 				width=1920
 				).generate(string_tokens)
 		# plt.imshow(wc)
-		filestring = 'images/'+candidate+'_'+str(year)+'_'+str(month)+'_'+str(day)+'.png'
+		filestring = 'images/more_filtering/'+candidate+'_'+str(year)+'_'+str(month)+'_'+str(day)+'.png'
 		wc.to_file(filestring)
 		# break
 	# break
