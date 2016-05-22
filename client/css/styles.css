@@ -65,14 +65,14 @@ footer {
     height: auto;
     padding: 15px;
   }
-  .row.content {height:auto;} 
+  .row.content {height:auto;}
 }
 .candidatePicture{
   height:33.333%;
   display:block;
   margin:auto;
   font-weight:bold;
-}    
+}
 .candidateImg{
   height:80%;
   /*width:50px;*/
