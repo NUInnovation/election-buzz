@@ -24,6 +24,7 @@ updateImg = function(val)
   $('#galleryImg').attr('src',fileName);
 }
 updateImg(todayString);
+$('#datepicker').val(todayString);
 
   // var word = "";
   //

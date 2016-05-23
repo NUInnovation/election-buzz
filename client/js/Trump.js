@@ -23,6 +23,7 @@ updateImg = function(val)
   $('#galleryImg').attr('src',fileName);
 }
 updateImg(todayString);
+$('#datepicker').val(todayString);
 
 function filterThemselves(elem) {
   result = elem.screen_name === 'realDonaldTrump';
