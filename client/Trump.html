@@ -18,22 +18,29 @@
     <link rel='stylesheet' text='text/css' href='css/individualCandidate.css'>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Election Buzz</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Election Buzz</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timeline.html">Tweet Timeline</a></li>
+          <li><a href="Hillary.html">Clinton</a></li>
+          <li><a href="Sanders.html">Sanders</a></li>
+          <li class="active"><a href="Trump.html">Trump</a></li>
+          <li><a href="aboutus.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <div class="container-fluid text-center">
         <div class="row content">
             <table>
@@ -54,7 +61,7 @@
                 <div class='row'>
                   <h3>What Donald Trump's followers tweet about: </h3>
                 </div>
-                <div class='row'>
+                <div class='row pick_date'>
                    Choose a day: <input type="text" id="datepicker">
                 </div>
 
@@ -72,6 +79,12 @@
  -->
                 </div>
         </div>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
     </div>
     </div>
     </div>

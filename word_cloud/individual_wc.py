@@ -17,9 +17,9 @@ from datetime import date
 
 
 tknzr = TweetTokenizer(strip_handles=True, reduce_len=True)
-stopwords_en = stopwords.words('english')
+stopwords_en1 = stopwords.words('english')
 
-stopwords_en += ['via','rt','https','pm','http','u','w','see','go','every','hes','get','cant','thats','im','got','new']
+stopwords_en1 += ['via','rt','https','pm','http','u','w','see','go','every','hes','get','cant','thats','im','got','new']
 politics = ['cruz','trump','ted','hillary','clinton','kasich','bernie','sanders','donald','think','vote']
 politics += ['vote','gop','president','democrat','hillaryclinton','politics','candidate']
 politics += ['votes','primary','primaries','dem','rep','republican']
@@ -33,18 +33,18 @@ nonPolitics = nonPolitics.split(' ')
 
 otherWords = "dont want look one time need let still"
 otherWords += " make america american great again know thank"
-stopwords_en += politics+nonPolitics+(otherWords.split(' '))
+stopwords_en = stopwords_en1+politics+nonPolitics+(otherWords.split(' '))
 
-for day in range(17,22):
+for month in range(1,5):
 	for candidate in ['HillaryClinton','BernieSanders','realDonaldTrump']:
 		print "getting data for "+candidate
 		today = date.today()
 		year = today.year
-		month = today.month 
+		# month = today.month 
 		# day = today.day-1
-		reqString = 'candidate='+candidate+'&year='+str(year)+'&month='+str(month)+'&day='+str(day)
+		reqString = 'candidate='+candidate+'&year='+str(year)+'&month='+str(month)
 		print reqString
-		r = requests.get('http://162.243.13.220:8081/api/cloud?'+reqString)
+		r = requests.get('http://162.243.13.220:8081/api/candidate?'+reqString)
 		print "got, change to json"
 		rjson = r.json()
 
@@ -56,7 +56,7 @@ for day in range(17,22):
 
 		print 'stemming '
 		alltokens = [x.lower() for x in alltokens]
-		alltokens = [x for x in alltokens if x.isalpha()==True and x not in stopwords_en]
+		alltokens = [x for x in alltokens if x.isalpha()==True and x not in stopwords_en1]
 		string_tokens = ' '.join(alltokens)
 		scale = 0.6
 		wc = WordCloud(
@@ -67,7 +67,7 @@ for day in range(17,22):
 				width=1920
 				).generate(string_tokens)
 		# plt.imshow(wc)
-		filestring = 'images/more_filtering/'+candidate+'_'+str(year)+'_'+str(month)+'_'+str(day)+'.png'
+		filestring = 'images/candidates/political/'+candidate+'_'+str(year)+'_'+str(month)+'.png'
 		wc.to_file(filestring)
 		# break
 	# break
