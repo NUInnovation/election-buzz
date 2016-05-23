@@ -36,6 +36,7 @@ function filterThemselves(elem) {
     var sandersFollowers = null;
     var urlFollowers = 'http://162.243.13.220:8081/api/followers'
     $.getJSON(urlFollowers,function(data){
+      $('#loading').remove();
 
         sandersFollowers = JSON.parse(data.Sanders);//.slice(0,6);
         sandersFollowers = sandersFollowers.filter(filterThemselves);

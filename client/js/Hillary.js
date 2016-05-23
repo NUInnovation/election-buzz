@@ -274,6 +274,7 @@ function filterThemselves(elem) {
     var clintonFollowers = null;
     var urlFollowers = 'http://162.243.13.220:8081/api/followers'
     $.getJSON(urlFollowers,function(data){
+        $('#loading').remove();
 
         clintonFollowers = JSON.parse(data.Clinton);//.slice(0,6);
         clintonFollowers = clintonFollowers.filter(filterThemselves);
