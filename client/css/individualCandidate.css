@@ -1,0 +1,140 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+div {
+    /*border: 1px solid black;*/
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    height: 450px
+}
+/* Set gray background color and 100% height */
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.candidates {
+    display: inline-block;
+}
+
+#pictures {
+    /*border: 1px solid black;*/
+    height: 100%;
+    padding: 0;
+}
+
+#followertweets {
+    /*border: 1px solid black;*/
+    height: 100%;
+    padding: 0;
+}
+
+#TwitterFollowers {
+    display: inline-block;
+    margin: auto;
+    width:80%;
+    margin-bottom: 1%;
+}
+
+.topfollowers {
+    display: inline-block;
+}
+
+#graph {
+    height: 250px;
+}
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+.candidatePicture {
+    height: 33.3333%;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+}
+
+.candidateImg {
+    width:30%;
+    display: block;
+    margin: auto;
+}
+
+#chart {
+    border: none;
+}
+
+.bar.realDonaldTrump {
+    fill: rgb(226, 26, 33);
+}
+
+.bar.HillaryClinton {
+    fill: rgb(2, 26, 188);
+}
+
+.bar.BernieSanders {
+    fill: rgb(2, 26, 188);
+}
+
+.bar {
+    color: white;
+    /*stroke: gray;*/
+    /*stroke-width:1px;*/
+}
+
+.label {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#title_graph {
+    margin: 10px 0px 10px 0px;
+}
+
+.selectForm {
+    font-size: 1.5em;
+}
+
+.axis path,
+.axis line {
+fill: none;
+stroke: #000;
+shape-rendering: crispEdges;
+}
+
+.x.axis path {
+display: none;
+}
+
+.line {
+fill: none;
+stroke: steelblue;
+stroke-width: 1.5px;
+}
+
+#galleryImg{
+height: 300px;
+}
