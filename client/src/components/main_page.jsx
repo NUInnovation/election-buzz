@@ -231,9 +231,9 @@ var MainPage = React.createClass({
           </div>
           <div className="col-sm-2" id="pictures">
             <div className='candidatePicture'>
-              <a href="candidate.html?name=Hillary">
+              <Link to={'/candidate/0'}
                 <img src='images/hillary.jpg' className='img-circle candidateImg' /> @HillaryClinton
-              </a>
+              </Link>
             </div>
             <div className='candidatePicture'>
               <a href="candidate.html?name=Bernie">
