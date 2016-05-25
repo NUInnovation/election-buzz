@@ -1,6 +1,13 @@
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}
 
+
+a {
+  color:inherit;
+}
+a:hover {
+  color:inherit;
+}
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
@@ -104,6 +111,7 @@ footer {
 
 .selectForm {
   font-size:1.5em;
+  margin-top: .5em;
 }
 
 .candidateProfile {
@@ -121,4 +129,91 @@ footer {
 
 .candidatechart {
   height: 100%;
+}
+
+.tagline {
+  font-family: monospace;
+  font-size: 2em;
+  text-transform: uppercase;
+  transform: translate(0px,-.75em);
+  /*height:.5em;*/
+  border-bottom: 1px solid gray;
+}
+
+.logo_img {
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height:15em;
+  width:100%;
+}
+
+.guide_text {
+  color: green;
+  margin: 1em;
+  font-weight: bold;
+  font-size:1.25em;
+}
+.action_text {
+  color: gold;
+}
+
+.feature_text {
+  color: purple;
+  /*text-align: left;*/
+  font-size: 0.75em;
+}
+
+
+.light_gray {
+  background-color: rgb(245,245,245);
+}
+.dark_gray {
+  background-color: rgb(45,45,45);
+}
+.gray {
+  background-color: rgb(86,86,86);
+}
+.candidate_block {
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+#navbar {
+  position: fixed;
+  z-index: +1;
+  width: 100%;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.5;
 }

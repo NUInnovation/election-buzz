@@ -1,7 +1,7 @@
 
 
 $(function() {
-  $( "#datepicker" ).datepicker({
+  $( "#datepicker_Sanders" ).datepicker({
       onSelect: updateImg,
       minDate: new Date("May 1, 2016 11:13:00"),
       maxDate: new Date("May 20, 2016 11:13:00"),
@@ -21,22 +21,17 @@ updateImg = function(val)
   console.log(dateStringEnd);
   var fileName = 'images/word_cloud/sanders/BernieSanders_2016_'+dateStringEnd+'.png';
   console.log(fileName);
-  $('#galleryImg').attr('src',fileName);
+  $('#galleryImg_Sanders').attr('src',fileName);
 }
 updateImg(todayString);
-$('#datepicker').val(todayString);
+$('#datepicker_Sanders').val(todayString);
 
-function filterThemselves(elem) {
-  result = elem.screen_name === 'BernieSanders';
-  result = result | elem.screen_name === 'photosandbacon';
-  return !result;
-};
 
     /// FOLLOWERS
     var sandersFollowers = null;
     var urlFollowers = 'http://162.243.13.220:8081/api/followers'
     $.getJSON(urlFollowers,function(data){
-      $('#loading').remove();
+      $('#loading_Sanders').remove();
 
         sandersFollowers = JSON.parse(data.Sanders);//.slice(0,6);
         sandersFollowers = sandersFollowers.filter(filterThemselves);
@@ -44,7 +39,7 @@ function filterThemselves(elem) {
         console.table(sandersFollowers);
         sandersFollowers.forEach(function(element){
           // append to twitterFollowers class
-          $('#followerProfiles').append(
+          $('#followerProfiles_Sanders').append(
             '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
           );
         });
@@ -54,8 +49,8 @@ function filterThemselves(elem) {
     var modal = document.getElementById('myModal');
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('galleryImg');
-    var modalImg = document.getElementById("img01");
+    var img = document.getElementById('galleryImg_Sanders');
+    var modalImg = document.getElementById("img01_Sanders");
     var captionText = document.getElementById("caption");
     img.onclick = function(){
         modal.style.display = "block";
