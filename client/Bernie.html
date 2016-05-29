@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Election Buzz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        
+        div {
+            /*border: 1px solid black;*/
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 450px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        
+        .candidates {
+            display: inline-block;
+        }
+        
+        .Hillary {
+            background-color: gray;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+        
+        #candidatetweets {
+            /*border: 1px solid black;*/
+            height: 100%;
+        }
+        
+        #pictures {
+            /*border: 1px solid black;*/
+            height: 100%;
+            padding: 0;
+        }
+        
+        #followertweets {
+            /*border: 1px solid black;*/
+            height: 100%;
+            padding: 0;
+        }
+        
+        #TwitterFollowers {
+            display: inline-block;
+        }
+        
+        .topfollowers {
+            display: inline-block;
+        }
+        
+        #graph {
+            height: 250px;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+        
+        .candidatePicture {
+            height: 33.3333%;
+            display: block;
+            margin: auto;
+            font-weight: bold;
+        }
+        
+        .candidateImg {
+            height: 80%;
+            /*width:50px;*/
+            display: block;
+            margin: auto;
+        }
+        
+        #chart {
+            border: none;
+        }
+        
+        .bar.realDonaldTrump {
+            fill: rgb(226, 26, 33);
+        }
+        
+        .bar.HillaryClinton {
+            fill: rgb(2, 26, 188);
+        }
+        
+        .bar.BernieSanders {
+            fill: rgb(2, 26, 188);
+        }
+        
+        .bar {
+            color: white;
+            /*stroke: gray;*/
+            /*stroke-width:1px;*/
+        }
+        
+        .label {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        
+        #title_graph {
+            margin: 10px 0px 10px 0px;
+        }
+        
+        .selectForm {
+            font-size: 1.5em;
+        }
+        
+        .img-circle-bernie {
+            border-radius: 50%;
+            width: 15%;
+            height: 15%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Election Buzz</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--<li><a href="#">About</a></li>-->
+                    <!--<li><a href="#">Projects</a></li>-->
+                    <!--<li><a href="#">Contact</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+
+
+
+            <table>
+                <tr>
+                    <div class='results'>
+                        <img class="img-circle-bernie" src='../pictures/bernie.jpg'>
+                    </div>
+                </tr>
+                <h3>Bernie Sanders</h3>
+                <p>Top Twitter Followers:</p>
+                <div id="TwitterFollowers">
+
+
+
+                    <form>
+                        What his followers are talking about...
+                        <br>
+                        <input type="text" name="word">
+                        <br>
+                        <input type='submit' onclick='updateChart()'>
+                    </form>
+
+                    <table style="width:100%">
+                        <tr>
+                            <td>Tweet</td>
+                        </tr>
+                        <tr>
+                            <td>Tweet</td>
+                        </tr>
+                        <tr>
+                            <td>Tweet</td>
+                        </tr>
+                        <tr>
+                            <td>Tweet</td>
+                        </tr>
+                        <tr>
+                            <td>Tweet</td>
+                        </tr>
+                    </table>
+                    <div id='graph'></div>
+                    
+                    <div id='images'>
+                        IMAGES HERE
+                    </div>
+
+
+
+                </div>
+
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript">
+    var word = "";
+
+
+
+
+    function filterTrump(obj) {
+        return obj.support === "realDonaldTrump";
+    }
+
+    function filterHillary(obj) {
+        return obj.support === "HillaryClinton";
+    }
+
+    function filterSanders(obj) {
+        return obj.support === "BernieSanders";
+    }
+
+    function updateChart() {
+        return;
+    }
+
+    // var url = 'http://162.243.13.220:8081/api/timeline?word='+$('#word').text()
+    // $.getJSON(url,function(data){
+
+    //     d3.json(data,drawGraph(json));
+    // });
+
+    function drawGraph(json) {
+        // TODO: Make GRAPH TO SHOW TIMELINE
+        // TODO: THIS IS FROM d3
+    }
+
+
+    var w = 500;
+    var h = 500;
+
+    var svg = d3.select("#graph")
+        .append("svg")
+        .attr("class", 'timelinechart')
+        .attr("width", w)
+        .attr("height", h);
+    var max_n = 10;
+
+    var lineFunction = d3.svg.line()
+</script>
+
+</html>

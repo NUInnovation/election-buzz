@@ -41,7 +41,7 @@ function filterThemselves(elem) {
 
     /// FOLLOWERS
     var clintonFollowers = null;
-    var urlFollowers = 'https://162.243.13.220:8080/api/followers'
+    var urlFollowers = 'http://162.243.13.220:8081/api/followers'
     $.getJSON(urlFollowers,function(data){
         $('#loading_Clinton').remove();
 
@@ -52,7 +52,7 @@ function filterThemselves(elem) {
         clintonFollowers.forEach(function(element){
           // append to twitterFollowers class
           $('#followerProfiles_Clinton').append(
-            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
+            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
           );
         });
     });
