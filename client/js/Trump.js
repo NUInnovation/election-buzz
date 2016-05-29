@@ -29,7 +29,7 @@ $('#datepicker_Trump').val(todayString);
 
     /// FOLLOWERS
     var trumpFollowers = null;
-    var urlFollowers = 'http://162.243.13.220:8081/api/followers'
+    var urlFollowers = 'https://162.243.13.220:8080/api/followers'
     $.getJSON(urlFollowers,function(data){
       $('#loading_Trump').remove();
 

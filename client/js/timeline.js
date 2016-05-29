@@ -18,7 +18,7 @@ function filterDate(obj){
 var allData = null;
 function updateChart(){
   var input=$('#word').val();
-  url = 'http://162.243.13.220:8081/api/timeline?word='+input;
+  url = 'https://162.243.13.220:8080/api/timeline?word='+input;
   console.log(url)
   // return;
   $.getJSON(url,function(data){
@@ -186,7 +186,7 @@ var xGrid = null;
 var legend = null;
 
 
-var url = 'http://162.243.13.220:8081/api/timeline?word=women'
+var url = 'https://162.243.13.220:8080/api/timeline?word=women'
 $('#word').val('women');
 $.getJSON(url,function(data){
 
