@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/d3.legend.js"></script>
 
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
@@ -74,8 +75,9 @@
             display: inline-block;
         }
 
-        #graph {
-            height: 250px;
+        #graph > svg{
+            background-color: #EEEEEE;
+            border-radius: 10px;
         }
         /* Set black background color, white text and some padding */
 
@@ -161,81 +163,58 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.5;
+}
+
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Election Buzz</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Election Buzz</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class='active'><a href="timeline.html">Tweet Timeline</a></li>
+          <li><a href="Hillary.html">Clinton</a></li>
+          <li><a href="Sanders.html">Sanders</a></li>
+          <li><a href="Trump.html">Trump</a></li>
+          <li><a href="aboutus.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <div class="container-fluid text-center">
-        <div class="row content">
-
-            <table>
-                <tr>
-                    <div class='results'>
-                        <img src='../images/hillary.jpg' class='img-circle candidateImg'>
-                    </div>
-                </tr>
-                <h3>Hillary Clinton</h3>
-                <p>Top Twitter Followers:</p>
-                <div id="TwitterFollowers">
-                  <div class="row" style="border:1px solid black;" id='followerProfiles'>
-                  </div>
-                </div>
-
-                  <br>
+        <div class='row'>
+                <h4>The following chart shows number of tweets including a selected keyword, split by number of candidates. Type in a keyword to learn more about the candidates' followers. </h4>
                   <input type="text" name="word" id='word'>
-                  <br>
-                  <button onclick='updateChart()'>Submit</button>
-
-                    <table style="width:100%">
-                        <tr>
-                            <td>Tweet</td>
-                        </tr>
-                        <tr>
-                            <td>Tweet</td>
-                        </tr>
-                        <tr>
-                            <td>Tweet</td>
-                        </tr>
-                        <tr>
-                            <td>Tweet</td>
-                        </tr>
-                        <tr>
-                            <td>Tweet</td>
-                        </tr>
-                    </table>
+                  <button onclick='updateChart()' class="btn btn-primary">Search!</button>
                     <div id='graph'></div>
-
-
-
                 </div>
-
-
+                <h5>Note: We used a random sample of the last 3000 tweets of 1000 followers for each candidate, attempting to filter out journalists, twitter bots, and influential people </h5>
         </div>
-
-    </div>
-    </div>
-    </div>
-
-
-
 </body>
 
 <script type="text/javascript">
@@ -263,7 +242,6 @@
       console.log(url)
       // return;
       $.getJSON(url,function(data){
-
         data.forEach(function(d) {
             // if ()(d.Date.length)==6)
             // console.log(d.Date.length);
@@ -298,6 +276,20 @@
         svg.select('.y.axis')
           .call(yAxis);
 
+        svg.select('.x.grid')
+          .attr("transform", "translate(0," + height + ")")
+          .call(make_x_axis()
+              .tickSize(-height, 0, 0)
+              .tickFormat("")
+          );
+
+        svg.select('.y.grid')
+        .call(make_y_axis()
+            .tickSize(-width, 0, 0)
+            .tickFormat("")
+        )
+
+
         allDots = svg.selectAll('circle')
             .data(allData);
 
@@ -325,6 +317,7 @@
                 return 'red';
               }
             })
+            .attr('data-legend',function(d){ return d.support;})
             .attr("fill",function(d){
               console.log('hihi');
               if (d.support === 'HillaryClinton')
@@ -340,6 +333,10 @@
                 return 'red';
               }
             });
+
+            legend.attr("transform","translate(50,30)")
+            .style("font-size","15px")
+            .call(d3.legend);
 
         // trumpLine.datum(trumpData)
         //   .attr('d',line);
@@ -358,8 +355,8 @@
     }
 
     var margin = {top: 20, right: 80, bottom: 30, left: 50},
-    width = 600 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 900 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
     var parseDate = d3.time.format("%Y/%U").parse;
 
@@ -375,10 +372,25 @@
         .orient("bottom")
         .ticks(8);
 
+
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left")
         .ticks(5);
+
+    function make_x_axis() {
+        return d3.svg.axis()
+            .scale(x)
+             .orient("bottom")
+             .ticks(10)
+    };
+
+    function make_y_axis() {
+        return d3.svg.axis()
+            .scale(y)
+            .orient("left")
+            .ticks(10)
+    };
 
     var line = d3.svg.line()
         // .interpolate("basis")
@@ -402,9 +414,13 @@
     var allDots = null;
     var xAxes = null;
     var yAxes = null;
+    var yGrid = null;
+    var xGrid = null;
+    var legend = null;
 
 
     var url = 'http://162.243.13.220:8081/api/timeline?word=women'
+    $('#word').val('women');
     $.getJSON(url,function(data){
 
       // console.table(data);
@@ -449,6 +465,20 @@
         .attr("dy", ".71em")
         .style("text-anchor", "end")
 
+        yGrid = svg.append("g")
+        .attr("class", "y grid")
+        .call(make_y_axis()
+            .tickSize(-width, 0, 0)
+            .tickFormat("")
+        )
+
+        xGrid = svg.append("g")
+        .attr("class", "x grid")
+        .attr("transform", "translate(0," + height + ")")
+        .call(make_x_axis()
+            .tickSize(-height, 0, 0)
+            .tickFormat("")
+        );
         // .text("Price ($)");
 
         allDots = svg.selectAll('circle')
@@ -473,6 +503,7 @@
                 return 'red';
               }
             })
+            .attr('data-legend',function(d){ return d.support;})
             .attr("fill",function(d){
               console.log('hihi');
               if (d.support === 'HillaryClinton')
@@ -489,7 +520,11 @@
               }
             });
 
-        // console.log(trumpData);
+       legend = svg.append("g")
+              .attr("class","legend")
+              .attr("transform","translate(50,30)")
+              .style("font-size","15px")
+              .call(d3.legend);
 
         // trumpLine = svg.append('path')
         //     .datum(trumpData)
@@ -515,25 +550,11 @@
     });
 
 
-    var w = 500;
-    var h =500;
+    var w = 800;
+    var h =800;
 
     var max_n = 10;
 
-    var lineFunction = d3.svg.line()
-    var clintonFollowers = null;
-    var urlFollowers = 'http://162.243.13.220:8081/api/followers'
-    $.getJSON(urlFollowers,function(data){
-
-        clintonFollowers = JSON.parse(data.Sanders).slice(0,5);
-        console.table(clintonFollowers);
-        clintonFollowers.forEach(function(element){
-          // append to twitterFollowers class
-          $('#followerProfiles').append(
-            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'"><div><img style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
-          );
-        });
-    });
 
 </script>
 

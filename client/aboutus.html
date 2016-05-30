@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Election Buzz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        div {
+            /*border: 1px solid black;*/
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+        .row.content {
+            height: 450px
+        }
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        .candidates {
+            display: inline-block;
+        }
+
+        .Hillary {
+            background-color: gray;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        #candidatetweets {
+            /*border: 1px solid black;*/
+            height: 100%;
+        }
+
+        #pictures {
+            /*border: 1px solid black;*/
+            height: 100%;
+            padding: 0;
+        }
+
+        #followertweets {
+            /*border: 1px solid black;*/
+            height: 100%;
+            padding: 0;
+        }
+
+        #TwitterFollowers {
+            display: inline-block;
+        }
+
+        .topfollowers {
+            display: inline-block;
+        }
+
+        .intro {
+            font-family: verdana;
+            font-size: 16px;
+            color: #505050  ;
+            text-align: left;
+            margin-left: 1cm;
+            margin-right 1cm;
+            padding-top: 0 px;
+        }
+
+        .team {
+            background-color: #F0F0F0 ;
+
+        .line {
+            border-top: 1cm;
+            col
+        }
+
+        }
+
+        .opening {
+            width: 100%;
+            height: 60%;
+            background-image: url("images/BUZZ.png");
+            background-size: 100%;
+        }
+
+
+        #graph {
+            height: 250px;
+        }
+        /* Set black background color, white text and some padding */
+
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+
+        .candidatePicture {
+            height: 33.3333%;
+            display: block;
+            margin: auto;
+            font-weight: bold;
+        }
+
+        .candidateImg {
+            height: 80%;
+            /*width:50px;*/
+            display: block;
+            margin: auto;
+        }
+
+        #chart {
+            border: none;
+        }
+
+
+        .bar {
+            color: white;
+            /*stroke: gray;*/
+            /*stroke-width:1px;*/
+        }
+
+        .label {
+            font-size: 15px;
+            font-weight: normal;
+        }
+
+        #title_graph {
+            margin: 10px 0px 10px 0px;
+        }
+
+        .selectForm {
+            font-size: 1.5em;
+        }
+
+        .img-circle-team {
+            border-radius: 50%;
+            width: 50%;
+            height: 50%;
+        }
+
+        .aboutwe {
+            widht: 25%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Election Buzz</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timeline.html">Tweet Timeline</a></li>
+          <li><a href="Hillary.html">Clinton</a></li>
+          <li><a href="Sanders.html">Sanders</a></li>
+          <li><a href="Trump.html">Trump</a></li>
+          <li class='active'><a href="aboutus.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+             <div class="opening">
+            </div>
+                <div class="intro">
+                <h1>About us</h1>
+                &nbsp;
+                <p>Election Buzz provides insights into presidential candidates and their followers.</p>
+                <p> It helps you dig through candidate's tweets to figure out what they are talking about major subjects such as education, security, immigration, among others. You can also compare how much their followers are talking about the same subjects.
+                Are they in line? </p>
+                <p> Using Election Buzz you can also find out who are candidate's top followers (be prepared for some surprises!) and learn how much each candidate has talked about certain topics over time. You can type any topic you want and check the graph. Did their priorities change during the campaign? </p>
+                <p> Welcome! </p>
+                </div>
+                &nbsp;
+
+                <div class='row team'>
+                  <div class='col-sm-12'>
+                    <h2>Who are we?</h2>
+                  </div>
+                </div>
+                <div class='row team'>
+                  <div class='col-sm-3'>
+                    <div class='row'>
+                      <a href="https://www.linkedin.com/in/bpeynetti">
+                          <img class="img-circle-team" src='images/BrunoPeyetti.jpg'>
+                      </a>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-11'>
+                        <h4> Bruno Peynetti </h4>
+                        <p>Master of Science candidate for Computer Engineering in McCormick. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-3'>
+                    <div class='row'>
+                      <a href="https://www.linkedin.com/in/gofronmichael">
+                          <img class="img-circle-team" src='images/MichaelGrofon.jpg'>
+                      </a>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-11'>
+                        <h4> Michael Gofron</h4>
+                        <p> Is a software engineer with a passion for code and burritos. In his free time he likes to eat obscene amounts of food, work out, hike and play guitar. He can play a mean smoke on the water.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-3'>
+                    <div class='row'>
+                      <a href="https://www.linkedin.com/in/ligiaaguilhar">
+                          <img class="img-circle-team" src='images/LigiaAguilhar.jpg'>
+                      </a>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-11'>
+                        <h4> Ligia Aguilhar </h4>
+                        <p>Is a candidate in the Media Strategy and Leadership Program at Medill - Northwestern University. Loves technology, journalism and startups. ICFJ and McCormick fellow exploring media and technology</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-3'>
+                    <div class='row'>
+                      <a href="https://www.linkedin.com/in/lori-janjigian-19733175">
+                        <img class="img-circle-team" src='images/Lori.png'>
+                      </a>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-11'>
+                        <h4> Lori Janjigian </h4>
+                        <p>Is a candidate in the Media Strategy and Leadership Program at Medill - Northwestern University. Loves technology, journalism and startups. ICFJ and McCormick fellow exploring media and technology</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>

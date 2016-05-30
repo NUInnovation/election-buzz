@@ -3,14 +3,14 @@
 $(function() {
   $( "#datepicker" ).datepicker({
       onSelect: updateImg,
-      minDate: -20,
-      maxDate: "+1M +10D",
+      minDate: new Date("May 1, 2016 11:13:00"),
+      maxDate: new Date("May 20, 2016 11:13:00"),
       defaultDate: new Date()
      });
 });
 
-var today = new Date();
-var todayString = '0'+(today.getMonth() + 1) + '/' + (today.getDate()-10) + '/' +  today.getFullYear()
+var today = new Date("May 1, 2016 11:11:00");
+var todayString = '05/01/2016'
 console.log(todayString);
 
 updateImg = function(val)
@@ -24,6 +24,7 @@ updateImg = function(val)
   $('#galleryImg').attr('src',fileName);
 }
 updateImg(todayString);
+$('#datepicker').val(todayString);
 
 function filterThemselves(elem) {
   result = elem.screen_name === 'BernieSanders';
@@ -35,6 +36,7 @@ function filterThemselves(elem) {
     var sandersFollowers = null;
     var urlFollowers = 'http://162.243.13.220:8081/api/followers'
     $.getJSON(urlFollowers,function(data){
+      $('#loading').remove();
 
         sandersFollowers = JSON.parse(data.Sanders);//.slice(0,6);
         sandersFollowers = sandersFollowers.filter(filterThemselves);
@@ -47,3 +49,25 @@ function filterThemselves(elem) {
           );
         });
     });
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('galleryImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
