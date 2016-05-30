@@ -5,16 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script src="js/d3.legend.js"></script>
   <link rel='stylesheet' href='css/styles.css'>
   <link rel='stylesheet' text='text/css' href='css/individualCandidate.css'>
+  <script src="http://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script>
+    // set the firebase reference at the beginning
+    var ref = new Firebase('http://electionbuzztimeline.firebaseio.com/');
+    var follower_ref = ref.child('twitter_followers');
+  </script>
 
   <style>
 
@@ -160,12 +166,12 @@
                 <div class='guide_text'> We looked at a random sample of Clinton's followers. </div>
                 <div class='guide_text'> Choose a day to see what was trending. </div>
               </div>
-              <div class='row pick_date'>
-                 Choose a day: <input type="text" id="datepicker_Clinton">
-              </div>
+              <!--<div class='row pick_date'>-->
+              <!--   Choose a day: <input type="text" id="datepicker_Clinton">-->
+              <!--</div>-->
 
               <div class='gallery'>
-                <img src='#' id='galleryImg_Clinton' class='galleryImg'></img>
+                <iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1b4AlVKYwM4W-OBgXUCFJkwE2qWSCTZI8vFG62Qk4S8E&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
               </div>
           </div>
           </div>

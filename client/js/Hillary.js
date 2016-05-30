@@ -41,21 +41,36 @@ function filterThemselves(elem) {
 
     /// FOLLOWERS
     var clintonFollowers = null;
-    var urlFollowers = 'https://162.243.13.220:8080/api/followers'
-    $.getJSON(urlFollowers,function(data){
-        $('#loading_Clinton').remove();
-
-        clintonFollowers = JSON.parse(data.Clinton);//.slice(0,6);
-        clintonFollowers = clintonFollowers.filter(filterThemselves);
+    var clintonRef = follower_ref.child('Clinton');
+    clintonRef.on('value',function(snapshot){
+      clintonFollowers = snapshot.val();
+      $('#loading_Clinton').remove();
+      clintonFollowers = clintonFollowers.filter(filterThemselves);
         clintonFollowers = clintonFollowers.slice(0,6);
         console.table(clintonFollowers);
         clintonFollowers.forEach(function(element){
           // append to twitterFollowers class
           $('#followerProfiles_Clinton').append(
-            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
+            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
           );
         });
     });
+    
+    // var urlFollowers = 'http://162.243.13.220:8081/api/followers'
+    // $.getJSON(urlFollowers,function(data){
+    //     $('#loading_Clinton').remove();
+
+    //     clintonFollowers = data.Clinton;// JSON.parse(data.Clinton);//.slice(0,6);
+    //     clintonFollowers = clintonFollowers.filter(filterThemselves);
+    //     clintonFollowers = clintonFollowers.slice(0,6);
+    //     console.table(clintonFollowers);
+    //     clintonFollowers.forEach(function(element){
+    //       // append to twitterFollowers class
+    //       $('#followerProfiles_Clinton').append(
+    //         '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
+    //       );
+    //     });
+    // });
 
     // Get the modal
     var modal = document.getElementById('myModal');

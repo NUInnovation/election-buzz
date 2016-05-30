@@ -29,21 +29,36 @@ $('#datepicker_Trump').val(todayString);
 
     /// FOLLOWERS
     var trumpFollowers = null;
-    var urlFollowers = 'https://162.243.13.220:8080/api/followers'
-    $.getJSON(urlFollowers,function(data){
+    var trumpFollowers = null;
+    var trumpRef = follower_ref.child('Trump');
+    trumpRef.on('value',function(snapshot){
+      trumpFollowers = snapshot.val();
       $('#loading_Trump').remove();
-
-        trumpFollowers = JSON.parse(data.Trump);//.slice(0,6);
-        trumpFollowers = trumpFollowers.filter(filterThemselves);
+      trumpFollowers = trumpFollowers.filter(filterThemselves);
         trumpFollowers = trumpFollowers.slice(0,6);
         console.table(trumpFollowers);
         trumpFollowers.forEach(function(element){
           // append to twitterFollowers class
           $('#followerProfiles_Trump').append(
-            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="https://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
+            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
           );
         });
     });
+    // var urlFollowers = 'http://162.243.13.220:8081/api/followers'
+    // $.getJSON(urlFollowers,function(data){
+    //   $('#loading_Trump').remove();
+
+    //     trumpFollowers = data.Trump; // JSON.parse(data.Trump);//.slice(0,6);
+    //     trumpFollowers = trumpFollowers.filter(filterThemselves);
+    //     trumpFollowers = trumpFollowers.slice(0,6);
+    //     console.table(trumpFollowers);
+    //     trumpFollowers.forEach(function(element){
+    //       // append to twitterFollowers class
+    //       $('#followerProfiles_Trump').append(
+    //         '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
+    //       );
+    //     });
+    // });
 
     var modal = document.getElementById('myModal');
 

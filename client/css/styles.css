@@ -218,3 +218,7 @@ footer {
   stroke:black;
   opacity:0.5;
 }
+
+iframe {
+  width:100%;
+}
