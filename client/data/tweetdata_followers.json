@@ -1,259 +1,144 @@
 {
-    "Themes": [
+  "Themes": [
+    {
+      "Topic": "Tax",
+      "Data": [
         {
-            "Data": [
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 4,
-                    "Tweets": 0.13596193065941536
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 1,
-                    "Tweets": 0.034818941504178275
-                },
-                
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 62,
-                    "Tweets": 2.1610317183687697
-                }
-            ],
-            "Topic": "Kasich"
+          "Tweets": 1.55,
+          "Name": "HillaryClinton",
+          "Number": 310
         },
         {
-            "Data": [
-               
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 92,
-                    "Tweets": 3.1271244051665534
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 32,
-                    "Tweets": 1.1142061281337048
-                },
-               
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 493,
-                    "Tweets": 17.183687696061344
-                }
-            ],
-            "Topic": "Trump"
+          "Tweets": 1.005,
+          "Name": "BernieSanders",
+          "Number": 201
         },
         {
-            "Data": [
-               
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 760,
-                    "Tweets": 25.832766825288918
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 88,
-                    "Tweets": 3.064066852367688
-                },
-                
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 149,
-                    "Tweets": 5.1934471941443014
-                }
-            ],
-            "Topic": "Hillary"
-        },
-        {
-            "Data": [
-              
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 25,
-                    "Tweets": 0.849762066621346
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 34,
-                    "Tweets": 1.1838440111420614
-                },
-
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 14,
-                    "Tweets": 0.48797490414778666
-                }
-            ],
-            "Topic": "Tax"
-        },
-        {
-            "Data": [
-
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 94,
-                    "Tweets": 3.195105370496261
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 172,
-                    "Tweets": 5.988857938718663
-                },
-
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 81,
-                    "Tweets": 2.8232833739979086
-                }
-            ],
-            "Topic": "Immigration"
-        },
-        {
-            "Data": [
-
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 81,
-                    "Tweets": 2.753229095853161
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 45,
-                    "Tweets": 1.5668523676880224
-                },
-
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 6,
-                    "Tweets": 0.20913210177762287
-                }
-            ],
-            "Topic": "Supreme Court"
-        },
-        {
-            "Data": [
-
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 160,
-                    "Tweets": 5.438477226376614
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 63,
-                    "Tweets": 2.1935933147632314
-                },
-
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 26,
-                    "Tweets": 0.9062391077030324
-                }
-            ],
-            "Topic": "Women"
-        },
-        {
-            "Data": [
-
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 9,
-                    "Tweets": 0.30591434398368456
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 2,
-                    "Tweets": 0.06963788300835655
-                },
-
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 202,
-                    "Tweets": 7.040780759846636
-                }
-            ],
-            "Topic": "Cruz"
-        },
-        {
-            "Data": [
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 156,
-                    "Tweets": 5.302515295717199
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 146,
-                    "Tweets": 5.0835654596100275
-                },
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 34,
-                    "Tweets": 1.1850819100731962
-                }
-            ],
-            "Topic": "Healthcare"
-        },
-        {
-            "Data": [
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 64,
-                    "Tweets": 2.175390890550646
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 61,
-                    "Tweets": 2.1239554317548746
-                },
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 71,
-                    "Tweets": 2.474729871035204
-                }
-            ],
-            "Topic": "Security"
-        },
-        {
-            "Data": [
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 137,
-                    "Tweets": 4.656696125084976
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 117,
-                    "Tweets": 4.073816155988858
-                },
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 44,
-                    "Tweets": 1.5336354130359011
-                }
-            ],
-            "Topic": "Education"
-        },
-        {
-            "Data": [
-                {
-                    "Name": "HillaryClinton",
-                    "Number": 27,
-                    "Tweets": 0.9177430319510537
-                },
-                {
-                    "Name": "BernieSanders",
-                    "Number": 346,
-                    "Tweets": 12.047353760445683
-                },
-                {
-                    "Name": "realDonaldTrump",
-                    "Number": 18,
-                    "Tweets": 0.6273963053328686
-                }
-            ],
-            "Topic": "Bernie"
+          "Tweets": 1.13,
+          "Name": "realDonaldTrump",
+          "Number": 226
         }
-    ]
+      ]
+    },
+    {
+      "Topic": "Supreme Court",
+      "Data": [
+        {
+          "Tweets": 0.465,
+          "Name": "HillaryClinton",
+          "Number": 93
+        },
+        {
+          "Tweets": 0.345,
+          "Name": "BernieSanders",
+          "Number": 69
+        },
+        {
+          "Tweets": 0.345,
+          "Name": "realDonaldTrump",
+          "Number": 69
+        }
+      ]
+    },
+    {
+      "Topic": "Immigration",
+      "Data": [
+        {
+          "Tweets": 0.95,
+          "Name": "HillaryClinton",
+          "Number": 190
+        },
+        {
+          "Tweets": 0.88,
+          "Name": "BernieSanders",
+          "Number": 176
+        },
+        {
+          "Tweets": 2.565,
+          "Name": "realDonaldTrump",
+          "Number": 513
+        }
+      ]
+    },
+    {
+      "Topic": "Healthcare",
+      "Data": [
+        {
+          "Tweets": 1.35,
+          "Name": "HillaryClinton",
+          "Number": 270
+        },
+        {
+          "Tweets": 1.44,
+          "Name": "BernieSanders",
+          "Number": 288
+        },
+        {
+          "Tweets": 1.125,
+          "Name": "realDonaldTrump",
+          "Number": 225
+        }
+      ]
+    },
+    {
+      "Topic": "Security",
+      "Data": [
+        {
+          "Tweets": 1.07,
+          "Name": "HillaryClinton",
+          "Number": 214
+        },
+        {
+          "Tweets": 0.84,
+          "Name": "BernieSanders",
+          "Number": 168
+        },
+        {
+          "Tweets": 3.095,
+          "Name": "realDonaldTrump",
+          "Number": 619
+        }
+      ]
+    },
+    {
+      "Topic": "Education",
+      "Data": [
+        {
+          "Tweets": 1.43,
+          "Name": "HillaryClinton",
+          "Number": 286
+        },
+        {
+          "Tweets": 1.265,
+          "Name": "BernieSanders",
+          "Number": 253
+        },
+        {
+          "Tweets": 1.005,
+          "Name": "realDonaldTrump",
+          "Number": 201
+        }
+      ]
+    },
+    {
+      "Topic": "Women",
+      "Data": [
+        {
+          "Tweets": 2.825,
+          "Name": "HillaryClinton",
+          "Number": 565
+        },
+        {
+          "Tweets": 0.965,
+          "Name": "BernieSanders",
+          "Number": 193
+        },
+        {
+          "Tweets": 2.11,
+          "Name": "realDonaldTrump",
+          "Number": 422
+        }
+      ]
+    }
+  ]
 }

@@ -34,7 +34,7 @@ div {
 #followertweets {
     /*border: 1px solid black;*/
     height: 100%;
-    padding: 0;
+    /*padding: 0;*/
 }
 
 #TwitterFollowers {
@@ -49,7 +49,7 @@ div {
 }
 
 #graph {
-    height: 250px;
+    height: 280px;
 }
 /* Set black background color, white text and some padding */
 
@@ -71,7 +71,7 @@ footer {
 }
 
 .candidatePicture {
-    height: 33.3333%;
+    height: 83px;
     display: block;
     margin: auto;
     font-weight: bold;
@@ -250,7 +250,26 @@ transition: 0.3s;
 }
 
 .candidateName {
-  font-weight: bold;
-  font-size:1.25em;
-  border-bottom: 1px solid gray;
+    font-weight: normal;
+    font-size: 2em;
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+.twitter_link {
+    font-weight: lighter;
+    font-size:1.2em;
+}
+.twitter_link:hover {
+    text-decoration: underline;
+}
+
+#TwitterFollowers_Clinton {
+    border-bottom: 1px solid gray;
+}
+#TwitterFollowers_Trump {
+    border-bottom: 1px solid gray;
+}
+#TwitterFollowers_Sanders {
+    border-bottom: 1px solid gray;
 }
