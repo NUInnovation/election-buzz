@@ -29,14 +29,21 @@ nonPolitics +="primaries presidential politics california nominee general electi
 nonPolitics +="pledged independence dnc warren convention clintons national debt virginia west oregon states "
 nonPolitics +="debate bush liberal rubio marco states paul ryan nebraska nevada win lose political ohio porland "
 nonPolitics +="democrats us people wv de tax voters voting conservative delegates polls dems democratic congress presidential say bernies potus http htt hillarys trumps va "
+nonPolitics += "nebraska alabama vermont california ca oregon "
 nonPolitics = nonPolitics.split(' ')
 
 otherWords = "dont want look one time need let still"
 otherWords += " make america american great again know thank"
 stopwords_en += politics+nonPolitics+(otherWords.split(' '))
 
-for day in range(17,22):
+for day in range(1,28):
 	for candidate in ['HillaryClinton','BernieSanders','realDonaldTrump']:
+		if (candidate=='HillaryClinton'):
+			candidate_dir = 'clinton'
+		if (candidate=='BernieSanders'):
+			candidate_dir = 'sanders'
+		if (candidate=='realDonaldTrump'):
+			candidate_dir = 'trump'
 		print "getting data for "+candidate
 		today = date.today()
 		year = today.year
@@ -64,11 +71,21 @@ for day in range(17,22):
 				stopwords=STOPWORDS,
 				relative_scaling=scale,
 				height=1080,
+				width=1920,
+				background_color='white'
+				).generate(string_tokens)
+		wc_black = WordCloud(
+				max_words=500,
+				stopwords=STOPWORDS,
+				relative_scaling=scale,
+				height=1080,
 				width=1920
 				).generate(string_tokens)
 		# plt.imshow(wc)
-		filestring = 'images/more_filtering/'+candidate+'_'+str(year)+'_'+str(month)+'_'+str(day)+'.png'
+		filestring = 'images/white_bkgnd/high_filtering/'+candidate_dir+'/'+candidate+'_'+str(year)+'_'+str(month)+'_'+str(day)+'.png'
+		filestring_b = 'images/white_bkgnd/high_filtering/'+candidate_dir+'/'+candidate+'_'+str(year)+'_'+str(month)+'_'+str(day)+'_b.png'
 		wc.to_file(filestring)
+		wc_black.to_file(filestring_b)
 		# break
 	# break
 		# plt.axis('off')

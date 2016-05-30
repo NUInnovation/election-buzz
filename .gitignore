@@ -8,3 +8,9 @@ tweet_analysis_py/tweet_categorization/noun_9996_cc.png
 tweet_analysis_py/tweet_categorization/something.py
 
 *.pyc
+/nbproject/private/
+*.xml
+
+*.properties
+
+*.iml
