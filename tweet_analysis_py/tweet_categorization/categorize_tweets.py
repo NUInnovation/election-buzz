@@ -4,20 +4,25 @@ import json
 import requests 
 # from tweetAnalysis import *
 
-num_tweets = 20000
+num_tweets = {}
 
 api_url = "http://162.243.13.220:8081/api/follower_tweets"
 
-def match(words,words_topic):
+def match(tweet,words,words_topic):
     """ determines if there's a match between the two """
     
-    
+    for word in words_topic:
+        word = word.lower()
+        if (str(word) in tweet):
+            # print topic,'\t',word,'- \t ',tweet
+            return True
+    return False
     # use sets 
-    set_words = set(words)
-    set_topic_words = set(words_topic)
-    if len(set_words.intersection(set_topic_words)) == 0:
-        return False 
-    return True
+    # set_words = set(words)
+    # set_topic_words = set(words_topic)
+    # if len(set_words.intersection(set_topic_words)) == 0:
+    #     return False 
+    # return True
 
 def add_one(candidate_name, topic):
     """ adds one to the candidate name and topic that it corresponds"""
@@ -32,7 +37,7 @@ def add_one(candidate_name, topic):
     for i in range(len(topic_Dict)):
         if (topic_Dict[i]['Topic'])==topic:
             returnDict['Themes'][i]['Data'][index]["Number"] += 1
-            returnDict['Themes'][i]['Data'][index]["Tweets"] = returnDict['Themes'][i]['Data'][index]["Number"]/num_tweets*100
+            returnDict['Themes'][i]['Data'][index]["Tweets"] = returnDict['Themes'][i]['Data'][index]["Number"]/num_tweets[candidate_name]*100
 
 # load categories first 
 Topics = json.load(open('topic_dictionary.json','r'))['Topics']
@@ -62,7 +67,7 @@ for candidate_name in ['HillaryClinton','BernieSanders','realDonaldTrump']:
     
     # resp = requests.get(url=api_url+'?candidate='+candidate_name, timeout=None)
     # all_tweets = json.loads(res.text)
-    file = open(candidate_name+'.txt')
+    file = open(candidate_name+'_own.txt')
     all_tweets = []
     first = True
     for line in file:
@@ -75,6 +80,7 @@ for candidate_name in ['HillaryClinton','BernieSanders','realDonaldTrump']:
     print "FOR CANDIDATE: ",candidate_name
     print len(all_tweets)
     candidateTotals = len(all_tweets)
+    num_tweets[candidate_name] = candidateTotals
     # print all_tweets
     
     matches = 0
@@ -86,12 +92,22 @@ for candidate_name in ['HillaryClinton','BernieSanders','realDonaldTrump']:
         flag = False
         for topic in big_topics:
             words_topic = Topics[topic]
-            if match(words,words_topic):
-                # print topic,tweet
+            if match(tweet.lower(),words,words_topic):
+                if (topic=='Security'):
+                    if ('social security' in tweet.lower()):
+                        # print "FALSE:",tweet.lower()
+                        a = 1
+                    else:
+                        add_one(candidate_name,topic)
+                        # print candidate_name,topic,tweet
+                else:
+                    add_one(candidate_name,topic)
                 flag = True
-                add_one(candidate_name,topic)
         if (flag==True):
             matches += 1
+        else:
+            a = 1
+            # print tweet
     print matches
                 
 print json.dumps(returnDict, separators=(',',':'))
