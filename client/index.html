@@ -43,7 +43,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href='#home'><img src="pictures/bee_logo.png" id="logo" /></a>
+            <a href='#home'><img src="../pictures/bee_logo.png" id="logo" /></a>
           </li>
           <li class="nav_item"><a href="#home">Home</a></li>
           <li class="nav_item"><a href="#Hillary">Clinton</a></li>
@@ -130,7 +130,7 @@
           <br>
           <div class='row'>
             <div class='col-sm-12'>
-              <div class='feature_text light_bkgnd'> The graphs include the past 3000 tweets by candidates and xxx tweets by candidate's followers. The topics are generated using keywords shown below </div>
+              <div class='feature_text light_bkgnd'> The graphs include the past 3000 tweets by candidates and a sample of 20,000 tweets from 2016 by each candidate's followers. The topics are generated using keywords shown below </div>
               <div class='feature_text light_bkgnd' id="Topics"> Education includes: loan, college, education, etc.</div>
             </div>
           </div>
@@ -272,7 +272,12 @@
         </div>
           <div id='graph_timeline'></div>
       </div>
-      <div class='feature_text'>How does this work? We used a random sample of the last 3000 tweets of 1000 followers for each candidate, attempting to filter out journalists, twitter bots, and influential people </div>
+      <div class='feature_text'>How does this graph work? <br> 
+                We used a random sample of the last 3000 tweets of 1000 followers for each candidate, attempting to filter out journalists, twitter bots, and influential people. <br>
+                When you search a word or phrase, we will provide you with a count of numbe of total tweets from these followers <br>
+                that contain that phrase in the tweet text, grouped by week. Why does it start in March 2016? We searched for 3000 tweets and due to Twitter's API limits, there is a large amount <br>
+                of followers who tweeted all these 3000 tweets in the past. This graph should become updated and linear since we are now <br>
+                scraping the tweets live using the Twitter Streaming API. </div>
     </div>
   </a>
 
@@ -661,7 +666,7 @@
     .attr("class", 'candidatechart')
     .attr("width", w + padding)
     .attr("height", h + padding);
-  var max_n = 15;
+  var max_n = 12;
 
   var xAxes0 = null;
   var yAxes0 = null;
@@ -755,7 +760,7 @@
         return dy * i + dy / 2;
       })
       .text(function(d) {
-        return "(" + d.Number + " tweets)";
+        return '';//"(" + d.Number + " tweets)";
       })
       .style("font-weight", "bold");
   });
@@ -793,7 +798,7 @@
           return dx * d.Tweets + 10
         })
         .text(function(d) {
-          return "(" + d.Number + " tweets)";
+          return '';//"(" + d.Number + " tweets)";
         });
     });
   });
@@ -809,7 +814,7 @@
     .attr("class", 'candidatechart')
     .attr("width", w1 + padding + 20)
     .attr("height", h1 + padding);
-  var max_n1 = 5;
+  var max_n1 = 12;
   console.log("MAX_N1=" + max_n1);
   var xAxes1 = null;
   var yAxes1 = null;
