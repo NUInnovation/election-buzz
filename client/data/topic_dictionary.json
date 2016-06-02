@@ -1,5 +1,19 @@
 {
     "Topics": {
+        "Jobs": [
+            "jobs",
+            "employment",
+            "workforce",
+            "job",
+            "salary",
+            "wage",
+            "minimum wage",
+            "income",
+            "unemployment",
+            "employment",
+            "economy",
+            "economys"
+        ],
         "Education": [
             "loan",
             "college",
@@ -119,6 +133,6 @@
             "equality of gender",
             "paid leave",
             "women"
-        ]
+        ],
     }
 }

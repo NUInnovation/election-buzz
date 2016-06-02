@@ -36,11 +36,11 @@ $('#datepicker_Trump').val(todayString);
       $('#loading_Trump').remove();
       trumpFollowers = trumpFollowers.filter(filterThemselves);
         trumpFollowers = trumpFollowers.slice(0,6);
-        console.table(trumpFollowers);
+        // console.table(trumpFollowers);
         trumpFollowers.forEach(function(element){
           // append to twitterFollowers class
           $('#followerProfiles_Trump').append(
-            '<div class="col-sm-2" style="font-weight:bold; color:blue"><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
+            '<div class="col-sm-2 twitter_link dark_bkgnd" ><a href="http://twitter.com/'+element.screen_name+'"><div><img class="img-circle" style="width:100%" src="'+element.picture_url+'"></div>@'+element.screen_name+'</a></div>'
           );
         });
     });
@@ -60,23 +60,23 @@ $('#datepicker_Trump').val(todayString);
     //     });
     // });
 
-    var modal = document.getElementById('myModal');
+    // var modal = document.getElementById('myModal');
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('galleryImg_Trump');
-    var modalImg = document.getElementById("img01_Trump");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        modalImg.alt = this.alt;
-        captionText.innerHTML = this.alt;
-    }
+    // // Get the image and insert it inside the modal - use its "alt" text as a caption
+    // var img = document.getElementById('galleryImg_Trump');
+    // var modalImg = document.getElementById("img01_Trump");
+    // var captionText = document.getElementById("caption");
+    // img.onclick = function(){
+    //     modal.style.display = "block";
+    //     modalImg.src = this.src;
+    //     modalImg.alt = this.alt;
+    //     captionText.innerHTML = this.alt;
+    // }
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    // // Get the <span> element that closes the modal
+    // var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+    // // When the user clicks on <span> (x), close the modal
+    // span.onclick = function() {
+    //     modal.style.display = "none";
+    // }

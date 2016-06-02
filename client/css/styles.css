@@ -45,7 +45,7 @@ a:hover {
 #followertweets {
   /*border: 1px solid black;*/
   height: 100%;
-  padding:0;
+  /*padding:0;*/
 }
 
 #TwitterFollowers {
@@ -151,34 +151,69 @@ footer {
 }
 
 .guide_text {
-  color: green;
-  margin: 1em;
-  font-weight: bold;
-  font-size:1.25em;
+  /*color: #808080;*/
+  margin: .5em;
+  font-weight: lighter;
+  font-size:1.8em;
+  text-decoration: none;
 }
+.guide_text:hover {
+  text-decoration: none;
+
+}
+
+
 .action_text {
-  color: gold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 .feature_text {
-  color: purple;
+  /*color: purple;*/
   /*text-align: left;*/
   font-size: 0.75em;
+  color: #cbb677;
 }
 
+.top_follower_txt {
+    font-weight: lighter;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.light_bkgnd {
+  color:#333333;
+}
+.dark_bkgnd {
+  color: #eeeeee;
+}
 
 .light_gray {
   background-color: rgb(245,245,245);
+  color: #333333;
 }
+
 .dark_gray {
   background-color: rgb(45,45,45);
+  color: #eeeeee;
 }
 .gray {
   background-color: rgb(86,86,86);
+  color: #eeeeee;
 }
 .candidate_block {
   padding-top: 5em;
   padding-bottom: 2em;
+}
+
+#myNavbar {
+  font-size: 17px;
+}
+
+.nav_item {
+  padding-left: 1em;
+  padding-top: .25em;
 }
 
 #navbar {
@@ -221,4 +256,19 @@ footer {
 
 iframe {
   width:100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+.twitter_followers_class {
+    padding-bottom: 5px;
+    margin-bottom: 19px;
 }

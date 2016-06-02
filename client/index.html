@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Election Buzz</title>
   <meta charset="utf-8">
@@ -24,9 +25,9 @@
 
   <style>
 
-
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-inverse" id='navbar'>
     <div class="container-fluid">
@@ -41,233 +42,243 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href='#home'>BEE LOGO </a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#timeline">Tweet Timeline</a></li>
-          <li><a href="#Hillary">Clinton</a></li>
-          <li><a href="#Sanders">Sanders</a></li>
-          <li><a href="#Trump">Trump</a></li>
-          <li><a href="aboutus.html">About</a></li>
+          <li>
+            <a href='#home'><img src="/pictures/bee_logo.png" id="logo" /></a>
+          </li>
+          <li class="nav_item"><a href="#home">Home</a></li>
+          <li class="nav_item"><a href="#Hillary">Clinton</a></li>
+          <li class="nav_item"><a href="#Sanders">Sanders</a></li>
+          <li class="nav_item"><a href="#Trump">Trump</a></li>
+          <li class="nav_item"><a href="#timeline">Tweet Timeline</a></li>
+          <li class="nav_item"><a href="aboutus.html">About</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<a name='home'>
-<div class="container-fluid text-center candidate_block">
-  <div class="row content">
-    <div class="col-sm-2" >
-    </div>
-    <div class="col-sm-8 text-center">
-      <div class='logo_img'>
-      </div>
-      <!-- <img src='images/logo.png'> -->
-      <div class='tagline'> Looking beyond 140 characters </div>
-      <div class='guide_text'> Everyone is tweeting about the election, but what are they saying?</div>
-      <div class='action_text'> We compiled a list of some of the most important election topics. Select one to see how much the candidates and their followers mention it on Twitter: </div>
-      <select name="Theme" class="selectForm">
-  			<option value="Education">Education</option>
-  			<option value="Security">Security</option>
-  			<option value="Immigration">Immigration</option>
-  			<option value="Women">Women</option>
-  			<option value="Healthcare">Healthcare</option>
-  			<option value="Supreme Court">Supreme Court</option>
-  			<option value="Tax">Taxes</option>
-  		</select>
-  		<div id='title_graph'>
-  		  <div class='row'>
-  		    <div class="col-sm-6">
-  		        <h3>Followers</h3>
-  		    </div>
-  		    <div class="col-sm-6">
-  		        <h3>Candidates </h3>
-  		    </div>
-  		  </div>
-  		</div>
-
-      <div id="graph" class="row">
-        <div class= "col-sm-5" id="candidatetweets">
-          <div id="fChart"></div>
+  <a name='home'>
+    <div class="container-fluid text-center candidate_block">
+      <div class="row content">
+        <div class="col-sm-2">
         </div>
-         <div class= "col-sm-2" id="pictures">
-          <table cellspacing="0" cellpadding="0">
-            <tbody>
-              <tr>
-                  <div class='candidatePicture'>
-                  <a href="#Hillary">
-                  <img src='images/hillary.jpg' class='img-circle candidateImg'>
-                  @HillaryClinton
-                  </a>
-                  </div>
-              </tr>
-              <tr>
-                  <div class='candidatePicture'>
-                  <a href="#Sanders">
-                  <img src='images/bernie.jpg' class='img-circle candidateImg'>
-                  @BernieSanders
-                  </a>
-                  </div>
-              </tr>
-               <tr>
-                   <div class='candidatePicture'>
-                   <a href="#Trump">
-                  <img src='images/trump.jpg' class='img-circle candidateImg'>
-                  @realDonaldTrump
-                    </a>
+        <div class="col-sm-8 text-center">
+          <div class='logo_img'>
+          </div>
+          <!-- <img src='images/logo.png'> -->
+          <div class='tagline'> Looking beyond 140 characters </div>
+          <div class='guide_text light_bkgnd'> Everyone is tweeting about the election, but what are they saying?</div>
+          <div class='action_text light_bkgnd'> We compiled a list of some election topics.</div>
+          <div class='action_text light_bkgnd'> Select one to see how much the candidates and their followers mention it on Twitter: </div>
+          <select name="Theme" class="selectForm">
+            <option value="Education">Education</option>
+            <option value="Security">Security</option>
+            <option value="Immigration">Immigration</option>
+            <option value="Women">Women</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Supreme Court">Supreme Court</option>
+            <option value="Tax">Taxes</option>
+            <option value="Jobs">Jobs</option>
+          </select>
+          <div id='title_graph'>
+            <div class='row'>
+              <div class="col-sm-6">
+                <h3>Followers</h3>
+              </div>
+              <div class="col-sm-6">
+                <h3>Candidates </h3>
+              </div>
+            </div>
+          </div>
+
+          <div id="graph" class="row">
+            <div class="col-sm-5" id="candidatetweets">
+              <div id="fChart"></div>
+            </div>
+            <div class="col-sm-2" id="pictures">
+              <table cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <div class='candidatePicture'>
+                      <a href="#Hillary">
+                        <img src='images/hillary.jpg' class='img-circle candidateImg'> @HillaryClinton
+                      </a>
                     </div>
-              </tr>
-            </tbody>
+                  </tr>
+                  <tr>
+                    <div class='candidatePicture'>
+                      <a href="#Sanders">
+                        <img src='images/bernie.jpg' class='img-circle candidateImg'> @BernieSanders
+                      </a>
+                    </div>
+                  </tr>
+                  <tr>
+                    <div class='candidatePicture'>
+                      <a href="#Trump">
+                        <img src='images/trump.jpg' class='img-circle candidateImg'> @realDonaldTrump
+                      </a>
+                    </div>
+                  </tr>
+                </tbody>
 
-          </table>
+              </table>
+            </div>
+            <div class="col-sm-5" id="followertweets">
+              <div id="chart"></div>
+            </div>
+          </div>
+
+          <br>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='feature_text light_bkgnd'> The graphs include the past 3000 tweets by candidates and xxx tweets by candidate's followers. The topics are generated using keywords shown below </div>
+              <div class='feature_text light_bkgnd' id="Topics"> Education includes: loan, college, education, etc.</div>
+            </div>
+          </div>
+          <br>
+          <br>
+
         </div>
-         <div class= "col-sm-5" id="followertweets">
-          <div id="chart"></div>
-        </div>
-      </div>
-
-      <br>
-      <div class='row'>
-        <div class='col-sm-12'>
-          <div class='feature_text'> The graphs include the past 3000 tweets by candidates and xxx tweets by candidate's followers. The topics are generated using keywords shown below </div>
-          <div class='feature_text'> Education includes: college, tuition, student debt, loans, education, etc...</div>
-        </div>
-      </div>
-      <br>
-      <br>
 
       </div>
-
     </div>
-  </div>
-</a>
+  </a>
 
   <a name='Hillary'>
-  <div class="container-fluid text-center light_gray candidate_block">
+    <div class="container-fluid text-center light_gray candidate_block">
       <div class="row content">
         <div class='col-sm-2'></div>
         <div class='col-sm-8'>
 
-                  <div class='results'>
-                      <img src='images/hillary.jpg' class='img-circle candidateProfileImg'>
-                  </div>
-              <div class='candidateName'>Hillary Clinton</div>
-              <div class='row'>
-                <h3>Top Twitter Followers:</h3>
-                <div id="loading_Clinton">
-                    <img id="loading-image_Clinton" src="images/spin.svg" alt="Loading..." />
-                </div>
-              </div>
-              <div class='row' id="TwitterFollowers_Clinton">
-                <div class="row" id='followerProfiles_Clinton'>
-                </div>
-              </div>
-              <!-- <div class="container"> -->
-              <div class='row'>
-                <div class='guide_text'> We looked at a random sample of Clinton's followers. </div>
-                <div class='guide_text'> Choose a day to see what was trending. </div>
-              </div>
-              <!--<div class='row pick_date'>-->
-              <!--   Choose a day: <input type="text" id="datepicker_Clinton">-->
-              <!--</div>-->
-
-              <div class='gallery'>
-                <iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1b4AlVKYwM4W-OBgXUCFJkwE2qWSCTZI8vFG62Qk4S8E&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
-              </div>
+          <div class='results'>
+            <img src='images/hillary.jpg' class='img-circle candidateProfileImg'>
           </div>
-          </div>
-      </div>
-      <script type='text/javascript' src='js/Hillary.js'></script>
-    </a>
-
-    <a name='Sanders'>
-      <div class="container-fluid text-center dark_gray candidate_block">
-          <div class="row content">
-            <div class='col-sm-2'></div>
-            <div class='col-sm-8'>
-
-                      <div class='results'>
-                          <img src='images/bernie.jpg' class='img-circle candidateProfileImg'>
-                      </div>
-                  <div class='candidateName'>Bernie Sanders</div>
-                  <div class='row'>
-                    <h3>Top Twitter Followers:</h3>
-                    <div id="loading_Sanders">
-                        <img id="loading-image_Sanders" src="images/spin.svg" alt="Loading..." />
-                    </div>
-                  </div>
-                  <div class='row' id="TwitterFollowers_Sanders">
-                    <div class="row" id='followerProfiles_Sanders'>
-                    </div>
-                  </div>
-                  <!-- <div class="container"> -->
-                  <div class='row'>
-                    <div class='guide_text'> We looked at a random sample of Sanders' followers. </div>
-                    <div class='guide_text'> Choose a day to see what was trending. </div>
-                  </div>
-                  <div class='row pick_date'>
-                     Choose a day: <input type="text" id="datepicker_Sanders">
-                  </div>
-
-                  <div class='gallery'>
-                    <img src='#' id='galleryImg_Sanders' class='galleryImg'></img>
-                  </div>
-              </div>
-              </div>
-          </div>
-          <script type='text/javascript' src='js/Sanders.js'></script>
-    </a>
-
-    <a name='Trump'>
-      <div class="container-fluid text-center gray candidate_block">
-          <div class="row content">
-            <div class='col-sm-2'></div>
-            <div class='col-sm-8'>
-
-                      <div class='results'>
-                          <img src='images/trump.jpg' class='img-circle candidateProfileImg'>
-                      </div>
-                  <div class='candidateName'>Donald Trump</div>
-                  <div class='row'>
-                    <h3>Top Twitter Followers:</h3>
-                    <div id="loading_Trump">
-                        <img id="loading-image_Trump" src="images/spin.svg" alt="Loading..." />
-                    </div>
-                  </div>
-                  <div class='row' id="TwitterFollowers_Trump">
-                    <div class="row" id='followerProfiles_Trump'>
-                    </div>
-                  </div>
-                  <!-- <div class="container"> -->
-                  <div class='row'>
-                    <div class='guide_text'> We looked at a random sample of Trump's followers. </div>
-                    <div class='guide_text'> Choose a day to see what was trending. </div>
-                  </div>
-                  <div class='row pick_date'>
-                     Choose a day: <input type="text" id="datepicker_Trump">
-                  </div>
-
-                  <div class='gallery'>
-                    <img src='#' id='galleryImg_Trump' class='galleryImg'></img>
-                  </div>
-              </div>
-              </div>
-          </div>
-          <script type='text/javascript' src='js/Trump.js'></script>
-    </a>
-
-    <a name='timeline'>
-      <!-- <script type='text/javascript' src='js/timeline.js'></script> -->
-
-      <div class="container-fluid text-center">
+          <div class='candidateName'>Hillary Clinton</div>
           <div class='row'>
-              <div class='guide_text'>Now it's your turn! Search any word and you will discover how much each candidate's followers mentioned it.</div>
-                    <input type="text" name="word" id='word'>
-                    <button onclick='updateChart()' class="btn btn-primary">Search!</button>
-                      <div id='graph_timeline'></div>
-                  </div>
-                <div class='feature_text'>How does this work? We used a random sample of the last 3000 tweets of 1000 followers for each candidate, attempting to filter out journalists, twitter bots, and influential people </div>
+            <div class='top_follower_txt'>Top Twitter Followers </div>
+            <div id="loading_Clinton">
+              <img id="loading-image_Clinton" src="images/spin.svg" alt="Loading..." />
+            </div>
           </div>
-    </a>
+          <div class='row twitter_followers_class' id="TwitterFollowers_Clinton">
+            <div class="row" id='followerProfiles_Clinton'>
+            </div>
+          </div>
+          <!-- <div class="container"> -->
+          <div class='row'>
+            <div class='guide_text light_bkgnd'> We looked at a random sample of Clinton's followers. </div>
+            <div class='guide_text light_bkgnd'>Choose a day to see what was trending. </div>
+          </div>
+          <!--<div class='row pick_date'>-->
+          <!--   Choose a day: <input type="text" id="datepicker_Clinton">-->
+          <!--</div>-->
+
+          <div class='gallery'>
+            <iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1b4AlVKYwM4W-OBgXUCFJkwE2qWSCTZI8vFG62Qk4S8E&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='js/Hillary.js'></script>
+  </a>
+
+  <a name='Sanders'>
+    <div class="container-fluid text-center dark_gray candidate_block">
+      <div class="row content">
+        <div class='col-sm-2'></div>
+        <div class='col-sm-8'>
+
+          <div class='results'>
+            <img src='images/bernie.jpg' class='img-circle candidateProfileImg'>
+          </div>
+          <div class='candidateName'>Bernie Sanders</div>
+          <div class='row'>
+            <div class='top_follower_txt'>Top Twitter Followers </div>
+            <div id="loading_Sanders">
+              <img id="loading-image_Sanders" src="images/spin.svg" alt="Loading..." />
+            </div>
+          </div>
+          <div class='row twitter_followers_class' id="TwitterFollowers_Sanders">
+            <div class="row" id='followerProfiles_Sanders'>
+            </div>
+          </div>
+          <!-- <div class="container"> -->
+          <div class='row'>
+            <div class='guide_text dark_bkgnd'> We looked at a random sample of Sanders' followers. </div>
+            <div class='guide_text dark_bkgnd'> Choose a day to see what was trending. </div>
+          </div>
+          <!--<div class='row pick_date'>-->
+          <!--   Choose a day: <input type="text" id="datepicker_Sanders">-->
+          <!--</div>-->
+
+          <div class='gallery'>
+            <!--<img src='#' id='galleryImg_Sanders' class='galleryImg'></img>-->
+            <iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1OA7dUWPz24JYhwCB85RW-LTaqYJTRB02qsW-2nbSO9Q&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='js/Sanders.js'></script>
+  </a>
+
+  <a name='Trump'>
+    <div class="container-fluid text-center gray candidate_block">
+      <div class="row content">
+        <div class='col-sm-2'></div>
+        <div class='col-sm-8'>
+
+          <div class='results'>
+            <img src='images/trump.jpg' class='img-circle candidateProfileImg'>
+          </div>
+          <div class='candidateName'>Donald Trump</div>
+          <div class='row'>
+            <div class='top_follower_txt'>Top Twitter Followers </div>
+            <div id="loading_Trump">
+              <img id="loading-image_Trump" src="images/spin.svg" alt="Loading..." />
+            </div>
+          </div>
+          <div class='row twitter_followers_class' id="TwitterFollowers_Trump">
+            <div class="row" id='followerProfiles_Trump'>
+            </div>
+          </div>
+          <!-- <div class="container"> -->
+          <div class='row'>
+            <div class='guide_text dark_bkgnd'> We looked at a random sample of Trump's followers. </div>
+            <div class='guide_text dark_bkgnd'> Choose a day to see what was trending. </div>
+          </div>
+          <!--<div class='row pick_date'>-->
+          <!--   Choose a day: <input type="text" id="datepicker_Trump">-->
+          <!--</div>-->
+
+          <div class='gallery'>
+            <!--<img src='#' id='galleryImg_Trump' class='galleryImg'></img>-->
+            <iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1IYnfUjJ7KCe1Jn8-axDJdjavdkAR_t5coHtiuEYwPKI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='js/Trump.js'></script>
+  </a>
+
+  <a name='timeline'>
+    <!-- <script type='text/javascript' src='js/timeline.js'></script> -->
+
+    <div class="container-fluid text-center">
+      <div class='row'>
+        <div class='col-sm-2'></div>
+        <div class='col-sm-8'>
+          <div class='guide_text'>Now it's your turn! Search any word or phrase and you will discover how much each candidate's followers mentioned that specific word or phrase in their tweets.</div>
+          <input type="text" name="word" id='word'>
+          <button onclick='updateChart()' class="btn btn-primary">Search!</button>
+        </div>
+          <div id='graph_timeline'></div>
+      </div>
+      <div class='feature_text' style='margin-top: 10px;'>How does this work? <br>
+      We used a random sample of the last 3000 tweets of 1000 randomly selected followers for each candidate, attempting to filter out journalists, twitter bots, and influential people.<br>
+      We continuously follow these 3000 Twitter accounts (1000 per candidate) and add their tweets to the database. <br>
+      When you search for a word, we provide you with a weekly count of tweets that include that word in the text of the tweet.<br>
+      We chose to </div>
+    </div>
+  </a>
 
 
 
@@ -276,48 +287,51 @@
 
 </body>
 
-	<script type="text/javascript">
-
+<script type="text/javascript">
   var word = "";
 
   function filterTrump(obj) {
-      return obj.support === "realDonaldTrump";
+    return obj.support === "realDonaldTrump";
   }
 
   function filterClinton(obj) {
-      return obj.support === "HillaryClinton";
+    return obj.support === "HillaryClinton";
   }
 
   function filterSanders(obj) {
-      return obj.support === "BernieSanders";
+    return obj.support === "BernieSanders";
   }
-  function filterDate(obj){
-    return obj.Date > parseDate('2016/00');
+
+  function filterDate(obj) {
+    return obj.Date > parseDate('2016/09');
   }
 
   var allData = null;
-  function updateChart(){
-    var input=$('#word').val();
-    url = 'http://162.243.13.220:8081/api/timeline?word='+input;
+
+  function updateChart() {
+    var input = $('#word').val();
+    intput = input.replace("'", "");
+    intput = input.replace('"', '');
+    url = 'http://162.243.13.220:8081/api/timeline?word=' + input;
     console.log(url)
-    // return;
-    $.getJSON(url,function(data){
+      // return;
+    $.getJSON(url, function(data) {
       data.forEach(function(d) {
-          // if ()(d.Date.length)==6)
-          // console.log(d.Date.length);
-          if (d.Date.length == 6){
-            d.Date  = d.Date.substr(0,5)+'0'+d.Date.substr(5,1);//+'/0';
-          }
-          else{
-            d.Date = d.Date;//+'/0';
-          }
-          // console.log(d.Date);
-          // console.log(d.Date+'-'+parseDate(d.Date));
-          d.Date = parseDate(d.Date);
-          // console.log(d.Date);
+        // if ()(d.Date.length)==6)
+        // console.log(d.Date.length);
+        if (d.Date.length == 6) {
+          d.Date = d.Date.substr(0, 5) + '0' + d.Date.substr(5, 1); //+'/0';
+        }
+        else {
+          d.Date = d.Date; //+'/0';
+        }
+        // console.log(d.Date);
+        // console.log(d.Date+'-'+parseDate(d.Date));
+        d.Date = parseDate(d.Date);
+        // console.log(d.Date);
       });
       data = data.filter(filterDate);
-      data = data.sort(function(a,b){
+      data = data.sort(function(a, b) {
         return +a.Date - b.Date;
       });
       allData = data;
@@ -326,11 +340,15 @@
       var sandersData = data.filter(filterSanders);
       // console.table(data);
 
-      x.domain(d3.extent(data, function(d) { return d.Date;}));
-      y.domain(d3.extent(data, function(d) {return d.Ct; }));
+      x.domain(d3.extent(data, function(d) {
+        return d.Date;
+      }));
+      y.domain(d3.extent(data, function(d) {
+        return d.Ct;
+      }));
 
 
-      svg_timeline.select ('.x.axis')
+      svg_timeline.select('.x.axis')
         .call(xAxis);
 
       svg_timeline.select('.y.axis')
@@ -339,120 +357,138 @@
       svg_timeline.select('.x.grid')
         .attr("transform", "translate(0," + height + ")")
         .call(make_x_axis()
-            .tickSize(-height, 0, 0)
-            .tickFormat("")
+          .tickSize(-height, 0, 0)
+          .tickFormat("")
         );
 
       svg_timeline.select('.y.grid')
-      .call(make_y_axis()
+        .call(make_y_axis()
           .tickSize(-width, 0, 0)
           .tickFormat("")
-      )
+        )
 
 
       allDots = svg_timeline.selectAll('circle')
-          .data(allData);
+        .data(allData);
 
       allDots.enter()
-          .append('circle');
+        .append('circle');
 
       allDots.exit().remove();
 
       allDots.transition()
-          .attr('cx',function(d) { return x(d.Date); })
-          .attr('cy',function(d) { return y(d.Ct);})
-          .attr('r','3px')
-          .attr("stroke",function(d){
-            // console.log('hihi');
-            if (d.support === 'HillaryClinton')
-            {
-              return 'blue';
-            }
-            if (d.support === 'BernieSanders')
-            {
-              return 'green';
-            }
-            if (d.support === 'realDonaldTrump')
-            {
-              return 'red';
-            }
-          })
-          .attr('data-legend',function(d){ return d.support;})
-          .attr("fill",function(d){
-            console.log('hihi');
-            if (d.support === 'HillaryClinton')
-            {
-              return 'blue';
-            }
-            if (d.support === 'BernieSanders')
-            {
-              return 'green';
-            }
-            if (d.support === 'realDonaldTrump')
-            {
-              return 'red';
-            }
-          });
+        .attr('cx', function(d) {
+          return x(d.Date);
+        })
+        .attr('cy', function(d) {
+          return y(d.Ct);
+        })
+        .attr('r', '3px')
+        .attr("stroke", function(d) {
+          // console.log('hihi');
+          if (d.support === 'HillaryClinton') {
+            return 'blue';
+          }
+          if (d.support === 'BernieSanders') {
+            return 'green';
+          }
+          if (d.support === 'realDonaldTrump') {
+            return 'red';
+          }
+        })
+        .attr('data-legend', function(d) {
+          return d.support;
+        })
+        .attr("fill", function(d) {
+          console.log('hihi');
+          if (d.support === 'HillaryClinton') {
+            return 'blue';
+          }
+          if (d.support === 'BernieSanders') {
+            return 'green';
+          }
+          if (d.support === 'realDonaldTrump') {
+            return 'red';
+          }
+        });
 
-          legend.attr("transform","translate(50,30)")
-          .style("font-size","15px")
-          .call(d3.legend);
-      });
-      return;
+
+      trumpLine.datum(trumpData)
+        .attr('d', line);
+
+      clintonLine.datum(clintonData)
+        .attr('d', line);
+
+      sandersLine.datum(sandersData)
+        .attr('d', line);
+
+
+      legend.attr("transform", "translate(50,30)")
+        .style("font-size", "15px")
+        .call(d3.legend);
+    });
+    return;
   }
 
-  var margin = {top: 20, right: 80, bottom: 30, left: 50},
-  width = 900 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom;
+  var margin = {
+      top: 20,
+      right: 80,
+      bottom: 30,
+      left: 50
+    },
+    width = 900 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
   var parseDate = d3.time.format("%Y/%U").parse;
 
   var x = d3.time.scale()
-      .range([0, width]);
+    .range([0, width]);
 
   var y = d3.scale.linear()
-      .range([height, 0]);
+    .range([height, 0]);
 
   var color = d3.scale.category10();
   var xAxis = d3.svg.axis()
-      .scale(x)
-      .orient("bottom")
-      .ticks(8);
+    .scale(x)
+    .orient("bottom")
+    .ticks(8);
 
 
   var yAxis = d3.svg.axis()
-      .scale(y)
-      .orient("left")
-      .ticks(5);
+    .scale(y)
+    .orient("left")
+    .ticks(5);
 
   function make_x_axis() {
-      return d3.svg.axis()
-          .scale(x)
-           .orient("bottom")
-           .ticks(10)
+    return d3.svg.axis()
+      .scale(x)
+      .orient("bottom")
+      .ticks(10)
   };
 
   function make_y_axis() {
-      return d3.svg.axis()
-          .scale(y)
-          .orient("left")
-          .ticks(10)
+    return d3.svg.axis()
+      .scale(y)
+      .orient("left")
+      .ticks(10)
   };
 
   var line = d3.svg.line()
-      // .interpolate("basis")
-      .x(function(d) {
-          console.log(d.Date+'-'+x(d.Date));
-          return x(d.Date); })
-      .y(function(d) {
-        console.log(d.Date+'-'+y(d.Date));
-        return y(d.Ct); });
+    // .interpolate("basis")
+    .x(function(d) {
+      // console.log(d.Date+'-'+x(d.Date));
+      return x(d.Date);
+    })
+    .y(function(d) {
+      // console.log(d.Date+'-'+y(d.Date));
+      return y(d.Ct);
+    });
 
   var svg_timeline = d3.select("#graph_timeline").append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
   var trumpLine = null;
@@ -468,42 +504,46 @@
 
   var url = 'http://162.243.13.220:8081/api/timeline?word=women'
   $('#word').val('women');
-  $.getJSON(url,function(data){
+  $.getJSON(url, function(data) {
 
     // console.table(data);
-      data.forEach(function(d) {
-          // if ()(d.Date.length)==6)
-          // console.log(d.Date.length);
-          if (d.Date.length == 6){
-            d.Date  = d.Date.substr(0,5)+'0'+d.Date.substr(5,1);//+'/0';
-          }
-          else{
-            d.Date = d.Date;//+'/0';
-          }
-          // console.log(d.Date);
-          // console.log(d.Date+'-'+parseDate(d.Date));
-          d.Date = parseDate(d.Date);
-          // console.log(d.Date);
-      });
-      data = data.filter(filterDate);
-      data = data.sort(function(a,b){
-        return +a.Date - b.Date;
-      });
-      allData = data;
-      var trumpData = data.filter(filterTrump);
-      var clintonData = data.filter(filterClinton);
-      var sandersData = data.filter(filterSanders);
+    data.forEach(function(d) {
+      // if ()(d.Date.length)==6)
+      // console.log(d.Date.length);
+      if (d.Date.length == 6) {
+        d.Date = d.Date.substr(0, 5) + '0' + d.Date.substr(5, 1); //+'/0';
+      }
+      else {
+        d.Date = d.Date; //+'/0';
+      }
+      // console.log(d.Date);
+      // console.log(d.Date+'-'+parseDate(d.Date));
+      d.Date = parseDate(d.Date);
+      // console.log(d.Date);
+    });
+    data = data.filter(filterDate);
+    data = data.sort(function(a, b) {
+      return +a.Date - b.Date;
+    });
+    allData = data;
+    var trumpData = data.filter(filterTrump);
+    var clintonData = data.filter(filterClinton);
+    var sandersData = data.filter(filterSanders);
 
-      // console.table(trumpData);
-      x.domain(d3.extent(data, function(d) { return d.Date;}));
-      y.domain(d3.extent(data, function(d) {return d.Ct; }));
+    // console.table(trumpData);
+    x.domain(d3.extent(data, function(d) {
+      return d.Date;
+    }));
+    y.domain(d3.extent(data, function(d) {
+      return d.Ct;
+    }));
 
-      xAxes = svg_timeline.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+    xAxes = svg_timeline.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
 
-      yAxes = svg_timeline.append("g")
+    yAxes = svg_timeline.append("g")
       .attr("class", "y axis")
       .call(yAxis)
       .append("text")
@@ -512,84 +552,84 @@
       .attr("dy", ".71em")
       .style("text-anchor", "end")
 
-      yGrid = svg_timeline.append("g")
+    yGrid = svg_timeline.append("g")
       .attr("class", "y grid")
       .call(make_y_axis()
-          .tickSize(-width, 0, 0)
-          .tickFormat("")
+        .tickSize(-width, 0, 0)
+        .tickFormat("")
       )
 
-      xGrid = svg_timeline.append("g")
+    xGrid = svg_timeline.append("g")
       .attr("class", "x grid")
       .attr("transform", "translate(0," + height + ")")
       .call(make_x_axis()
-          .tickSize(-height, 0, 0)
-          .tickFormat("")
+        .tickSize(-height, 0, 0)
+        .tickFormat("")
       );
-      // .text("Price ($)");
+    // .text("Price ($)");
 
-      allDots = svg_timeline.selectAll('circle')
-          .data(data)
-          .enter()
-          .append('circle')
-          .attr('cx',function(d) { return x(d.Date); })
-          .attr('cy',function(d) { return y(d.Ct);})
-          .attr('r','3px')
-          .attr("stroke",function(d){
-            console.log('hihi');
-            if (d.support === 'HillaryClinton')
-            {
-              return 'blue';
-            }
-            if (d.support === 'BernieSanders')
-            {
-              return 'green';
-            }
-            if (d.support === 'realDonaldTrump')
-            {
-              return 'red';
-            }
-          })
-          .attr('data-legend',function(d){ return d.support;})
-          .attr("fill",function(d){
-            console.log('hihi');
-            if (d.support === 'HillaryClinton')
-            {
-              return 'blue';
-            }
-            if (d.support === 'BernieSanders')
-            {
-              return 'green';
-            }
-            if (d.support === 'realDonaldTrump')
-            {
-              return 'red';
-            }
-          });
+    allDots = svg_timeline.selectAll('circle')
+      .data(data)
+      .enter()
+      .append('circle')
+      .attr('cx', function(d) {
+        return x(d.Date);
+      })
+      .attr('cy', function(d) {
+        return y(d.Ct);
+      })
+      .attr('r', '3px')
+      .attr("stroke", function(d) {
+        console.log('hihi');
+        if (d.support === 'HillaryClinton') {
+          return 'blue';
+        }
+        if (d.support === 'BernieSanders') {
+          return 'green';
+        }
+        if (d.support === 'realDonaldTrump') {
+          return 'red';
+        }
+      })
+      .attr('data-legend', function(d) {
+        return d.support;
+      })
+      .attr("fill", function(d) {
+        console.log('hihi');
+        if (d.support === 'HillaryClinton') {
+          return 'blue';
+        }
+        if (d.support === 'BernieSanders') {
+          return 'green';
+        }
+        if (d.support === 'realDonaldTrump') {
+          return 'red';
+        }
+      });
 
-     legend = svg_timeline.append("g")
-            .attr("class","legend")
-            .attr("transform","translate(50,30)")
-            .style("font-size","15px")
-            .call(d3.legend);
+    legend = svg_timeline.append("g")
+      .attr("class", "legend")
+      .attr("transform", "translate(50,30)")
+      .style("font-size", "15px")
+      .call(d3.legend);
 
-      // trumpLine = svg_timeline.append('path')
-      //     .datum(trumpData)
-      //     .attr('class','line')
-      //     .attr('d',line)
-      //     .style('stroke','red');
-      //
-      // clintonLine = svg_timeline_timeline.append('path')
-      //     .datum(clintonData)
-      //     .attr('class','line')
-      //     .attr('d',line)
-      //     .style('stroke','blue');
-      //
-      // sandersLine = svg_timeline.append('path')
-      //     .datum(sandersData)
-      //     .attr('class','line')
-      //     .attr('d',line)
-      //     .style('stroke','green');
+    trumpLine = svg_timeline.append('path')
+      .datum(trumpData)
+      .attr('class', 'line trumpLine')
+      .attr('d', line)
+      .style('stroke', 'red');
+
+    clintonLine = svg_timeline.append('path')
+      .datum(clintonData)
+      .attr('class', 'line clintonLine')
+      .attr('d', line)
+      .style('stroke', 'blue');
+
+    sandersLine = svg_timeline.append('path')
+      .datum(sandersData)
+      .attr('class', 'line sandersLine')
+      .attr('d', line)
+      .style('stroke', 'green');
 
 
 
@@ -598,202 +638,345 @@
 
 
   $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
       }
-    }
+    });
   });
-});
 
-		var theme = "Education";
-		function rightTheme(obj){
-			return obj.Topic == theme;
-		}
+  var theme = "Education";
 
-		var w =  $('#followertweets').width();
-		var   h = $('#followertweets').height();
+  function rightTheme(obj) {
+    return obj.Topic == theme;
+  }
 
-		var svg = d3.select("#chart")
-			.append("svg")
-			.attr("class",'candidatechart')
-			.attr("width", w)
-			.attr("height", h);
-		var max_n = 10;
+  var padding = 30;
+  var w = $('#followertweets').width() - padding;
+  var h = 250; //$('#followertweets').height()-padding;
 
-		d3.json("../tweet_analysis_py/tweetdata.json", function(json) {
+  var svg = d3.select("#chart")
+    .append("svg")
+    .attr("class", 'candidatechart')
+    .attr("width", w + padding)
+    .attr("height", h + padding);
+  var max_n = 15;
 
-			var data = json.Themes.filter(rightTheme);
+  var xAxes0 = null;
+  var yAxes0 = null;
+  var yGrid0 = null;
+  var xGrid0 = null;
 
-			var data = data[0].Data;
-			for (var d in data) {
-				console.log(d);
-				max_n = Math.max(data[d].Tweets, max_n);
-				// console.log(data.Data[d]);
-			}
-			console.log(max_n);
-			// debugger;
+  var x0 = d3.scale.linear()
+    .range([0, w]);
 
-			var dx = w / max_n;
-			var dy = h / data.length;
+  var xAxis0 = d3.svg.axis()
+    .scale(x0)
+    .orient("bottom")
+    .ticks(5)
+    .tickFormat(function(d) {
+      return d + "%";
+    });
 
+  function make_x_axis0() {
+    return d3.svg.axis()
+      .scale(x0)
+      .orient("bottom")
+      .ticks(5)
+  };
 
+  d3.json("data/tweetdata.json", function(json) {
 
-			// bars
+    var data = json.Themes.filter(rightTheme);
 
-			var bars = svg.selectAll(".bar")
-				.data(data)
-				.enter()
-				.append("rect")
-				.attr("class", function(d, i) {return "bar " + d.Name;})
-				.attr("x", function(d, i) {return 0;})
-				.attr("y", function(d, i) {return dy*i;})
-				.attr("width", function(d, i) {return dx*d.Tweets})
-				.attr("height", dy*.95)
-				.attr("rx",2)
-				.attr("ry",2);
+    var data = data[0].Data;
+    for (var d in data) {
+      console.log(d);
+      max_n = Math.max(data[d].Tweets, max_n);
+      // console.log(data.Data[d]);
+    }
+    console.log(max_n);
+    // debugger;
 
-			// labels
-			var text = svg.selectAll("text")
-				.data(data)
-				.enter()
-				.append("text")
-				.attr("class", function(d, i) {return "label " + d.Name;})
-				.attr("x", function(d,i) { return dx*d.Tweets+5})
-				.attr("y", function(d, i) {return dy*i + dy/2;})
-				.text( function(d) {return Number(d.Tweets).toFixed(1)  + "% ("+d.Number+" tweets)";})
-				.style("font-weight", "bold");
-		});
+    var dx = w / max_n;
+    var dy = h / data.length;
 
+    x0.domain([0, max_n]);
 
-		$('select').on('change', function(){
-			console.log("Theme changed to: ",this.value);
-			theme = this.value;
-			d3.json("../tweet_analysis_py/tweetdata.json",function(json){
-
-				var data = json.Themes.filter(rightTheme);
-
-				var data = data[0].Data;
-				for (var d in data) {
-					console.log(d);
-					max_n = Math.max(data[d].Tweets, max_n);
-					// console.log(data.Data[d]);
-				}
-				console.log(max_n);
-				// debugger;
-
-				var dx = w / max_n;
-				var dy = h / data.length;
-
-				svg.selectAll(".bar")
-					.data(data)
-					.transition()
-					.attr("width", function(d, i) {return dx*d.Tweets});
-
-				svg.selectAll("text")
-					.data(data)
-					.transition()
-					.attr("x", function(d,i) { return dx*d.Tweets+5})
-					.text( function(d) {return Number(d.Tweets).toFixed(1)  + "% ("+d.Number+" tweets)";});
-			});
-		});
+    xAxes0 = svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(10," + (h) + ")")
+      .call(xAxis0)
 
 
-		///////////////////////////////////////////////////////////////
-		/////////////////////////// FOLLOWERS /////////////////////////
+    xGrid0 = svg.append("g")
+      .attr("class", "x grid")
+      .attr("transform", "translate(10," + (h) + ")")
+      .call(make_x_axis0()
+        .tickSize(-h, 0, 0)
+        .tickFormat("")
+      );
+    // bars
+
+    var bars = svg.selectAll(".bar")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("class", function(d, i) {
+        return "bar " + d.Name;
+      })
+      .attr("x", function(d, i) {
+        console.log(d.Name + d.Tweets)
+        return 10;
+      })
+      .attr("y", function(d, i) {
+        return dy * i;
+      })
+      .attr("width", function(d, i) {
+        return dx * d.Tweets
+      })
+      .attr("height", dy * .95)
+      .attr("rx", 2)
+      .attr("ry", 2);
+
+    // labels
+    var text = svg.selectAll(".label")
+      .data(data)
+      .enter()
+      .append("text")
+      .attr("class", function(d, i) {
+        return "labels label " + d.Name;
+      })
+      .attr("x", function(d, i) {
+        return dx * d.Tweets + 10
+      })
+      .attr("y", function(d, i) {
+        return dy * i + dy / 2;
+      })
+      .text(function(d) {
+        return "(" + d.Number + " tweets)";
+      })
+      .style("font-weight", "bold");
+  });
+
+  $('select').on('change', function() {
+    console.log("Theme changed to: ", this.value);
+    theme = this.value;
+    d3.json("data/tweetdata.json", function(json) {
+
+      var data = json.Themes.filter(rightTheme);
+
+      var data = data[0].Data;
+      for (var d in data) {
+        // 	console.log(d);
+        max_n = Math.max(data[d].Tweets, max_n);
+        // console.log(data.Data[d]);
+      }
+      console.log(max_n);
+      // debugger;
+
+      var dx = w / max_n;
+      var dy = h / data.length;
+
+      svg.selectAll(".bar")
+        .data(data)
+        .transition()
+        .attr("width", function(d, i) {
+          return dx * d.Tweets
+        });
+
+      svg.selectAll(".labels")
+        .data(data)
+        .transition()
+        .attr("x", function(d, i) {
+          return dx * d.Tweets + 10
+        })
+        .text(function(d) {
+          return "(" + d.Number + " tweets)";
+        });
+    });
+  });
+
+  ///////////////////////////////////////////////////////////////
+  /////////////////////////// FOLLOWERS /////////////////////////
+
+  var w1 = $('#candidatetweets').width() - padding;
+  var h1 = 250; //$('#followertweets').height()-padding;
+
+  var svg1 = d3.select("#fChart")
+    .append("svg")
+    .attr("class", 'candidatechart')
+    .attr("width", w1 + padding + 20)
+    .attr("height", h1 + padding);
+  var max_n1 = 5;
+  console.log("MAX_N1=" + max_n1);
+  var xAxes1 = null;
+  var yAxes1 = null;
+  var yGrid1 = null;
+  var xGrid1 = null;
+
+  var x1 = d3.scale.linear()
+    .range([w1, 0]);
+
+  var xAxis1 = d3.svg.axis()
+    .scale(x1)
+    .orient("bottom")
+    .ticks(5)
+    .tickFormat(function(d) {
+      return d + "%";
+    });
+
+  function make_x_axis1() {
+    return d3.svg.axis()
+      .scale(x1)
+      .orient("bottom")
+      .ticks(5)
+  };
+
+  d3.json("data/tweetdata_followers.json", function(json) {
+
+    var data = json.Themes.filter(rightTheme);
+
+    var data = data[0].Data;
+    for (var d in data) {
+      // console.log(d);
+      max_n1 = Math.max(data[d].Tweets, max_n1);
+      // console.log(data.Data[d]);
+    }
+    console.log("MAX_N1=" + max_n1);
+    // debugger;
+    var dx = w1 / max_n1;
+    var dy = h1 / data.length;
+
+    x1.domain([0, max_n1])
+
+    xAxes1 = svg1.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(20," + (h1) + ")")
+      .call(xAxis1)
 
 
-		var w1 =  $('#candidatetweets').width();
-		var h1 = $('#candidatetweets').height();
+    xGrid1 = svg1.append("g")
+      .attr("class", "x grid")
+      .attr("transform", "translate(20," + (h1) + ")")
+      .call(make_x_axis1()
+        .tickSize(-h1, 0, 0)
+        .tickFormat("")
+      );
 
-		var svg1 = d3.select("#fChart")
-			.append("svg")
-			.attr("class",'followerChart')
-			.attr("width", w)
-			.attr("height", h);
-		var max_n1 = 10;
+    // bars
+    // var randNumbers = [(Math.random() * 8), (Math.random() * 8), (Math.random() * 8)]
+    // console.log(randNumbers);
 
-		d3.json("../tweet_analysis_py/tweetdata_followers.json", function(json) {
 
-			var data = json.Themes.filter(rightTheme);
+    var bars = svg1.selectAll(".bar")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("class", function(d, i) {
+        return "bar " + d.Name;
+      })
+      .attr("x", function(d, i) {
+        console.log('FOLLOW' + d.Name + d.Tweets)
+        return w1 - dx * d.Tweets + 20;
+      })
+      .attr("y", function(d, i) {
+        return dy * i;
+      })
+      .attr("width", function(d, i) {
+        return dx * d.Tweets;
+      })
+      .attr("height", dy * .95)
+      .attr("rx", 2)
+      .attr("ry", 2);
 
-			var data = data[0].Data;
-			for (var d in data) {
-				// console.log(d);
-				max_n = Math.max(data[d].Tweets, max_n);
-				// console.log(data.Data[d]);
-			}
-		// 	console.log(max_n);
-			// debugger;
 
-			var dx = w1 / max_n1;
-			var dy = h1 / data.length;
+    var text = svg1.selectAll(".label")
+      .data(data)
+      .enter()
+      .append("text")
+      .attr("class", function(d, i) {
+        return "labels label " + d.Name;
+      })
+      .attr("x", function(d, i) {
+        return w1 - dx * d.Tweets - 40
+      })
+      .attr("y", function(d, i) {
+        return dy * i + dy / 2;
+      })
+      .text(function(d, i) {
+        return '';
+      })
+      .style("font-weight", "bold");
+  });
 
-			// bars
-			var randNumbers = [(Math.random() * 8),(Math.random() * 8),(Math.random() * 8)]
-      console.log(randNumbers);
-			var bars = svg1.selectAll(".bar")
-				.data(data)
-				.enter()
-				.append("rect")
-				.attr("class", function(d, i) {return "bar " + d.Name;})
-				.attr("x", function(d, i) {return w1-dx*randNumbers[i];})
-				.attr("y", function(d, i) {return dy*i;})
-				.attr("width", function(d, i) {return dx*randNumbers[i]})
-				.attr("height", dy*.95)
-				.attr("rx",2)
-				.attr("ry",2);
+  $('select').on('change', function() {
+    theme = this.value;
+    d3.json("data/topic_dictionary.json", function(json) {
+      console.log("json");
 
-			// labels
-			var text = svg1.selectAll("text")
-				.data(data)
-				.enter()
-				.append("text")
-				.attr("class", function(d, i) {return "label " + d.Name;})
-				.attr("x", function(d,i) { return w1-dx*randNumbers[i]-40})
-				.attr("y", function(d, i) {return dy*i + dy/2;})
-				.text( function(d,i) {return Number(randNumbers[i]).toFixed(1)  + "%";})
-				.style("font-weight", "bold");
-		});
+      var Topics = json["Topics"];
+      var numKeyWords = 3;
+      for (var key in Topics) {
+        if (theme === key) {
+          var Topic_Str = "";
+          for (var i = 0; i < numKeyWords; i++) {
+            Topic = Topics[key];
+            Topic_Str = Topic_Str + " " + Topic[i] + ",";
+            if (i === numKeyWords - 1) {
+              Topic_Str += " etc."
+            }
+          }
+          $("#Topics").text(theme + " includes: " + Topic_Str);
+        }
+      }
+    });
 
-		$('select').on('change', function(){
-			theme = this.value;
-			d3.json("../tweet_analysis_py/tweetdata_followers.json",function(json,error){
-        if (error) return console.warn(error);
+    d3.json("data/tweetdata_followers.json", function(json) {
 
-				var data = json.Themes.filter(rightTheme);
+      var data = json.Themes.filter(rightTheme);
 
-				var data = data[0].Data;
-				for (var d in data) {
-					console.log(d);
-					max_n1 = Math.max(data[d].Tweets, max_n);
-					// console.log(data.Data[d]);
-				}
-				console.log(max_n1);
-				// debugger;
+      var data = data[0].Data;
+      for (var d in data) {
+        console.log(d);
+        max_n1 = Math.max(data[d].Tweets, max_n1);
+        // console.log(data.Data[d]);
+      }
+      // debugger;
 
-			  var randNumbers = [(Math.random() * 8),(Math.random() * 8),(Math.random() * 8)]
-				var dx = w1 / max_n1;
-				var dy = h1 / data.length;
+      // var randNumbers = [(Math.random() * 8), (Math.random() * 8), (Math.random() * 8)]
+      var dx = w1 / max_n1;
+      var dy = h1 / data.length;
 
-				svg1.selectAll(".bar")
-					.data(data)
-					.transition()
-					.attr("x",function(d,i) { return w1-dx*randNumbers[i]})
-					.attr("width", function(d, i) {return dx*randNumbers[i]});
+      svg1.selectAll(".bar")
+        .data(data)
+        .transition()
+        .attr("x", function(d, i) {
+          console.log('FOLLOW' + d.Name + d.Tweets)
+          return w1 - dx * d.Tweets + 20;
+        })
+        .attr("width", function(d, i) {
+          return dx * d.Tweets
+        });
 
-				svg1.selectAll("text")
-					.data(data)
-					.transition()
-					.attr("x", function(d,i) { return w1-dx*randNumbers[i]-40})
-					.text( function(d, i) {return Number(randNumbers[i]).toFixed(1)  + "%";});
-			});
-		});
-	</script>
+      svg1.selectAll(".label")
+        .data(data)
+        .transition()
+        .attr("x", function(d, i) {
+          return w1 - dx * d.Tweets - 40
+        })
+        .text(function(d, i) {
+          return '';
+        });
+    });
+  });
+</script>
+
 </html>
