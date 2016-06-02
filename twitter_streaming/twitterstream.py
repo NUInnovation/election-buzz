@@ -1,8 +1,38 @@
-execfile('connect.py')
+from tweepy import Stream
+from tweepy import OAuthHandler
+from tweepy.streaming import StreamListener
+import json 
+import time
 
-def update_user(user):
+import MySQLdb as mdb
+
+
+trump_support = ["#TrumpTrain","#MakeAmericaGreatAgain",'#Trump2016','#VoteTrump']
+bernie_support = ['#FeelTheBern','#Bernie2016','#Bernie2016']
+hillary_support = ['#ImWithHer','#Hillary2016','#VoteHillary2016']
+
+
+
+con = mdb.connect(host='localhost', user='####',passwd='####', db='tweet_db')
+cur = con.cursor()
+
+con.set_character_set('utf8')
+cur.execute('SET NAMES utf8;')
+cur.execute('SET CHARACTER SET utf8;')
+cur.execute('SET character_set_connection=utf8;')
+
+#consumer key, consumer secret, access token, access secret.
+
+
+
+auth = OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+#new_users = 0
+
+def update_user(user,txt):
     """ Adds or updates a user to the list of users"""
-
+    # no need to update user. we have information on them
+    #return;
     user_id = str(user['id'])
     username = user['screen_name'].replace("'","''")
     location = user['location']
@@ -15,23 +45,46 @@ def update_user(user):
     user_lang = user['lang']
     user_statuses = str(user['statuses_count'])
     user_created = str(user['created_at'])
+    user_picture_url = str(user["profile_image_url"]).replace('_normal','');
     tstamp_user = time.strftime('%Y-%m-%d %H:%M:%S', time.strptime(user_created,'%a %b %d %H:%M:%S +0000 %Y'))
 
     description = ' '
     if 'description' in user.keys():
 	if not (user['description'] == None):        
 		description = user['description'].replace("'","''")
-        
+    
+    # figure out who they support
+    trump = False
+    bernie = False
+    hillary = False
+    for msg in trump_support:
+        trump = trump or (msg in txt)
+    for msg in bernie_support:
+	bernie = bernie or (msg in txt)
+    for msg in hillary_support:
+	hillary = hillary or (msg in txt)
 
-    sql = "INSERT INTO users (user_id, screen_name, follower_count, user_created, verified, status_count, description) VALUES "
-    sql += "("+user_id+ ",'" + username +"'," +user_followers +",'" +tstamp_user + "'," + user_verified + "," + user_statuses + ",'"+description+"')"
-    sql += " ON DUPLICATE KEY UPDATE follower_count="+user_followers+", status_count="+user_statuses+";"
+    trump = int(trump)
+    bernie = int(bernie)
+    hillary = int(hillary)
+
+    sql = "INSERT INTO users (user_id, screen_name, follower_count, user_created, verified, status_count, description, follow_trump, follow_clinton, follow_sanders, picture_url) VALUES "
+    sql += "("+user_id+ ",'" + username +"'," +user_followers +",'" +tstamp_user + "'," + user_verified + "," + user_statuses + ",'"+description+"',"+str(trump)+","+str(hillary)+","+str(bernie)+",'"+user_picture_url+"')"
+    sql += " ON DUPLICATE KEY UPDATE picture_url='"+user_picture_url+"', follower_count="+user_followers+", status_count="+user_statuses+";"
+    print trump,bernie,hillary,txt
 	
  #   if new_users%100 == 0:
 #	print "new user, total: ",new_users
  #   new_users +=1
     #print sql 
-    cur.execute(sql)
+    try:
+        cur.execute(sql)
+    except mdb.IntegrityError, e:
+        print "Some integrity error",e
+    except mdb.Error, e:
+        print "Some standard error",e
+    except mdb.Warning, e:
+        print "Some warning",e
     con.commit()
 
     return 
@@ -45,7 +98,7 @@ def update_tweet(tweet,retweet):
   #  if total_tweets % 100 == 0:
 #	print "total_tweets: ",total_tweets
 
-    print "Tweet",retweet
+#    print "Retweet",retweet
 #    print tweet
 
     if 'text' in tweet.keys():
@@ -73,7 +126,7 @@ def update_tweet(tweet,retweet):
         retweeted_user = tweet['retweeted_status']['user']
 
         # save information of retweeted account 
-        update_user(retweeted_user)
+        update_user(retweeted_user,tweet['retweeted_status']['text'])
         # and update the original tweet as well (if existed)
         update_tweet(tweet['retweeted_status'],True)
         
@@ -88,7 +141,14 @@ def update_tweet(tweet,retweet):
     else:
 	sql += "ON DUPLICATE KEY UPDATE tweet_id="+id
     # print sql 
-    cur.execute(sql)
+    try:
+        cur.execute(sql)
+    except mdb.IntegrityError, e:
+        print "Some integrity error",e
+    except mdb.Error, e:
+        print "Some standard error",e
+    except mdb.Warning, e:
+        print "Some warning",e
 
     # print username,txt
     # print sql
@@ -106,8 +166,11 @@ class listener(StreamListener):
         #print data
         #data goes here 
         tweet = json.loads(data)
-
-        update_user(tweet['user'])
+	if 'text' in tweet.keys():
+		txt = tweet['text'].replace("'","''").replace('"','""')
+	else:
+		return
+        update_user(tweet['user'],txt)
         update_tweet(tweet,False)
 
 
@@ -117,5 +180,9 @@ class listener(StreamListener):
         print status
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["@realDonaldTrump","@TedCruz","@HillaryClinton","@BernieSanders",'@JohnKasich'])
+
+
+
+
+twitterStream.filter(track=["#TrumpTrain","#MakeAmericaGreatAgain",'#Trump2016','#VoteTrump','#FeelTheBern','#ImWithHer','#Hillary2016','#VoteHillary2016','#Bernie2016','#Bernie2016'])
         
