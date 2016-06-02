@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "electionbuzztimeline1",
+  "private_key_id": "e6a4767e969668974cb434fff3b4e14bb79a7b31",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbFCJx98IYT10E\nBdZ8wjeKOjuU1fegvyGBCUjmLlWIi0xgYELKyNOribez86wr9WsOZHaK3wpbY2fh\ndkBbMKMAsH+MH3EJOaq51XUEkzkqgArWut8cD2fpp9gNs1QQBM0OvCFl2WT6p4c9\nUe7cy2EFgmQLqALvKFcTGGIDIXxK69okjNycA8LH/uvns5znJz5bjXd7lYL3A1L7\nOHlLxoaLlgFnAfkN+tvv3GdbGPDxvPP4Z7DrFEQa/qLEeD5Nzyk06UrLJMkgW88P\nUgQD5skeFG+09k1WGP3fWom3qWyWBMb+MYvIKHTjK8DTEeVHQedhDoN388qCPprF\nFdc46dMpAgMBAAECggEAKEzQMrvG9dhR/MSjm6JBGqvNZf1Ar8Zbp5PJHQA3fBdv\nDrCVSutrjm1ojtwpBvdtDb1vzODvaRZpHX9EdC4sffZf/wMAtfwFcOuW0EyOE4xY\nxLqlVj5uq5rRm6XZl5wXydd7+mLHShgVHgtXvosfuHXNF/ZeZNYf4rd4aQXfrfw4\nLm6+BS61sY03uDKVv4bFN4fhteMsYzLwlvix1yLT3Vq/+26kritNjtZrcQAgtrS/\nhvZKYmMjWMBKaj3TQpGopI6N3MsIPHmQSBcHMTx0D0ASjdTe21SEDnFSWosZwQEW\nrmmwnFm/sBIyNAR9WmzPFCYcCTM4BYxyYRWyNDD3gQKBgQD8NSaEmatexxexKnYi\nd5X5YkXdqzf7ipFwK9e4Nzdy5N9KHg86mMj8Yx5j4EdoBy4IqVl3qHoowK1u3q70\n3DOWkCkmvyYgaSQDBYCEqS8JyL7FnsMfLTEg9o9h99pvKn7qs0qNjMhFFU922MQD\nkyD8zRnGeMJBPmfk/dekv1/68QKBgQCdaRhiUmRAlek1oyf0P6tptLwmmgN05jl2\nEvwm3E0iSgF6JkLnobP9P+6bIBhpiHyEaHn2sN1U0c6uthaGmcXaXsa/kljcs6S7\nvAawfPMaHMyryWXmpv+m3z4xmMuSxUNGrWmhePQ7BTFgr9+Pf4QlaVqp23HpkyMt\nC2jG3dcruQKBgCKjhiPGG0RMIdPiWhFHzWBP//p+7pRspqb6Toltg/8Sshwy3rKU\nk14emujqv8Po4IiuAayuhgCc3fURPoRAzhEKwawhqrHe3uRPWCRgPCai3Ji1wmTA\nxzOYyX6SFP0ZoA7KCx4/zK24TI6tHNbE2U3/OWAJ69wcHxbTSk/FPQBxAoGAS1WR\n4vR1oGdenloAdCfInKVv6rWI8/h/BaBeZybGD6QFgvUuzfaY0po3UqyQomk81o29\n2S+aLc7fsMPakf6kLzduvR6IQtADBgod1XdnTVb9KTYQ+8tuzOlItanfu9WGthum\nUy41DM4WbKSfROkNUG5UgrhQky3lBtjQA2UGZpkCgYEAv4xU400HIZyofXTzhflr\nEIspPRFeGjMpASBwiFK7ScH0/frCKnizolPa9iVg6zkI5/Q1ItVhxqH8TQB/Xkut\n8qIwzpyf34srAqIEInLhaxfvJyTkWA2tqMkqtk5Tz8RAtDbEB0o7whU7kWJqN1O0\n3kzhDP9vkjh2GPqYSmbLrW8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "nodeserver-digitalocean@electionbuzztimeline1.iam.gserviceaccount.com",
+  "client_id": "100926700708322938265",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nodeserver-digitalocean%40electionbuzztimeline1.iam.gserviceaccount.com"
+}

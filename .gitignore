@@ -6,7 +6,8 @@ connect.py
 tweet_analysis_py/tweet_categorization/noun_9996_cc.png
 
 tweet_analysis_py/tweet_categorization/something.py
-
+server/key.pem
+server/server.pass*
 *.pyc
 /nbproject/private/
 *.xml
