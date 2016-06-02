@@ -3,6 +3,9 @@ var React = require("react");
 var HorizBarChart = require('./components/horizBarChart.jsx');
 var CategoryPicker = require('./components/categoryPicker.jsx');
 var MainPage = require('./components/main_page.jsx');
+var Candidates = require('./components/candidates.jsx');
+var Candidate = require('./components/candidate.jsx');
+
 
 var ReactRouter = require('react-router');
 var ReactDom = require('react-dom');
@@ -24,6 +27,9 @@ var App = React.createClass({
 
 var routes = (
   <Route path="/" component={App}>
+    <Route path="candidates" component={Candidates}>
+      <Route path="/candidate/:candidateid" component={Candidate} />
+    </Route>
   </Route>
 );
 
