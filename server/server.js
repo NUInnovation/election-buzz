@@ -4,15 +4,15 @@ var Firebase = require('firebase');
 var fs = require('fs');
 var bodyParser = require('body-parser');
 var cors = require('cors');
-var https = require('https');
+// var https = require('https');
 var http = require('http');
 //configure to use bodyParser
 
 //configure the https server using openssl certificates
-var options = {
-	key: fs.readFileSync('key.pem'),
-	cert: fs.readFileSync('cert.pem')
-};
+// var options = {
+// 	key: fs.readFileSync('key.pem'),
+// 	cert: fs.readFileSync('cert.pem')
+// };
 
 
 
@@ -21,13 +21,13 @@ app.use(bodyParser.json());
 app.use(cors());
 
 var port = process.env.PORT || 8081;
-var https_port = process.env.PORT || 8080;
+// var https_port = process.env.PORT || 8080;
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host: 'localhost',
-	user: 'root',
-	password: 'F2wRnvcSna',
+	user: '<USER>',
+	password: '<PWD>',
 	database: 'tweet_db'
 });
 
@@ -242,33 +242,8 @@ router.route('/users')
 app.use('/api',router);
 //app.listen(port);
 http.createServer(app).listen(port);
-https.createServer(options,app).listen(https_port);
+// https.createServer(options,app).listen(https_port);
 console.log("I'm listening on port "+port);
-console.log('Listening for https on port '+https_port);
-
-/*
-
-app.get('/listusers',function(req, res) {
-	
-	console.log("Getting users");
-	connection.query("Select count(*) from users", function(err, rows, fields) {
-		if (!err)
-		{ console.log(JSON.stringify(rows));
-		 res.end(JSON.stringify(rows));
-		 }
-		else
-		{ console.log("error!"); }
-	
-	});
+// console.log('Listening for https on port '+https_port);
 
 
-});
-*/
-/*
-var server = app.listen(port, function() {
-
-        var host = server.address().address;
-        var port = server.address().port;
-        console.log("app listening on http://%s:%s", host, port);
-})
-*/
